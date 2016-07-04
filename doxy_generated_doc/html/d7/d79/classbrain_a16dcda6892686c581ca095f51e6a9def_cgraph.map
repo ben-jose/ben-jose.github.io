@@ -1,0 +1,12 @@
+<map id="brain::candidate_find_analysis" name="brain::candidate_find_analysis">
+<area shape="rect" id="node2" href="$d6/d45/classneuromap.html#a5da738c0ecb7ba74a4fc435ca33b1fcb" title="It tries to find a neuromap. " alt="" coords="198,56,338,83"/>
+<area shape="rect" id="node11" href="$d7/d0b/classdeducer.html#a7db42a9dfc25ed6ed6747faea2c90961" title="It does normal resolution analysis (CDCL). " alt="" coords="209,107,327,133"/>
+<area shape="rect" id="node3" href="$d6/d45/classneuromap.html#a5ad7c9c245129fc8a162742c11d4e972" title="It stabilizes a neuromap to a BCFF and then finds or writes the BCFF. " alt="" coords="387,56,531,83"/>
+<area shape="rect" id="node4" href="$d6/d45/classneuromap.html#a9c0e877474e2d17cf8b9da564de8b8c3" title="It stabilizes a neuromap to a BCFF. " alt="" coords="579,49,741,90"/>
+<area shape="rect" id="node5" href="$d7/dec/classsort__glb.html#ad87061a8532cc773200ba06d939a6dfc" title="It stabilizes two &#39;loaded&#39; (initialized) sort_glb with a neuromap (no further refinement is possible)..." alt="" coords="789,27,936,53"/>
+<area shape="rect" id="node10" href="$d7/dec/classsort__glb.html#abcd6c73d28df5efcf002c2aed63ccd92" title="It stabilizes two &#39;loaded&#39; (initialized) sort_glb with a neuromap to a BCFF. " alt="" coords="789,78,936,119"/>
+<area shape="rect" id="node6" href="$d7/dec/classsort__glb.html#a314081679beafcbbeac7f2e504558f18" title="It stabilizes neuron sortee s and quanton sortee s until no further refinement is possible..." alt="" coords="984,56,1163,83"/>
+<area shape="rect" id="node7" href="$d7/dec/classsort__glb.html#a25baf3b8e0bc9bdca9c0d6658b298f07" title="It does sort_from operations on this sort_glb neuron sortee s. " alt="" coords="1211,5,1347,32"/>
+<area shape="rect" id="node8" href="$d7/dec/classsort__glb.html#a40a9304f2ef43071021472a8e020069a" title="It does sort_from operations on this sort_glb opposite quanton sortee s. " alt="" coords="1211,56,1347,83"/>
+<area shape="rect" id="node9" href="$d7/dec/classsort__glb.html#aa41c7303e4bae7eb7c466f119c3ace1f" title="It does sort_from operations on this sort_glb quanton sortee s. " alt="" coords="1211,107,1347,133"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="brain::think" name="brain::think">
+<area shape="rect" id="node2" href="$d7/d79/classbrain.html#a2daa8c1c03eea62a51a359470bb64cc7" title="This is the starting point to solve any instance. It is the main function of the implementation. " alt="" coords="142,56,287,83"/>
+<area shape="rect" id="node3" href="$dc/d3c/ben__jose_8h.html#a65eb23939cc4ae39654dbd93343580c8" title="bj_solve_file" alt="" coords="346,5,441,32"/>
+<area shape="rect" id="node4" href="$dc/d3c/ben__jose_8h.html#a45eef575a2ca6c6b90e0a1d998f1eb7d" title="bj_solve_data" alt="" coords="342,56,445,83"/>
+<area shape="rect" id="node5" href="$dc/d3c/ben__jose_8h.html#a2818f32df95b8d462f49a201ce371142" title="bj_solve_literals" alt="" coords="336,107,451,133"/>
+</map>

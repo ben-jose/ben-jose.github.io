@@ -1,0 +1,15 @@
+<map id="neuromap::map_prepare_mem_oper" name="neuromap::map_prepare_mem_oper">
+<area shape="rect" id="node2" href="$d6/d45/classneuromap.html#a5ad7c9c245129fc8a162742c11d4e972" title="It stabilizes a neuromap to a BCFF and then finds or writes the BCFF. " alt="" coords="216,56,360,83"/>
+<area shape="rect" id="node3" href="$d6/d45/classneuromap.html#a5da738c0ecb7ba74a4fc435ca33b1fcb" title="It tries to find a neuromap. " alt="" coords="411,29,551,56"/>
+<area shape="rect" id="node13" href="$d6/d45/classneuromap.html#adb0c3a4698866c919272f9b4ba5998fd" title="It tries to write a neuromap. " alt="" coords="408,81,555,108"/>
+<area shape="rect" id="node4" href="$d7/d79/classbrain.html#a16dcda6892686c581ca095f51e6a9def" title="Does full BCFF finding with active write candidates. " alt="" coords="603,19,746,61"/>
+<area shape="rect" id="node5" href="$d7/d79/classbrain.html#adec5742918fedd1636a6152502bd409c" title="Does conflict analysis, BCFFs finding and BCFFs writing. " alt="" coords="795,56,954,83"/>
+<area shape="rect" id="node6" href="$d7/d79/classbrain.html#a8d880c7f0e91a5dbb2cedaefdb704153" title="Does all analysis and one backtrack. " alt="" coords="1003,49,1181,90"/>
+<area shape="rect" id="node7" href="$d7/d79/classbrain.html#a9728a44b4e7b71ddb4a47bb25af05612" title="This is the basic step function while solving an instance. It does one full backtrack. " alt="" coords="1230,56,1330,83"/>
+<area shape="rect" id="node8" href="$d7/d79/classbrain.html#a8524441f8b863aec8fe2cc9c3ad2d21a" title="This is the main processing function to solve an instance. It get called by solve_instance. " alt="" coords="1379,56,1466,83"/>
+<area shape="rect" id="node9" href="$d7/d79/classbrain.html#a2daa8c1c03eea62a51a359470bb64cc7" title="This is the starting point to solve any instance. It is the main function of the implementation. " alt="" coords="1515,56,1661,83"/>
+<area shape="rect" id="node10" href="$dc/d3c/ben__jose_8h.html#a65eb23939cc4ae39654dbd93343580c8" title="bj_solve_file" alt="" coords="1719,5,1814,32"/>
+<area shape="rect" id="node11" href="$dc/d3c/ben__jose_8h.html#a45eef575a2ca6c6b90e0a1d998f1eb7d" title="bj_solve_data" alt="" coords="1715,56,1818,83"/>
+<area shape="rect" id="node12" href="$dc/d3c/ben__jose_8h.html#a2818f32df95b8d462f49a201ce371142" title="bj_solve_literals" alt="" coords="1709,107,1824,133"/>
+<area shape="rect" id="node14" href="$db/d3c/brain_8h.html#a14f74143760dde7c17a99c26c736c198" title="Writes all neuromap s (candidates) that need writing. " alt="" coords="620,85,729,112"/>
+</map>

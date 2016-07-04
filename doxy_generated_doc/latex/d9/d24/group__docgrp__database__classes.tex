@@ -1,0 +1,27 @@
+\hypertarget{group__docgrp__database__classes}{\section{Database classes}
+\label{group__docgrp__database__classes}\index{Database classes@{Database classes}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classskeleton__glb}{skeleton\+\_\+glb}
+\begin{DoxyCompactList}\small\item\em A \hyperlink{classskeleton__glb}{skeleton\+\_\+glb} is a directory holding a database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classskeleton__glb}{skeleton\+\_\+glb} class handles all disk related functions and management. The database is basically a directory and all its sub-\/directories in disk. The directory (\hyperlink{classskeleton__glb}{skeleton\+\_\+glb}) is seen as a group of (''key'',''value'') pairs. Just like a common database ''index'', a ''dictionary'' class, or a ''map'' class. A path within the \hyperlink{classskeleton__glb}{skeleton\+\_\+glb} is a ''key'' and the files in the path are the ''value''. To see if a ''key'' exists is to see if a path exists within the \hyperlink{classskeleton__glb}{skeleton\+\_\+glb}. Unsatisfiable \hyperlink{classcanon__cnf}{canon\+\_\+cnf} s are saved and searched by the S\+H\+A function of their content. They are saved in a path (''key'') that is constructed with the S\+H\+A and other relevant search info.
+
+Since an unsatisfiable sub-\/formula might not be minimal (have some unnecessary clauses for unsatisfiability), each unsatisfiable C\+N\+F sub-\/formula has three relevant canon\+\_\+cnf\+:
+
+
+\begin{DoxyItemize}
+\item The guide. It is the \hyperlink{classcanon__cnf}{canon\+\_\+cnf} resulting of stabilizing the C\+N\+F sub-\/formula covered by first search branch variables. So it is a satisfiable part of the unsatisfiable C\+N\+F sub-\/formula that is a ''guide'' for the search.
+
+
+\item The tauto. It is the full unsatisfiable C\+N\+F sub-\/formula. It is the \hyperlink{classcanon__cnf}{canon\+\_\+cnf} resulting of stabilizing the C\+N\+F sub-\/formula covered by both search branches charged \hyperlink{classquanton}{quanton} s (used variables).
+
+
+\item The diff. This \hyperlink{classcanon__cnf}{canon\+\_\+cnf} contains all canon\+\_\+clause s in tauto but not in guide. Each diff is saved in a path called 'variant' in the \hyperlink{classskeleton__glb}{skeleton\+\_\+glb}. So one guide can have several variants. 
+\end{DoxyItemize}
+
+A search of a target C\+N\+F sub-\/formula is conducted in two phases\+: the search for the guide of the target and the search for the variant that is a sub-\/formula of the target diff. Once the guide is stabilized the search for it is a simple\+: ''see if its path exists'' (remember that its path contains the S\+H\+A of its content). If the target \hyperlink{classcanon__cnf}{canon\+\_\+cnf} is not equal to a variant (the path does not exist), the second phase is more time consuming because it involves reading each variant and comparing it to the target diff to see if the the variant is a sub-\/formula of the target diff (which would mean that the target is unsatisfiable and therefore can be backtracked). 

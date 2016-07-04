@@ -1,0 +1,315 @@
+\hypertarget{macro__algorithm__ben__jose_8cpp}{\section{/home/jose/devel/ben-\/jose/src/programs/macro\+\_\+ben\+\_\+jose/macro\+\_\+algorithm\+\_\+ben\+\_\+jose.cpp File Reference}
+\label{macro__algorithm__ben__jose_8cpp}\index{/home/jose/devel/ben-\/jose/src/programs/macro\+\_\+ben\+\_\+jose/macro\+\_\+algorithm\+\_\+ben\+\_\+jose.\+cpp@{/home/jose/devel/ben-\/jose/src/programs/macro\+\_\+ben\+\_\+jose/macro\+\_\+algorithm\+\_\+ben\+\_\+jose.\+cpp}}
+}
+
+
+This is a documentation file to help understand the innerworking of the library. It is not compiled.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{macro__algorithm__ben__jose_8cpp_a6c1ce86bc2c830291e5c4e027c26c90f}{\#define \hyperlink{macro__algorithm__ben__jose_8cpp_a6c1ce86bc2c830291e5c4e027c26c90f}{T\+H\+I\+S\+\_\+\+C\+O\+D\+E\+\_\+\+I\+S\+\_\+\+N\+O\+T\+\_\+\+C\+O\+M\+P\+I\+L\+E\+D}}\label{macro__algorithm__ben__jose_8cpp_a6c1ce86bc2c830291e5c4e027c26c90f}
+
+\begin{DoxyCompactList}\small\item\em \mbox{[}macro\+\_\+bj\+\_\+id\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a documentation file to help understand the innerworking of the library. It is not compiled. 
+
+It is an outline of the functions that get called during the solving of a S\+A\+T instance when the user of the library uses one of the three presentations of the ben-\/jose A\+P\+I top solve instances\+:
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{ben__jose_8h_a65eb23939cc4ae39654dbd93343580c8}{bj\+\_\+solve\+\_\+file} 
+
+\hyperlink{ben__jose_8h_a45eef575a2ca6c6b90e0a1d998f1eb7d}{bj\+\_\+solve\+\_\+data} 
+
+\hyperlink{ben__jose_8h_a2818f32df95b8d462f49a201ce371142}{bj\+\_\+solve\+\_\+literals}
+\end{DoxySeeAlso}
+This file is not compiled it is just to help in the understanding of the inner-\/works of the library, and to help the interested programmer to get familiar with the backbone functions of the library.
+
+The following are its contents\+:
+
+
+\begin{DoxyCodeInclude}
+\textcolor{preprocessor}{#define THIS\_CODE\_IS\_NOT\_COMPILED}
+
+\textcolor{keywordtype}{void}
+\hyperlink{classbrain_a2daa8c1c03eea62a51a359470bb64cc7}{brain::solve\_instance}()\{
+    \textcolor{comment}{// init all brain data with any of:}
+    \textcolor{comment}{//      a DIMACS file}
+    \textcolor{comment}{//      a byte array (the chars in a DIMACS file)}
+    \textcolor{comment}{//      a literals array (long ints represent literals}
+    \textcolor{comment}{//          and a 0 separates clauses)}
+    load\_instance(); 
+    \hyperlink{classbrain_a8524441f8b863aec8fe2cc9c3ad2d21a}{think}();
+\}
+
+\textcolor{keywordtype}{void} 
+\hyperlink{classbrain_a8524441f8b863aec8fe2cc9c3ad2d21a}{brain::think}()\{
+    \textcolor{keywordflow}{while}(o\_info.bjo\_result == \hyperlink{ben__jose_8h_ga9aba221730ab694a549d25ee1aa28c69ad8dafe2640a5e989a73880526a853663}{bjr\_unknown\_satisf})\{
+        \hyperlink{classbrain_a9728a44b4e7b71ddb4a47bb25af05612}{pulsate}();
+    \}
+\}
+
+\textcolor{keywordtype}{void}
+\hyperlink{classbrain_a9728a44b4e7b71ddb4a47bb25af05612}{brain::pulsate}()\{
+    \hyperlink{classbrain_a28eeaf513dd81fcb3dcb21fb37f58ccb}{propagate\_signals}();
+    \textcolor{keywordflow}{if}(found\_conflict())\{
+        \hyperlink{classbrain_a8d880c7f0e91a5dbb2cedaefdb704153}{deduce\_and\_reverse\_trail}();
+    \} \textcolor{keywordflow}{else}\{
+        choose\_quanton();
+        start\_propagation();
+    \}
+\}
+
+\textcolor{keywordtype}{void}
+\hyperlink{classbrain_a8d880c7f0e91a5dbb2cedaefdb704153}{brain::deduce\_and\_reverse\_trail}()\{
+    \hyperlink{classdeduction}{deduction}& dct = br\_pulse\_deduc;
+    reason& rsn = dct.dt\_rsn;
+    
+    dct.reset\_deduction();
+    
+    \hyperlink{classbrain_adec5742918fedd1636a6152502bd409c}{analyse\_conflicts}(br\_all\_conflicts\_found, dct);
+    reverse\_with(rsn);
+\}
+
+\textcolor{keywordtype}{void}
+\hyperlink{classbrain_adec5742918fedd1636a6152502bd409c}{brain::analyse\_conflicts}()\{
+    \hyperlink{classdeduction}{deduction}& dct = br\_pulse\_deduc;
+    \hyperlink{classdeducer}{deducer}& ddc = br\_dedcer;
+    
+    dct.reset\_deduction();
+    ddc.\hyperlink{classdeducer_a7db42a9dfc25ed6ed6747faea2c90961}{deduce}(dct); \textcolor{comment}{// good old conflict analysis. }
+    \textcolor{comment}{//it finds a reason (clause) for a conflict}
+    
+    \hyperlink{classbrain_a16dcda6892686c581ca095f51e6a9def}{candidate\_find\_analysis}(ddc, dct); \textcolor{comment}{// try to go further by }
+    \textcolor{comment}{// finding unsat sub-formulas}
+
+    row\_neuromap\_t& to\_wrt = dct.dt\_all\_to\_wrt;
+    \hyperlink{brain_8h_a14f74143760dde7c17a99c26c736c198}{write\_all\_nmps}(to\_wrt);
+    
+\}
+
+\textcolor{keywordtype}{void}
+\hyperlink{brain_8h_a14f74143760dde7c17a99c26c736c198}{brain::write\_all\_nmps}(row<neuromap*>& to\_wrt)\{
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} aa = 0; aa < to\_wrt.size(); aa++)\{
+        \hyperlink{classneuromap}{neuromap}& nmp = *(to\_wrt[aa]);
+        nmp.\hyperlink{classneuromap_adb0c3a4698866c919272f9b4ba5998fd}{map\_write}();
+    \}
+\}
+
+\textcolor{keywordtype}{void}
+\hyperlink{classbrain_a16dcda6892686c581ca095f51e6a9def}{brain::candidate\_find\_analysis}(\hyperlink{classdeducer}{deducer}& dedcer, 
+      \hyperlink{classdeduction}{deduction}& dct)\{
+    \hyperlink{classneuromap}{neuromap}* out\_nmp = NULL\_PT;
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{long} aa = br\_candidate\_nmp\_lvs.last\_idx(); aa >= 0; aa--)\{
+        out\_nmp = br\_candidate\_nmp\_lvs[aa];
+        \textcolor{keywordflow}{if}(! out\_nmp->\hyperlink{classneuromap_a5da738c0ecb7ba74a4fc435ca33b1fcb}{map\_find}())\{
+            \textcolor{keywordflow}{break};
+        \}
+        dct.reset\_deduction();
+        dedcer.\hyperlink{classdeducer_a7db42a9dfc25ed6ed6747faea2c90961}{deduce}(dct);
+    \}
+\}
+
+\textcolor{keywordtype}{bool}
+\hyperlink{classneuromap_a5da738c0ecb7ba74a4fc435ca33b1fcb}{neuromap::map\_find}()\{
+    \textcolor{keywordflow}{return} \hyperlink{classneuromap_a5ad7c9c245129fc8a162742c11d4e972}{map\_oper}(mo\_find);
+\}
+
+\textcolor{keywordtype}{bool}
+\hyperlink{classneuromap_adb0c3a4698866c919272f9b4ba5998fd}{neuromap::map\_write}()\{
+    \textcolor{keywordflow}{return} \hyperlink{classneuromap_a5ad7c9c245129fc8a162742c11d4e972}{map\_oper}(mo\_save);
+\}
+
+\textcolor{keywordtype}{bool}
+\hyperlink{classneuromap_a5ad7c9c245129fc8a162742c11d4e972}{neuromap::map\_oper}(mem\_op\_t mm)\{
+    \textcolor{comment}{// prepare the neuromap: stabilize it to find it's BCFF.}
+    \textcolor{keywordtype}{bool} prep\_ok = \hyperlink{classneuromap_a9c0e877474e2d17cf8b9da564de8b8c3}{map\_prepare\_mem\_oper}(mm);
+    \textcolor{keywordflow}{if}(! prep\_ok)\{
+        \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+    \}
+    \hyperlink{classbrain}{brain}& brn = get\_brn();
+    \hyperlink{classskeleton__glb}{skeleton\_glb}& skg = brn.get\_skeleton();
+    
+    \hyperlink{classcanon__cnf}{canon\_cnf}& tmp\_tauto\_cnf = brn.br\_tmp\_wrt\_tauto\_cnf; \textcolor{comment}{// the unsat BCFF }
+    \hyperlink{classcanon__cnf}{canon\_cnf}& tmp\_diff\_cnf = brn.br\_tmp\_wrt\_diff\_cnf; \textcolor{comment}{// the diff between tauto and guide.}
+    \hyperlink{classcanon__cnf}{canon\_cnf}& tmp\_guide\_cnf = brn.br\_tmp\_wrt\_guide\_cnf; \textcolor{comment}{// the guide of tauto}
+    
+    \textcolor{keywordflow}{if}(mm == mo\_find)\{
+        \hyperlink{classinstance__info}{instance\_info}& iinfo = brn.get\_my\_inst();
+        row\_neuron\_t& all\_found = na\_found\_col.co\_neus;
+        
+        \textcolor{comment}{// find this neuromap in the skeleton:}
+        tmp\_diff\_cnf.first\_vnt\_i\_super\_of(skg, all\_found, &iinfo); 
+    \} \textcolor{keywordflow}{else} \{
+        ch\_string& tau\_pth = na\_tauto\_pth;
+
+        \textcolor{comment}{// write all relevant cnfs of this neuromap in the skeleton:}
+        tmp\_tauto\_cnf.save\_cnf(skg, tau\_pth);
+        tmp\_diff\_cnf.save\_cnf(skg, tau\_pth);
+        tmp\_guide\_cnf.save\_cnf(skg, tau\_pth);
+    \}
+\}
+
+\textcolor{keywordtype}{bool}
+\hyperlink{classneuromap_a9c0e877474e2d17cf8b9da564de8b8c3}{neuromap::map\_prepare\_mem\_oper}(mem\_op\_t mm)\{
+    \hyperlink{classbrain}{brain}& brn = get\_brn();
+    
+    brn.all\_mutual\_init(); \textcolor{comment}{// init all stab aux params}
+    
+    \textcolor{comment}{// final stab of the guide}
+    \hyperlink{classsort__glb}{sort\_glb}& guide\_ne\_srg = brn.br\_guide\_neus\_srg;
+    \hyperlink{classsort__glb}{sort\_glb}& guide\_qu\_srg = brn.br\_guide\_quas\_srg;
+
+    \textcolor{comment}{// init sort\_glb info and do some stab.}
+    \textcolor{keywordflow}{if}(! has\_stab\_guide())\{
+        map\_set\_stab\_guide();
+    \} \textcolor{keywordflow}{else} \{
+        guide\_col.load\_colors\_into(guide\_ne\_srg, guide\_qu\_srg, dbg\_call\_1, \textcolor{keyword}{this});
+    \}
+    \textcolor{comment}{// final stab guide:}
+    guide\_ne\_srg.\hyperlink{classsort__glb_ad87061a8532cc773200ba06d939a6dfc}{stab\_mutual}(guide\_qu\_srg, \textcolor{keyword}{false});
+    
+    \hyperlink{classcoloring}{coloring} final\_guide\_col(&brn);
+    final\_guide\_col.save\_colors\_from(guide\_ne\_srg, guide\_qu\_srg, tid\_tee\_consec, \textcolor{keyword}{false});
+
+    \hyperlink{classcoloring}{coloring}& ini\_tau\_col = brn.br\_tmp\_ini\_tauto\_col;
+    map\_get\_initial\_tauto\_coloring(final\_guide\_col, ini\_tau\_col, mm);
+    
+    \textcolor{comment}{// final tauto stab of this neuromap}
+    brn.all\_mutual\_init();
+
+    \hyperlink{classsort__glb}{sort\_glb}& tauto\_ne\_srg = brn.br\_tauto\_neus\_srg;
+    \hyperlink{classsort__glb}{sort\_glb}& tauto\_qu\_srg = brn.br\_tauto\_quas\_srg;
+    
+    \textcolor{comment}{// init all sort\_glb info:}
+    ini\_tau\_col.load\_colors\_into(tauto\_ne\_srg, tauto\_qu\_srg, dbg\_call\_3, \textcolor{keyword}{this}, \textcolor{keyword}{true});
+    
+    tauto\_ne\_srg.\hyperlink{classsort__glb_abcd6c73d28df5efcf002c2aed63ccd92}{stab\_mutual\_unique}(tauto\_qu\_srg, \textcolor{keyword}{this});
+    
+    map\_prepare\_wrt\_cnfs(mm, quick\_find\_ref); \textcolor{comment}{// this sets the temp cnfs for this nmp.}
+\}
+
+\textcolor{keywordtype}{void}
+\hyperlink{classsort__glb_abcd6c73d28df5efcf002c2aed63ccd92}{sort\_glb::stab\_mutual\_unique}(\hyperlink{classsort__glb}{sort\_glb}& srg2, 
+      \hyperlink{classneuromap}{neuromap}* dbg\_nmp)\{
+    \hyperlink{classsort__glb}{sort\_glb}& srg1 = *\textcolor{keyword}{this};
+    \textcolor{keywordtype}{bool} all\_consec = \textcolor{keyword}{false};
+    \textcolor{keywordflow}{while}(! all\_consec)\{
+        \hyperlink{classsort__glb_a314081679beafcbbeac7f2e504558f18}{stab\_mutual\_core}(srg2);
+        all\_consec = srg2.sg\_step\_all\_consec;
+        \textcolor{keywordflow}{if}(! all\_consec)\{
+            srg2.stab\_mutual\_choose\_one(srg1);
+        \}
+    \}
+    stab\_mutual\_end(srg2, \textcolor{keyword}{true});
+\}
+
+\textcolor{keywordtype}{void}
+\hyperlink{classsort__glb_ad87061a8532cc773200ba06d939a6dfc}{sort\_glb::stab\_mutual}(\hyperlink{classsort__glb}{sort\_glb}& srg2, \textcolor{keywordtype}{bool} one\_ccl\_per\_ss)\{
+    \hyperlink{classsort__glb_a314081679beafcbbeac7f2e504558f18}{stab\_mutual\_core}(srg2);
+    stab\_mutual\_end(srg2, one\_ccl\_per\_ss);
+\}
+
+\textcolor{keywordtype}{void}
+\hyperlink{classsort__glb_a314081679beafcbbeac7f2e504558f18}{sort\_glb::stab\_mutual\_core}(\hyperlink{classsort__glb}{sort\_glb}& srg2)\{
+    \hyperlink{classsort__glb}{sort\_glb}& srg1 = *\textcolor{keyword}{this};
+    \textcolor{keywordtype}{bool} has\_diff = \textcolor{keyword}{true};
+    \textcolor{keywordflow}{while}(has\_diff)\{
+        srg1.\hyperlink{classsort__glb_a25baf3b8e0bc9bdca9c0d6658b298f07}{step\_neus}(srg2);
+        \textcolor{keywordtype}{bool} diff1 = srg1.sg\_step\_has\_diff;
+        srg2.\hyperlink{classsort__glb_a40a9304f2ef43071021472a8e020069a}{step\_opps}(srg1);
+        srg2.\hyperlink{classsort__glb_aa41c7303e4bae7eb7c466f119c3ace1f}{step\_quas}(srg1);
+        \textcolor{keywordtype}{bool} diff2 = srg2.sg\_step\_has\_diff;
+        has\_diff = (diff1 || diff2);
+    \}
+\}
+
+\textcolor{keywordtype}{void}
+\hyperlink{classsort__glb_a25baf3b8e0bc9bdca9c0d6658b298f07}{sort\_glb::step\_neus}(\hyperlink{classsort__glb}{sort\_glb}& mates\_srg)\{
+    step\_mutual\_stabilize(mates\_srg, sm\_with\_neus);
+\}
+
+\textcolor{keywordtype}{void}
+\hyperlink{classsort__glb_a40a9304f2ef43071021472a8e020069a}{sort\_glb::step\_opps}(\hyperlink{classsort__glb}{sort\_glb}& mates\_srg)\{
+    step\_mutual\_stabilize(mates\_srg, sm\_with\_opps);
+\}
+
+\textcolor{keywordtype}{void}
+\hyperlink{classsort__glb_aa41c7303e4bae7eb7c466f119c3ace1f}{sort\_glb::step\_quas}(\hyperlink{classsort__glb}{sort\_glb}& mates\_srg)\{
+    step\_mutual\_stabilize(mates\_srg, sm\_with\_quas);
+\}
+
+\textcolor{keywordtype}{void}
+sort\_glb::step\_mutual\_stabilize(\hyperlink{classsort__glb}{sort\_glb}& srg2, step\_mutual\_op\_t op)\{
+    \hyperlink{classsort__glb}{sort\_glb}& srg1 = *\textcolor{keyword}{this};
+
+    \textcolor{comment}{// initialize some step info}
+    \textcolor{comment}{// (see the code)}
+    \textcolor{comment}{// .....}
+    
+    row<sorset*>& sets = sg\_step\_prv\_sorsets;
+    sets.clear();
+
+    sg\_step\_sorsets.move\_to(sets);
+    sg\_step\_sorsets.set\_cap(sets.size());
+    
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{long} aa = 0; aa < sets.size(); aa++)\{
+        \hyperlink{classsorset}{sorset}& srs = *(sets[aa]);
+        sets[aa] = NULL\_PT;
+
+        srs.\hyperlink{classsorset_a9a85b9412bc1fc5bea86d416e52b55c7}{step\_mutual\_stabilize\_rec}(srg1, srg2);
+    \}
+    sets.clear();
+
+    \textcolor{comment}{// setup final info (sg\_cnf\_clauses)}
+\}
+
+\textcolor{keywordtype}{void}
+\hyperlink{classsorset_a9a85b9412bc1fc5bea86d416e52b55c7}{sorset::step\_mutual\_stabilize\_rec}(\hyperlink{classsort__glb}{sort\_glb}& srg1, 
+      \hyperlink{classsort__glb}{sort\_glb}& srg2)\{
+    \textcolor{keywordflow}{while}(has\_subsets())\{
+        \hyperlink{classsorset}{sorset}& nsr = first\_subset();
+        nsr.\hyperlink{classsorset_a9a85b9412bc1fc5bea86d416e52b55c7}{step\_mutual\_stabilize\_rec}(srg1, srg2);
+    \}
+\}
+
+\textcolor{keywordtype}{void}
+\hyperlink{classsorset_a9a85b9412bc1fc5bea86d416e52b55c7}{sorset::step\_mutual\_stabilize\_rec}(\hyperlink{classsort__glb}{sort\_glb}& srg1, 
+      \hyperlink{classsort__glb}{sort\_glb}& srg2)\{
+    \textcolor{keywordflow}{while}(has\_subsets())\{
+        \hyperlink{classsorset}{sorset}& nsr = first\_subset();
+        nsr.\hyperlink{classsorset_a9a85b9412bc1fc5bea86d416e52b55c7}{step\_mutual\_stabilize\_rec}(srg1, srg2);
+    \}
+    
+    binder* fst = ss\_items.bn\_right;
+    binder* lst = &(ss\_items);
+    binder* rgt = NULL\_PT;
+    \textcolor{keywordflow}{for}(rgt = fst; rgt != lst; rgt = rgt->bn\_right)\{
+        \hyperlink{classsortee}{sortee}& srt = as\_sortee(rgt);
+        \textcolor{keywordflow}{if}(oper == sm\_with\_neus)\{
+            row<sortee*>& all\_mates = srt.so\_related->so\_mates;
+            srg2.\hyperlink{classsort__glb_ac755a6417f43e7860ca96317a8e8f4e8}{sort\_all\_from}(all\_mates, curr\_stab\_consec, \textcolor{keyword}{false}, 0, \textcolor{keyword}{true}, tc\_none,
+                                &srg1, &srt); \textcolor{comment}{// it calls sort\_from for all mates}
+        \}
+        \textcolor{keywordflow}{if}(oper == sm\_with\_opps)\{
+            \hyperlink{classsortee}{sortee}& opp = srt.opposite();
+            \hyperlink{classsorset}{sorset}& vssl = opp.get\_vessel();
+    
+            \textcolor{keywordflow}{if}(&vssl != \textcolor{keyword}{this})\{
+                opp.\hyperlink{classsortee_a5cc113e22e62dfcb3869c2786ae5345e}{sort\_from}(srg1, curr\_stab\_consec);
+            \}
+        \}
+        \textcolor{keywordflow}{if}(oper == sm\_with\_quas)\{
+            \textcolor{keywordtype}{long} qua\_id = srt.get\_qua\_id(srg1);
+            
+            row<sortee*>& all\_mates = srt.so\_related->so\_mates;
+            srg2.\hyperlink{classsort__glb_ac755a6417f43e7860ca96317a8e8f4e8}{sort\_all\_from}(all\_mates, curr\_stab\_consec, \textcolor{keyword}{true}, qua\_id, \textcolor{keyword}{false}, tc\_mates,
+                                &srg1, &srt); \textcolor{comment}{// it calls sort\_from for all mates}
+        \}
+    \}
+\}
+
+\end{DoxyCodeInclude}

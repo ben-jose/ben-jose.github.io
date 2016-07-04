@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- This HTML code looks nice because is manually written and then gnumaked -->
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 4 meta tags *must* come first in the head -->
+
+	<meta name="description" content="Ben-Jose SAT Trainable Solver Library">
+	<meta name="author" content="">
+	<link rel="icon" href="images/bj-logo-ico.png">
+
+	<title>Ben-Jose Trainable SAT Solver Software Library</title>
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="css/starter-template.css" rel="stylesheet">
+	<script src="js/ie-emulation-modes-warning.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" 
+				data-toggle="collapse" data-target="#navbar" 
+				aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<!-- DO NOT REMOVE THE NEXT LINE. It is needed by Makefile -->
+			<a class="navbar-brand" href="index.html"><img src="images/bj-mix-mini.png" alt=""></a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+			<!-- DO NOT REMOVE THE NEXT LINE. It is needed by Makefile  -->
+			<li class="active"> <a href="index.html">Home</a> </li>
+			<li><a href="about.html">About</a></li>
+			<li class="dropdown">
+				<a href="index.html" class="dropdown-toggle" data-toggle="dropdown" 
+						role="button" aria-haspopup="true" aria-expanded="false">
+					Info <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+				<li><a href="hello_world.html">Hello World</a></li>
+				<li><a href="bj-phi.html">bj-phi</a></li>
+				<li><a href="proofs.html">Proofs</a></li>
+				</ul>
+			</li>
+			<li><a href="doxy_generated_doc/html/index.html">Doxygen Documentation</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="https://github.com/ben-jose/ben-jose">
+							GitHub
+						</a>
+					</li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+<!-- END_OF common_top.txt -->
+<!-- START_OF top_rest.txt -->
+
+<div class="container">
+
+<!-- START_OF hello_world.txt -->
+
+<h1>Hello World example</h1>
+
+The basic functionality of the library is best shown by the bj-hello-world.c program:
+
+<pre>
+#include <stdio.h>
+#include "ben_jose.h"
+
+int main(int argc, char** argv)
+{
+	if(argc < 2){
+		printf("args: <cnf_file_path>\n");
+		return 1;
+	}
+	char* ff = argv[1];
+	
+	bj_solver_t ss = bj_solver_create("");
+	
+	bj_satisf_val_t  vv = bj_solve_file(ss, ff);
+	switch(vv){
+		case bjr_yes_satisf:
+			printf("%s is SAT instance\n", ff);
+			break;
+		case bjr_no_satisf:
+			printf("%s is UNS instance\n", ff);
+			break;
+		case bjr_error:
+			printf("ERROR ! in %s\n", ff);
+			break;
+		default:
+			printf("FATAL ERROR ! in %s\n", ff);
+			break;
+	}
+	
+	// more info with this functions
+	//bj_output_t oo = bj_get_output(ss);
+	//const long* aa = bj_get_assig(ss);
+	
+	bj_solver_release(ss);
+	return 0;
+}
+</pre>
+
+<p>
+This program finds the solution to the SAT instance defined by the file ''ff''. The file must be in the <a href="http://www.satcompetition.org/2009/format-benchmarks2009.html" target="blank">simplified DIMACS format</a>.
+
+<p>
+Three functions are minimally needed to use the library:
+<ol>
+<li>
+<code>bj_solver_create</code>
+<li>
+<code>bj_solve_file</code>
+<li>
+<code>bj_solver_release</code>
+</ol>
+
+<h2>Compiling Hello World</h2>
+
+<p>
+<div class="alert alert-warning" role="alert">
+The library compiles and builds a <code>bj-hello-world</code> by default when 
+<a href="index.html">installing</a> so it should be in the path.
+</div>
+
+<p>
+Once the library has been installed (see Section \ref{sect:installation}), a user program can be compiled using standard c++ compilation.
+
+<p>
+Assuming that the file libben-jose.a is in the directory {\BJLIBPTH}, the program in Listing \ref{hello-prog} is build and compiled as in Listing \ref{compiling-hello-prog}:
+
+<pre>
+BJ_LIB_PTH=../../../build/gnu_make/bin
+
+cc -o bj-hello-world.o -c -MD -Wall -std=c99 -I../../library/api bj-hello-world.c
+cc -o bj-hello-world -rdynamic -L${BJ_LIB_PTH} bj-hello-world.o -lben-jose -lstdc++ -lgmpxx -lgmp
+</pre>
+
+
+<br>
+<br>
+<br>
+<!-- START_OF bottom.txt -->
+
+</div><!-- /.container -->
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="js/jquery.js"></script>
+<script>
+	window.jQuery || 
+	document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="js/bootstrap.js"></script>
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+  
+
+<div id="link64_vdp_tabid" style="display:none;">1031</div>
+
+</body>
+</html>
+

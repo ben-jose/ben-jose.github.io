@@ -1,0 +1,509 @@
+\hypertarget{ben__jose_8cpp}{\section{/home/jose/devel/ben-\/jose/src/library/api/ben\+\_\+jose.cpp File Reference}
+\label{ben__jose_8cpp}\index{/home/jose/devel/ben-\/jose/src/library/api/ben\+\_\+jose.\+cpp@{/home/jose/devel/ben-\/jose/src/library/api/ben\+\_\+jose.\+cpp}}
+}
+
+
+File containing the implementation code for the users A\+P\+I of ben\+\_\+jose.  
+
+
+{\ttfamily \#include $<$cstdio$>$}\\*
+{\ttfamily \#include \char`\"{}ben\+\_\+jose.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}brain.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}solver.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}file\+\_\+funcs.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}dbg\+\_\+prt.\+h\char`\"{}}\\*
+Include dependency graph for ben\+\_\+jose.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d50/ben__jose_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ben__jose_8cpp_a017fab7c4a46c76367a8810a6a0da452}{bj\+\_\+init\+\_\+output} (bj\+\_\+output\+\_\+t $\ast$the\+\_\+out)
+\item 
+\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} \hyperlink{ben__jose_8cpp_a3f6cb5e5aac2da12b2d475c81909becf}{bj\+\_\+solver\+\_\+create} (const char $\ast$bjs\+\_\+dir\+\_\+path)
+\item 
+void \hyperlink{ben__jose_8cpp_ae256ffb1a6f33249d57c88ad79c5132b}{bj\+\_\+solver\+\_\+release} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs)
+\item 
+void \hyperlink{ben__jose_8cpp_afeb4622efbaae0a207b9d0a394b860ee}{bj\+\_\+set\+\_\+param\+\_\+char} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs, \hyperlink{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29}{bj\+\_\+param\+\_\+t} prm, char val)
+\item 
+char \hyperlink{ben__jose_8cpp_ae5e07f54c5d1f3315695876d31bbfc4d}{bj\+\_\+get\+\_\+param\+\_\+char} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs, \hyperlink{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29}{bj\+\_\+param\+\_\+t} prm)
+\item 
+const char $\ast$ \hyperlink{ben__jose_8cpp_aacdcf2c366bfd31c06c00cb33a548e9f}{bj\+\_\+get\+\_\+database\+\_\+path} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs)
+\item 
+\hyperlink{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69}{bj\+\_\+satisf\+\_\+val\+\_\+t} \hyperlink{ben__jose_8cpp_a65eb23939cc4ae39654dbd93343580c8}{bj\+\_\+solve\+\_\+file} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs, const char $\ast$f\+\_\+path)
+\item 
+\hyperlink{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69}{bj\+\_\+satisf\+\_\+val\+\_\+t} \hyperlink{ben__jose_8cpp_a45eef575a2ca6c6b90e0a1d998f1eb7d}{bj\+\_\+solve\+\_\+data} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs, long dat\+\_\+sz, const char $\ast$dat)
+\item 
+\hyperlink{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69}{bj\+\_\+satisf\+\_\+val\+\_\+t} \hyperlink{ben__jose_8cpp_a2818f32df95b8d462f49a201ce371142}{bj\+\_\+solve\+\_\+literals} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs, long num\+\_\+vars, long num\+\_\+cls, long lits\+\_\+sz, long $\ast$lits)
+\item 
+\hyperlink{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69}{bj\+\_\+satisf\+\_\+val\+\_\+t} \hyperlink{ben__jose_8cpp_aef97ca0385d43a4415e6710d07b1dd4d}{bj\+\_\+get\+\_\+result} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs)
+\item 
+bj\+\_\+output\+\_\+t \hyperlink{ben__jose_8cpp_a2685b092d0a891b280bc1895d1deaef1}{bj\+\_\+get\+\_\+output} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs)
+\item 
+const char $\ast$ \hyperlink{ben__jose_8cpp_a2cd47bfce4c972f1882857eb7910569d}{bj\+\_\+get\+\_\+solve\+\_\+file\+\_\+path} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs)
+\item 
+const long $\ast$ \hyperlink{ben__jose_8cpp_a672cdf8b8774c4224e1cd641f0460705}{bj\+\_\+get\+\_\+assig} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs)
+\item 
+const char $\ast$ \hyperlink{ben__jose_8cpp_ac3cb476b34f135c0370047bc5ade0058}{bj\+\_\+get\+\_\+last\+\_\+proof\+\_\+path} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs)
+\item 
+const char $\ast$ \hyperlink{ben__jose_8cpp_abf18e6ff43cc5a12b15d6317da5357ef}{bj\+\_\+get\+\_\+error\+\_\+stack\+\_\+str} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs)
+\item 
+const char $\ast$ \hyperlink{ben__jose_8cpp_aa74202918cc8ec8e05d541a9fa04251f}{bj\+\_\+get\+\_\+error\+\_\+assert\+\_\+str} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs)
+\item 
+void \hyperlink{ben__jose_8cpp_a62d44e173c8c8d19dae9c88696649127}{bj\+\_\+restart} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs)
+\item 
+void \hyperlink{ben__jose_8cpp_ac7ff7cedad8c30e85232f52cb1c6e716}{bj\+\_\+print\+\_\+paths} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs)
+\item 
+const char $\ast$ \hyperlink{ben__jose_8cpp_ab6303f60ba14cddd8b534b40830df31d}{bj\+\_\+error\+\_\+str} (\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8b}{bj\+\_\+error\+\_\+t} bje)
+\item 
+const char $\ast$ \hyperlink{ben__jose_8cpp_a09f75c893eb86496a7fa1eba093b9d67}{bj\+\_\+get\+\_\+result\+\_\+titles\+\_\+string} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs)
+\item 
+const char $\ast$ \hyperlink{ben__jose_8cpp_aef3c645a9b041d6f7fd7aa720d255308}{bj\+\_\+get\+\_\+result\+\_\+string} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs)
+\item 
+void \hyperlink{ben__jose_8cpp_ac23228b810b4eadd052ee3dcc193a0a5}{bj\+\_\+parse\+\_\+result\+\_\+string} (\hyperlink{ben__jose_8h_a3825fe3519107001ca4d0679f1d0a110}{bj\+\_\+solver\+\_\+t} bjs, const char $\ast$rslt\+\_\+str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing the implementation code for the users A\+P\+I of ben\+\_\+jose. 
+
+
+
+
+
+
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ben__jose_8cpp_a017fab7c4a46c76367a8810a6a0da452}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+init\+\_\+output@{bj\+\_\+init\+\_\+output}}
+\index{bj\+\_\+init\+\_\+output@{bj\+\_\+init\+\_\+output}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+init\+\_\+output}]{\setlength{\rightskip}{0pt plus 5cm}void bj\+\_\+init\+\_\+output (
+\begin{DoxyParamCaption}
+\item[{bj\+\_\+output\+\_\+t $\ast$}]{the\+\_\+out}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_a017fab7c4a46c76367a8810a6a0da452}
+Init a bj\+\_\+output\+\_\+t structure 
+\begin{DoxyParams}{Parameters}
+{\em the\+\_\+out} & A pointer to the structure to be initialized \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{d1/d55/ben__jose_8cpp_a017fab7c4a46c76367a8810a6a0da452_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ben__jose_8cpp_a3f6cb5e5aac2da12b2d475c81909becf}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+solver\+\_\+create@{bj\+\_\+solver\+\_\+create}}
+\index{bj\+\_\+solver\+\_\+create@{bj\+\_\+solver\+\_\+create}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+solver\+\_\+create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bj\+\_\+solver\+\_\+t} bj\+\_\+solver\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{bjs\+\_\+dir\+\_\+path}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_a3f6cb5e5aac2da12b2d475c81909becf}
+Create a solver object to solve one or more C\+N\+Fs 
+\begin{DoxyParams}{Parameters}
+{\em bjs\+\_\+dir\+\_\+path} & A C string that represents the path of the database of C\+N\+Fs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bj\+\_\+solver\+\_\+t object representing a solver. 
+\end{DoxyReturn}
+\hypertarget{ben__jose_8cpp_ae256ffb1a6f33249d57c88ad79c5132b}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+solver\+\_\+release@{bj\+\_\+solver\+\_\+release}}
+\index{bj\+\_\+solver\+\_\+release@{bj\+\_\+solver\+\_\+release}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+solver\+\_\+release}]{\setlength{\rightskip}{0pt plus 5cm}void bj\+\_\+solver\+\_\+release (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_ae256ffb1a6f33249d57c88ad79c5132b}
+Release a solver object created with bj\+\_\+solver\+\_\+create 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be released. \\
+\hline
+\end{DoxyParams}
+\hypertarget{ben__jose_8cpp_afeb4622efbaae0a207b9d0a394b860ee}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+set\+\_\+param\+\_\+char@{bj\+\_\+set\+\_\+param\+\_\+char}}
+\index{bj\+\_\+set\+\_\+param\+\_\+char@{bj\+\_\+set\+\_\+param\+\_\+char}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+set\+\_\+param\+\_\+char}]{\setlength{\rightskip}{0pt plus 5cm}void bj\+\_\+set\+\_\+param\+\_\+char (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs, }
+\item[{{\bf bj\+\_\+param\+\_\+t}}]{prm, }
+\item[{char}]{val}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_afeb4622efbaae0a207b9d0a394b860ee}
+Set an input parameter in the solver 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+{\em prm} & The parameter. \\
+\hline
+{\em val} & The value. For boolen values it is 0 (false) or not 0 (true) \\
+\hline
+\end{DoxyParams}
+\hypertarget{ben__jose_8cpp_ae5e07f54c5d1f3315695876d31bbfc4d}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+get\+\_\+param\+\_\+char@{bj\+\_\+get\+\_\+param\+\_\+char}}
+\index{bj\+\_\+get\+\_\+param\+\_\+char@{bj\+\_\+get\+\_\+param\+\_\+char}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+get\+\_\+param\+\_\+char}]{\setlength{\rightskip}{0pt plus 5cm}char bj\+\_\+get\+\_\+param\+\_\+char (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs, }
+\item[{{\bf bj\+\_\+param\+\_\+t}}]{prm}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_ae5e07f54c5d1f3315695876d31bbfc4d}
+Get the value of a previusly set (with bj\+\_\+set\+\_\+param\+\_\+char) input parameter. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+{\em prm} & The parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value. For boolen values it is 0 (false) or 1 (true) 
+\end{DoxyReturn}
+\hypertarget{ben__jose_8cpp_aacdcf2c366bfd31c06c00cb33a548e9f}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+get\+\_\+database\+\_\+path@{bj\+\_\+get\+\_\+database\+\_\+path}}
+\index{bj\+\_\+get\+\_\+database\+\_\+path@{bj\+\_\+get\+\_\+database\+\_\+path}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+get\+\_\+database\+\_\+path}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ bj\+\_\+get\+\_\+database\+\_\+path (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_aacdcf2c366bfd31c06c00cb33a548e9f}
+Get the value of a previusly set database path (with bj\+\_\+solver\+\_\+create). 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The database directory path. Do not free the returned pointer. 
+\end{DoxyReturn}
+\hypertarget{ben__jose_8cpp_a65eb23939cc4ae39654dbd93343580c8}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+solve\+\_\+file@{bj\+\_\+solve\+\_\+file}}
+\index{bj\+\_\+solve\+\_\+file@{bj\+\_\+solve\+\_\+file}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+solve\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bj\+\_\+satisf\+\_\+val\+\_\+t} bj\+\_\+solve\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs, }
+\item[{const char $\ast$}]{f\+\_\+path}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_a65eb23939cc4ae39654dbd93343580c8}
+Solve a C\+N\+F given the D\+I\+M\+A\+C\+S formated file path of the C\+N\+F. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+{\em f\+\_\+path} & The C\+N\+F file path. It must be in D\+I\+M\+A\+C\+S format. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The solving result. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d55/ben__jose_8cpp_a65eb23939cc4ae39654dbd93343580c8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ben__jose_8cpp_a45eef575a2ca6c6b90e0a1d998f1eb7d}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+solve\+\_\+data@{bj\+\_\+solve\+\_\+data}}
+\index{bj\+\_\+solve\+\_\+data@{bj\+\_\+solve\+\_\+data}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+solve\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bj\+\_\+satisf\+\_\+val\+\_\+t} bj\+\_\+solve\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs, }
+\item[{long}]{dat\+\_\+sz, }
+\item[{const char $\ast$}]{dat}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_a45eef575a2ca6c6b90e0a1d998f1eb7d}
+Solve a C\+N\+F given a D\+I\+M\+A\+C\+S formated C A\+S\+C\+I\+I characters array. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+{\em dat\+\_\+sz} & The number of A\+S\+C\+I\+I characters in dat. \\
+\hline
+{\em dat} & The D\+I\+M\+A\+C\+S formated C A\+S\+C\+I\+I characters array. It can be the exact contents read of a valid D\+I\+M\+A\+C\+S file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The solving result. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d55/ben__jose_8cpp_a45eef575a2ca6c6b90e0a1d998f1eb7d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ben__jose_8cpp_a2818f32df95b8d462f49a201ce371142}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+solve\+\_\+literals@{bj\+\_\+solve\+\_\+literals}}
+\index{bj\+\_\+solve\+\_\+literals@{bj\+\_\+solve\+\_\+literals}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+solve\+\_\+literals}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bj\+\_\+satisf\+\_\+val\+\_\+t} bj\+\_\+solve\+\_\+literals (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs, }
+\item[{long}]{num\+\_\+vars, }
+\item[{long}]{num\+\_\+cls, }
+\item[{long}]{lits\+\_\+sz, }
+\item[{long $\ast$}]{lits}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_a2818f32df95b8d462f49a201ce371142}
+Solve a C\+N\+F given the D\+I\+M\+A\+C\+S values of a C\+N\+F. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+{\em num\+\_\+vars} & The number of variables in used in lits. It is the value as read in a cnf declaration of a D\+I\+M\+A\+C\+S file. \\
+\hline
+{\em num\+\_\+cls} & The number of clauses found in lits. It is the value as read in a cnf declaration of a D\+I\+M\+A\+C\+S file. \\
+\hline
+{\em lits\+\_\+sz} & The size of the lits parameter. \\
+\hline
+{\em lits} & T\+He array containing a set of clauses separated by zeros. Ej\+: \mbox{[}1 2 0 3 4 5 0\mbox{]} representes two clauses\+: \mbox{[}1 2\mbox{]} and \mbox{[}3 4 5\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The solving result. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d55/ben__jose_8cpp_a2818f32df95b8d462f49a201ce371142_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ben__jose_8cpp_aef97ca0385d43a4415e6710d07b1dd4d}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+get\+\_\+result@{bj\+\_\+get\+\_\+result}}
+\index{bj\+\_\+get\+\_\+result@{bj\+\_\+get\+\_\+result}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+get\+\_\+result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bj\+\_\+satisf\+\_\+val\+\_\+t} bj\+\_\+get\+\_\+result (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_aef97ca0385d43a4415e6710d07b1dd4d}
+Get the result of a solving process. A bj\+\_\+solve\+\_\+ function must have been previusly called. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The solving result. It has the same value returned by the previusly called bj\+\_\+solve\+\_\+ function. 
+\end{DoxyReturn}
+\hypertarget{ben__jose_8cpp_a2685b092d0a891b280bc1895d1deaef1}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+get\+\_\+output@{bj\+\_\+get\+\_\+output}}
+\index{bj\+\_\+get\+\_\+output@{bj\+\_\+get\+\_\+output}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+get\+\_\+output}]{\setlength{\rightskip}{0pt plus 5cm}bj\+\_\+output\+\_\+t bj\+\_\+get\+\_\+output (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_a2685b092d0a891b280bc1895d1deaef1}
+Get all the output a solving process. A bj\+\_\+solve\+\_\+ function must have been previusly called. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The solving output. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+bj\+\_\+output\+\_\+t 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{d1/d55/ben__jose_8cpp_a2685b092d0a891b280bc1895d1deaef1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ben__jose_8cpp_a2cd47bfce4c972f1882857eb7910569d}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+get\+\_\+solve\+\_\+file\+\_\+path@{bj\+\_\+get\+\_\+solve\+\_\+file\+\_\+path}}
+\index{bj\+\_\+get\+\_\+solve\+\_\+file\+\_\+path@{bj\+\_\+get\+\_\+solve\+\_\+file\+\_\+path}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+get\+\_\+solve\+\_\+file\+\_\+path}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ bj\+\_\+get\+\_\+solve\+\_\+file\+\_\+path (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_a2cd47bfce4c972f1882857eb7910569d}
+Returns the value passed to bj\+\_\+solve\+\_\+file. A bj\+\_\+solve\+\_\+ function must have been previusly called. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value passed to bj\+\_\+solve\+\_\+file or null otherwise (other bj\+\_\+solve\+\_\+ function was called). 
+\end{DoxyReturn}
+\hypertarget{ben__jose_8cpp_a672cdf8b8774c4224e1cd641f0460705}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+get\+\_\+assig@{bj\+\_\+get\+\_\+assig}}
+\index{bj\+\_\+get\+\_\+assig@{bj\+\_\+get\+\_\+assig}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+get\+\_\+assig}]{\setlength{\rightskip}{0pt plus 5cm}const long$\ast$ bj\+\_\+get\+\_\+assig (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_a672cdf8b8774c4224e1cd641f0460705}
+Get the assignation to variables that satisfies the C\+N\+F. A bj\+\_\+solve\+\_\+ function must have been previusly called. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array (here called 'assig') with the assignation to variables that satisfies the C\+N\+F.
+\end{DoxyReturn}
+'assig' always ends with a 0.
+
+No memory after that 0 should be accessed.
+
+Let vv = assig\mbox{[}ii\mbox{]}. Then\+:
+
+
+\begin{DoxyItemize}
+\item If vv is positive it means the the variable represented by abs(vv) is assigned true
+\item If vv is negative it means the the variable represented by abs(vv) is assigned false
+\end{DoxyItemize}
+
+Example\+: \mbox{[}-\/20 4 -\/12 6 9 0\mbox{]}
+
+Means\+:
+\begin{DoxyItemize}
+\item set var 20 to false
+\item set var 4 to true
+\item set var 12 to false
+\item set var 6 to true
+\item set var 9 to true
+\end{DoxyItemize}
+
+And that assignation satisfies the whole C\+N\+F (it might have more than 20 variables). \hypertarget{ben__jose_8cpp_ac3cb476b34f135c0370047bc5ade0058}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+get\+\_\+last\+\_\+proof\+\_\+path@{bj\+\_\+get\+\_\+last\+\_\+proof\+\_\+path}}
+\index{bj\+\_\+get\+\_\+last\+\_\+proof\+\_\+path@{bj\+\_\+get\+\_\+last\+\_\+proof\+\_\+path}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+get\+\_\+last\+\_\+proof\+\_\+path}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ bj\+\_\+get\+\_\+last\+\_\+proof\+\_\+path (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_ac3cb476b34f135c0370047bc5ade0058}
+Returns the last written proof path. A bj\+\_\+solve\+\_\+ function must have been previusly called. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The path to the last written G\+S\+O\+N proof file.
+\end{DoxyReturn}
+N\+U\+L\+L is returned if the parameter bjp\+\_\+write\+\_\+proofs was not used before calling a bj\+\_\+solve\+\_\+ function. \hypertarget{ben__jose_8cpp_abf18e6ff43cc5a12b15d6317da5357ef}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+get\+\_\+error\+\_\+stack\+\_\+str@{bj\+\_\+get\+\_\+error\+\_\+stack\+\_\+str}}
+\index{bj\+\_\+get\+\_\+error\+\_\+stack\+\_\+str@{bj\+\_\+get\+\_\+error\+\_\+stack\+\_\+str}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+get\+\_\+error\+\_\+stack\+\_\+str}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ bj\+\_\+get\+\_\+error\+\_\+stack\+\_\+str (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_abf18e6ff43cc5a12b15d6317da5357ef}
+Get the stack when the error ocurred. A bj\+\_\+solve\+\_\+ function must have been previusly called. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The stack when the error ocurred.
+\end{DoxyReturn}
+Funtion for debugging purposes. Only returns a valid value if an error has ocurred during solving. \hypertarget{ben__jose_8cpp_aa74202918cc8ec8e05d541a9fa04251f}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+get\+\_\+error\+\_\+assert\+\_\+str@{bj\+\_\+get\+\_\+error\+\_\+assert\+\_\+str}}
+\index{bj\+\_\+get\+\_\+error\+\_\+assert\+\_\+str@{bj\+\_\+get\+\_\+error\+\_\+assert\+\_\+str}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+get\+\_\+error\+\_\+assert\+\_\+str}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ bj\+\_\+get\+\_\+error\+\_\+assert\+\_\+str (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_aa74202918cc8ec8e05d541a9fa04251f}
+Get the assert that failed. A bj\+\_\+solve\+\_\+ function must have been previusly called. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The assert that failed.
+\end{DoxyReturn}
+Funtion for debugging purposes. Only returns a valid value if an assert has failed. \hypertarget{ben__jose_8cpp_a62d44e173c8c8d19dae9c88696649127}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+restart@{bj\+\_\+restart}}
+\index{bj\+\_\+restart@{bj\+\_\+restart}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+restart}]{\setlength{\rightskip}{0pt plus 5cm}void bj\+\_\+restart (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_a62d44e173c8c8d19dae9c88696649127}
+Resets all internal values in the solver. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+\end{DoxyParams}
+\hypertarget{ben__jose_8cpp_ac7ff7cedad8c30e85232f52cb1c6e716}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+print\+\_\+paths@{bj\+\_\+print\+\_\+paths}}
+\index{bj\+\_\+print\+\_\+paths@{bj\+\_\+print\+\_\+paths}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+print\+\_\+paths}]{\setlength{\rightskip}{0pt plus 5cm}void bj\+\_\+print\+\_\+paths (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_ac7ff7cedad8c30e85232f52cb1c6e716}
+Prints all paths used by the solver. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+\end{DoxyParams}
+\hypertarget{ben__jose_8cpp_ab6303f60ba14cddd8b534b40830df31d}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+error\+\_\+str@{bj\+\_\+error\+\_\+str}}
+\index{bj\+\_\+error\+\_\+str@{bj\+\_\+error\+\_\+str}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+error\+\_\+str}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ bj\+\_\+error\+\_\+str (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+error\+\_\+t}}]{bje}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_ab6303f60ba14cddd8b534b40830df31d}
+Gets a string representing the error. A bj\+\_\+solve\+\_\+ function must have been previusly called. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representing the error. 
+\end{DoxyReturn}
+\hypertarget{ben__jose_8cpp_a09f75c893eb86496a7fa1eba093b9d67}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+get\+\_\+result\+\_\+titles\+\_\+string@{bj\+\_\+get\+\_\+result\+\_\+titles\+\_\+string}}
+\index{bj\+\_\+get\+\_\+result\+\_\+titles\+\_\+string@{bj\+\_\+get\+\_\+result\+\_\+titles\+\_\+string}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+get\+\_\+result\+\_\+titles\+\_\+string}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ bj\+\_\+get\+\_\+result\+\_\+titles\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_a09f75c893eb86496a7fa1eba093b9d67}
+Get a string with the titles of a result string fields. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string with the titles of a result string fields.
+\end{DoxyReturn}
+Funtion for testing purposes. \hypertarget{ben__jose_8cpp_aef3c645a9b041d6f7fd7aa720d255308}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+get\+\_\+result\+\_\+string@{bj\+\_\+get\+\_\+result\+\_\+string}}
+\index{bj\+\_\+get\+\_\+result\+\_\+string@{bj\+\_\+get\+\_\+result\+\_\+string}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+get\+\_\+result\+\_\+string}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ bj\+\_\+get\+\_\+result\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_aef3c645a9b041d6f7fd7aa720d255308}
+Get a string with the result string. A bj\+\_\+solve\+\_\+ function must have been previusly called. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string with the result string.
+\end{DoxyReturn}
+Funtion for testing purposes. It contains a concatenation of the string representation of some fields obtained otherwise with the bj\+\_\+get\+\_\+output funtion. \hypertarget{ben__jose_8cpp_ac23228b810b4eadd052ee3dcc193a0a5}{\index{ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}!bj\+\_\+parse\+\_\+result\+\_\+string@{bj\+\_\+parse\+\_\+result\+\_\+string}}
+\index{bj\+\_\+parse\+\_\+result\+\_\+string@{bj\+\_\+parse\+\_\+result\+\_\+string}!ben\+\_\+jose.\+cpp@{ben\+\_\+jose.\+cpp}}
+\subsubsection[{bj\+\_\+parse\+\_\+result\+\_\+string}]{\setlength{\rightskip}{0pt plus 5cm}void bj\+\_\+parse\+\_\+result\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{{\bf bj\+\_\+solver\+\_\+t}}]{bjs, }
+\item[{const char $\ast$}]{rslt\+\_\+str}
+\end{DoxyParamCaption}
+)}}\label{ben__jose_8cpp_ac23228b810b4eadd052ee3dcc193a0a5}
+Sets internal values in the solver with a result string previusly returned by bj\+\_\+get\+\_\+result\+\_\+string. 
+\begin{DoxyParams}{Parameters}
+{\em bjs} & The solver object to be used. \\
+\hline
+{\em rslt\+\_\+str} & A string with the result string.\\
+\hline
+\end{DoxyParams}
+Funtion for testing purposes. It sets internal values in the solver so that a call to bj\+\_\+get\+\_\+output will return the parsed values. 

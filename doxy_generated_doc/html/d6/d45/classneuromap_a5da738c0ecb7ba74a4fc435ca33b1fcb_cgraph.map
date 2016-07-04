@@ -1,0 +1,10 @@
+<map id="neuromap::map_find" name="neuromap::map_find">
+<area shape="rect" id="node2" href="$d6/d45/classneuromap.html#a5ad7c9c245129fc8a162742c11d4e972" title="It stabilizes a neuromap to a BCFF and then finds or writes the BCFF. " alt="" coords="195,56,339,83"/>
+<area shape="rect" id="node3" href="$d6/d45/classneuromap.html#a9c0e877474e2d17cf8b9da564de8b8c3" title="It stabilizes a neuromap to a BCFF. " alt="" coords="387,49,549,90"/>
+<area shape="rect" id="node4" href="$d7/dec/classsort__glb.html#ad87061a8532cc773200ba06d939a6dfc" title="It stabilizes two &#39;loaded&#39; (initialized) sort_glb with a neuromap (no further refinement is possible)..." alt="" coords="597,27,744,53"/>
+<area shape="rect" id="node9" href="$d7/dec/classsort__glb.html#abcd6c73d28df5efcf002c2aed63ccd92" title="It stabilizes two &#39;loaded&#39; (initialized) sort_glb with a neuromap to a BCFF. " alt="" coords="597,78,744,119"/>
+<area shape="rect" id="node5" href="$d7/dec/classsort__glb.html#a314081679beafcbbeac7f2e504558f18" title="It stabilizes neuron sortee s and quanton sortee s until no further refinement is possible..." alt="" coords="792,56,971,83"/>
+<area shape="rect" id="node6" href="$d7/dec/classsort__glb.html#a25baf3b8e0bc9bdca9c0d6658b298f07" title="It does sort_from operations on this sort_glb neuron sortee s. " alt="" coords="1019,5,1155,32"/>
+<area shape="rect" id="node7" href="$d7/dec/classsort__glb.html#a40a9304f2ef43071021472a8e020069a" title="It does sort_from operations on this sort_glb opposite quanton sortee s. " alt="" coords="1019,56,1155,83"/>
+<area shape="rect" id="node8" href="$d7/dec/classsort__glb.html#aa41c7303e4bae7eb7c466f119c3ace1f" title="It does sort_from operations on this sort_glb quanton sortee s. " alt="" coords="1019,107,1155,133"/>
+</map>

@@ -1,0 +1,104 @@
+<!-- START_OF index.txt -->
+
+<h1>Introduction</h1>
+
+<p>
+Ben-Jose is:
+
+<ol>
+<li>
+A sotware library.
+<li>
+A <a href="https://en.wikipedia.org/wiki/Boolean_satisfiability_problem" target="blank">
+SAT problem</a> solver.
+<li>
+Free Software and Open Source Software.
+<li>
+Trainable.
+</ol>
+
+<p>
+Ben-jose is designed to be used as a support library for applications or libraries that need to solve both theoretical and practical instances of SAT. The expected user is a C/C++ programmer. 
+
+<p>
+The initial motivation for this software was to do better than existant solvers for
+Pigeon Hole Principle (PHP) instances of the SAT problem, and still be competitive for other instances.
+
+<h1>Status</h1>
+
+<p>
+ben-jose is in pre-alpha stage. It is research work in progress. Having said that, the author thinks it can serve as a proof of concept tool for the 
+<a href="https://github.com/ben-jose/ben-jose/raw/master/doc/ben-jose.pdf">
+proposed</a> strategy to solve SAT problems.
+
+<h1>Download and Install</h1>
+
+<ol>
+	<li>
+	Download and unzip a ZIP file of ben-jose from 
+	<a href="https://github.com/ben-jose/ben-jose">
+		https://github.com/ben-jose/ben-jose
+	</a>
+
+	<li>
+	In the command line:
+	<pre>
+	  cd ben-jose-master/build/gnu_make
+	  make 
+	  cd lib/ben-jose
+	  echo $'\nPATH=$PATH:'`pwd`$'\n' >> ~/.bashrc
+	  ls
+	  exit
+	</pre>
+</ol>
+
+<p>
+These commands will compile, built, put the library directory in the PATH environment variable, list all files of the library and finally 'exit' the command line so the changes to the path take effect (.bashrc is ran again) the next time you open a command line.
+
+<h3>Required Software</h3>
+<ol>
+	<li>A Linux system.
+	<li>GNU C++ (g++). 
+	<li>GNU Make (Make). 
+	<li>GMP Library for c++ development installed. Packages 'libgmp' (library), 'libgmp-dev' (development) and 'libgmpxx' (c++ bindings).
+</ol>
+
+<p>
+For Mint and in the command line (probably the same for other debian based distros):
+
+<pre>
+	sudo apt-get install gcc
+	sudo apt-get install g++
+	sudo apt-get install make
+	sudo apt-get install libgmp10
+	sudo apt-get install libgmp-dev
+	sudo apt-get install libgmpxx4ldbl
+</pre>
+
+<p>
+These commands are safe to be run even if the packages are already installed because it will just tell you so.
+
+<h1 id="Getting-Started">Getting Started</h1>
+
+<p>
+Look at:
+
+<ol>
+<li>The <a href="hello_world.html">bj-hello-world</a> program.
+
+<li>The <a href="bj-phi.html">bj-phi</a> program.
+
+<li>The 
+<a href="https://github.com/ben-jose/ben-jose/raw/master/doc/ben-jose.pdf">
+.pdf</a> file of 
+<a href="https://github.com/ben-jose/ben-jose/tree/master/doc">
+Ben-Jose</a> 's
+<a href="https://github.com/ben-jose/ben-jose/raw/master/doc/ben-jose.pdf">
+Tool Paper</a>.
+</ol>
+
+
+
+<br>
+<br>
+<br>

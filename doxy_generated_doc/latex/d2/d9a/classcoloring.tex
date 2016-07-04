@@ -1,0 +1,38 @@
+\hypertarget{classcoloring}{\section{coloring Class Reference}
+\label{classcoloring}\index{coloring@{coloring}}
+}
+
+
+The initial and final state for an stabilization is a coloring.  
+
+
+
+
+{\ttfamily \#include $<$brain.\+h$>$}
+
+
+
+Collaboration diagram for coloring\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d84/classcoloring__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+The initial and final state for an stabilization is a coloring. 
+
+A color is just an integer. A coloring of a sub-\/formula is an assignation of an integer (\hyperlink{classneuron}{neuron} -\/ color) to each \hyperlink{classneuron}{neuron} and an integer (\hyperlink{classquanton}{quanton} -\/color) to each \hyperlink{classquanton}{quanton} of the sub-\/formula. An stabilization may start with all neurons having the same neuron-\/color and all \hyperlink{classquanton}{quanton} s having the same \hyperlink{classquanton}{quanton} -\/color and finalize with each \hyperlink{classneuron}{neuron} having a unique \hyperlink{classneuron}{neuron} -\/ color and each \hyperlink{classquanton}{quanton} having a unique \hyperlink{classquanton}{quanton} -\/color, called a complete coloring.
+
+colorings are ''loaded'' into the sortglb class in order to start stabilization. After stabilization the final coloring may be ''saved''. Each color in a coloring will correspond to one \hyperlink{classsorset}{sorset} during stabilization. These ''loading'' and ''saving'' words are used in the software only in relation to the sortglb class and have nothing to do with file operations.
+
+This class is used to specify only the input to the stabilization process (the initial state). The class \hyperlink{classcanon__cnf}{canon\+\_\+cnf} is used for the output (it is the result of applying the output coloring (stabilized coloring) to the sub-\/formula it defines\+: \hyperlink{classneuron}{neuron} s and \hyperlink{classquanton}{quanton} s in the coloring. To initialize the sortor, it ''loads'' the initial coloring into the sortglb instance that will stabilize the C\+N\+F sub-\/formula. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/jose/devel/ben-\/jose/src/library/brain/\hyperlink{brain_8h}{brain.\+h}\item 
+/home/jose/devel/ben-\/jose/src/library/brain/neuromap.\+cpp\item 
+/home/jose/devel/ben-\/jose/src/library/debug/dbg\+\_\+brain.\+cpp\item 
+/home/jose/devel/ben-\/jose/src/library/debug/dbg\+\_\+cy\+\_\+htm.\+cpp\end{DoxyCompactItemize}

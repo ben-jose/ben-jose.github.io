@@ -1,0 +1,37 @@
+<!-- START_OF index.txt -->
+
+<h1>Proofs</h1>
+
+<p>
+ben-jose can generate proofs for unsatisfiable formulas. 
+
+<p>
+Assuming the program ''bj-batch-solver'' is in the path, and from the source tree directory:
+
+<pre>
+	cd ben-jose-master/src/programs/tests/solver
+	sh clean_sh
+	bj-solver-debug ./h4.cnf -proof -root .
+	firefox ./SKELETON/CNF/Show_Proof.htm &
+</pre>
+
+<p>
+the bj-batch-solver program will use the bjp_write_proofs library option to generate the proof of the unsatisfiable instance ''h4.cnf'' in JSON format. 
+
+<p>
+Then:
+<ol>
+<li>
+<p>
+Copy the (very long) path printed in the standard output under "LAST_PROOF_PATH=" to the text area field in the Show_Proof.htm HTML page.
+
+<p>
+Paths must begin with ''/SKELETON'', so get rid of the prefix before it.
+
+<li>
+Click ''LOAD\_FILE''
+</ol>
+
+<br>
+<br>
+<br>

@@ -1,0 +1,11 @@
+<map id="neuromap::map_write" name="neuromap::map_write">
+<area shape="rect" id="node2" href="$db/d3c/brain_8h.html#a14f74143760dde7c17a99c26c736c198" title="Writes all neuromap s (candidates) that need writing. " alt="" coords="200,56,309,83"/>
+<area shape="rect" id="node3" href="$d7/d79/classbrain.html#adec5742918fedd1636a6152502bd409c" title="Does conflict analysis, BCFFs finding and BCFFs writing. " alt="" coords="358,56,517,83"/>
+<area shape="rect" id="node4" href="$d7/d79/classbrain.html#a8d880c7f0e91a5dbb2cedaefdb704153" title="Does all analysis and one backtrack. " alt="" coords="565,49,744,90"/>
+<area shape="rect" id="node5" href="$d7/d79/classbrain.html#a9728a44b4e7b71ddb4a47bb25af05612" title="This is the basic step function while solving an instance. It does one full backtrack. " alt="" coords="793,56,893,83"/>
+<area shape="rect" id="node6" href="$d7/d79/classbrain.html#a8524441f8b863aec8fe2cc9c3ad2d21a" title="This is the main processing function to solve an instance. It get called by solve_instance. " alt="" coords="942,56,1029,83"/>
+<area shape="rect" id="node7" href="$d7/d79/classbrain.html#a2daa8c1c03eea62a51a359470bb64cc7" title="This is the starting point to solve any instance. It is the main function of the implementation. " alt="" coords="1078,56,1223,83"/>
+<area shape="rect" id="node8" href="$dc/d3c/ben__jose_8h.html#a65eb23939cc4ae39654dbd93343580c8" title="bj_solve_file" alt="" coords="1282,5,1377,32"/>
+<area shape="rect" id="node9" href="$dc/d3c/ben__jose_8h.html#a45eef575a2ca6c6b90e0a1d998f1eb7d" title="bj_solve_data" alt="" coords="1278,56,1381,83"/>
+<area shape="rect" id="node10" href="$dc/d3c/ben__jose_8h.html#a2818f32df95b8d462f49a201ce371142" title="bj_solve_literals" alt="" coords="1272,107,1387,133"/>
+</map>

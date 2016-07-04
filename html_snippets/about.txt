@@ -1,0 +1,28 @@
+<!-- START_OF about.txt -->
+
+<h1>About</h1>
+
+<h2>Developer</h2>
+
+<p>
+Developed by <a href="https://joseluisquiroga.github.io">Jose Luis Quiroga</a>
+
+<h2>Acknowledgments</h2>
+
+<ul>
+<li>
+Our heavenly Father YHWH (Yahweh).
+
+<li>
+Our Lord Yashuah (Jesus Christ).
+
+<li>
+Magda Beltran de Quiroga (my mother).
+
+<li>
+Federman Quiroga Rios (my father).
+
+</ul>
+
+
+

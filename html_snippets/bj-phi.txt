@@ -1,0 +1,43 @@
+<!-- START_OF index.txt -->
+
+<H1> bj-phi </h1>
+
+<p>
+Tha bj-phi program that comes with the library generates HTML pages with 
+<a href="http://js.cytoscape.org/">cytoscape.js</a> graphs to visualize the solving of 
+Pigeon Hole Principle (PHP) instances.
+
+<p>
+Assuming the program ''bj-phi'' is in the path, and from the source tree directory, do:
+
+<pre>
+	cd ben-jose/src/programs/tests/phi
+	sh clean_sh
+	bj-phi 4
+	firefox ./phi_hole_4/phi_hole_4_all_steps.htm &
+</pre>
+
+<p>
+will execute the bj-phi program for PHP-4 and it will use the file 
+
+<pre>
+	./dbg_ben_jose.conf
+</pre>
+
+<p>
+to configure the debugging system to generate an HTML log file of the the solving process for PHP-4. 
+
+<div class="alert alert-warning" role="alert">
+The second run generates different HTML because it does only <strong>one</strong> backtrack.
+</div>
+
+<p>
+In order to restart the original state before the first run: that is to delete the {\skeleton} and the generated files by bj-phi simply run:
+
+<pre>
+	sh ./clean_sh
+</pre>
+
+<br>
+<br>
+<br>

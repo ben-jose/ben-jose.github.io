@@ -1,0 +1,84 @@
+<!-- START_OF hello_world.txt -->
+
+<h1>Hello World example</h1>
+
+The basic functionality of the library is best shown by the bj-hello-world.c program:
+
+<pre>
+#include <stdio.h>
+#include "ben_jose.h"
+
+int main(int argc, char** argv)
+{
+	if(argc < 2){
+		printf("args: <cnf_file_path>\n");
+		return 1;
+	}
+	char* ff = argv[1];
+	
+	bj_solver_t ss = bj_solver_create("");
+	
+	bj_satisf_val_t  vv = bj_solve_file(ss, ff);
+	switch(vv){
+		case bjr_yes_satisf:
+			printf("%s is SAT instance\n", ff);
+			break;
+		case bjr_no_satisf:
+			printf("%s is UNS instance\n", ff);
+			break;
+		case bjr_error:
+			printf("ERROR ! in %s\n", ff);
+			break;
+		default:
+			printf("FATAL ERROR ! in %s\n", ff);
+			break;
+	}
+	
+	// more info with this functions
+	//bj_output_t oo = bj_get_output(ss);
+	//const long* aa = bj_get_assig(ss);
+	
+	bj_solver_release(ss);
+	return 0;
+}
+</pre>
+
+<p>
+This program finds the solution to the SAT instance defined by the file ''ff''. The file must be in the <a href="http://www.satcompetition.org/2009/format-benchmarks2009.html" target="blank">simplified DIMACS format</a>.
+
+<p>
+Three functions are minimally needed to use the library:
+<ol>
+<li>
+<code>bj_solver_create</code>
+<li>
+<code>bj_solve_file</code>
+<li>
+<code>bj_solver_release</code>
+</ol>
+
+<h2>Compiling Hello World</h2>
+
+<p>
+<div class="alert alert-warning" role="alert">
+The library compiles and builds a <code>bj-hello-world</code> by default when 
+<a href="index.html">installing</a> so it should be in the path.
+</div>
+
+<p>
+Once the library has been installed (see Section \ref{sect:installation}), a user program can be compiled using standard c++ compilation.
+
+<p>
+Assuming that the file libben-jose.a is in the directory {\BJLIBPTH}, the program in Listing \ref{hello-prog} is build and compiled as in Listing \ref{compiling-hello-prog}:
+
+<pre>
+BJ_LIB_PTH=../../../build/gnu_make/bin
+
+cc -o bj-hello-world.o -c -MD -Wall -std=c99 -I../../library/api bj-hello-world.c
+cc -o bj-hello-world -rdynamic -L${BJ_LIB_PTH} bj-hello-world.o -lben-jose -lstdc++ -lgmpxx -lgmp
+</pre>
+
+
+<br>
+<br>
+<br>

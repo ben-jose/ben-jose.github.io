@@ -1,0 +1,47 @@
+\hypertarget{classskeleton__glb}{\section{skeleton\+\_\+glb Class Reference}
+\label{classskeleton__glb}\index{skeleton\+\_\+glb@{skeleton\+\_\+glb}}
+}
+
+
+A \hyperlink{classskeleton__glb}{skeleton\+\_\+glb} is a directory holding a database.  
+
+
+
+
+{\ttfamily \#include $<$skeleton.\+h$>$}
+
+
+
+Collaboration diagram for skeleton\+\_\+glb\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{d8/d37/classskeleton__glb__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classskeleton__glb}{skeleton\+\_\+glb} is a directory holding a database. 
+
+The skeleton class handles all disk related functions and management. The database is basically a directory and all its sub-\/directories in disk. The directory (skeleton) is seen as a group of (''key'',''value'') pairs. Just like a common database ''index'', a ''dictionary'' class, or a ''map'' class. A path within the skeleton is a ''key'' and the files in the path are the ''value''. To see if a ''key'' exists is to see if a path exists within the skeleton. Unsatisfiable canoncnf s are saved and searched by the S\+H\+A function of their content. They are saved in a path (''key'') that is constructed with the S\+H\+A and other relevant search info.
+
+Since an unsatisfiable sub-\/formula might not be minimal (have some unnecessary clauses for unsatisfiability), each unsatisfiable C\+N\+F sub-\/formula has three relevant canoncnf \+:
+
+
+\begin{DoxyItemize}
+\item The guide. It is the canoncnf resulting of stabilizing the C\+N\+F sub-\/formula covered by first search branch variables. So it is a satisfiable part of the unsatisfiable C\+N\+F sub-\/formula that is a ''guide'' for the search.
+
+
+\item The tauto. It is the full unsatisfiable C\+N\+F sub-\/formula. It is the canoncnf resulting of stabilizing the C\+N\+F sub-\/formula covered by both search branches charged \hyperlink{classquanton}{quanton} s (used variables).
+
+
+\item The diff. This canoncnf contains all canon\+\_\+clause s in tauto but not in guide. Each diff is saved in a path called 'variant' in the skeleton. So one guide can have several variants. 
+\end{DoxyItemize}
+
+A search of a target C\+N\+F sub-\/formula is conducted in two phases\+: the search for the guide of the target and the search for the variant that is a sub-\/formula of the target diff. Once the guide is stabilized the search for it is a simple\+: ''see if its path exists'' (remember that its path contains the S\+H\+A of its content). If the target canoncnf is not equal to a variant (the path does not exist), the second phase is more time consuming because it involves reading each variant and comparing it to the target diff to see if the the variant is a sub-\/formula of the target diff (which would mean that the target is unsatisfiable and therefore can be backtracked). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/jose/devel/ben-\/jose/src/library/unsat\+\_\+db/skeleton.\+h\item 
+/home/jose/devel/ben-\/jose/src/library/unsat\+\_\+db/skeleton.\+cpp\end{DoxyCompactItemize}

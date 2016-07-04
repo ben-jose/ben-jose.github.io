@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- This HTML code looks nice because is manually written and then gnumaked -->
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 4 meta tags *must* come first in the head -->
+
+	<meta name="description" content="Ben-Jose SAT Trainable Solver Library">
+	<meta name="author" content="">
+	<link rel="icon" href="images/bj-logo-ico.png">
+
+	<title>Ben-Jose Trainable SAT Solver Software Library</title>
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="css/starter-template.css" rel="stylesheet">
+	<script src="js/ie-emulation-modes-warning.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" 
+				data-toggle="collapse" data-target="#navbar" 
+				aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<!-- DO NOT REMOVE THE NEXT LINE. It is needed by Makefile -->
+			<a class="navbar-brand" href="index.html"><img src="images/bj-mix-mini.png" alt=""></a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+			<!-- DO NOT REMOVE THE NEXT LINE. It is needed by Makefile  -->
+			<li class="active"> <a href="index.html">Home</a> </li>
+			<li><a href="about.html">About</a></li>
+			<li class="dropdown">
+				<a href="index.html" class="dropdown-toggle" data-toggle="dropdown" 
+						role="button" aria-haspopup="true" aria-expanded="false">
+					Info <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+				<li><a href="hello_world.html">Hello World</a></li>
+				<li><a href="bj-phi.html">bj-phi</a></li>
+				<li><a href="proofs.html">Proofs</a></li>
+				</ul>
+			</li>
+			<li><a href="doxy_generated_doc/html/index.html">Doxygen Documentation</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="https://github.com/ben-jose/ben-jose">
+							GitHub
+						</a>
+					</li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+<!-- END_OF common_top.txt -->
+<!-- START_OF top_rest.txt -->
+
+<div class="container">
+
+<!-- START_OF index.txt -->
+
+<H1> bj-phi </h1>
+
+<p>
+Tha bj-phi program that comes with the library generates HTML pages with 
+<a href="http://js.cytoscape.org/">cytoscape.js</a> graphs to visualize the solving of 
+Pigeon Hole Principle (PHP) instances.
+
+<p>
+Assuming the program ''bj-phi'' is in the path, and from the source tree directory, do:
+
+<pre>
+	cd ben-jose/src/programs/tests/phi
+	sh clean_sh
+	bj-phi 4
+	firefox ./phi_hole_4/phi_hole_4_all_steps.htm &
+</pre>
+
+<p>
+will execute the bj-phi program for PHP-4 and it will use the file 
+
+<pre>
+	./dbg_ben_jose.conf
+</pre>
+
+<p>
+to configure the debugging system to generate an HTML log file of the the solving process for PHP-4. 
+
+<div class="alert alert-warning" role="alert">
+The second run generates different HTML because it does only <strong>one</strong> backtrack.
+</div>
+
+<p>
+In order to restart the original state before the first run: that is to delete the {\skeleton} and the generated files by bj-phi simply run:
+
+<pre>
+	sh ./clean_sh
+</pre>
+
+<br>
+<br>
+<br>
+<!-- START_OF bottom.txt -->
+
+</div><!-- /.container -->
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="js/jquery.js"></script>
+<script>
+	window.jQuery || 
+	document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="js/bootstrap.js"></script>
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+  
+
+<div id="link64_vdp_tabid" style="display:none;">1031</div>
+
+</body>
+</html>
+

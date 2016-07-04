@@ -1,0 +1,16 @@
+<map id="brain::deduce_and_reverse_trail" name="brain::deduce_and_reverse_trail">
+<area shape="rect" id="node2" href="$d7/d79/classbrain.html#adec5742918fedd1636a6152502bd409c" title="Does conflict analysis, BCFFs finding and BCFFs writing. " alt="" coords="233,59,391,85"/>
+<area shape="rect" id="node3" href="$d7/d0b/classdeducer.html#a7db42a9dfc25ed6ed6747faea2c90961" title="It does normal resolution analysis (CDCL). " alt="" coords="646,5,765,32"/>
+<area shape="rect" id="node4" href="$d7/d79/classbrain.html#a16dcda6892686c581ca095f51e6a9def" title="Does full BCFF finding with active write candidates. " alt="" coords="441,51,583,93"/>
+<area shape="rect" id="node14" href="$db/d3c/brain_8h.html#a14f74143760dde7c17a99c26c736c198" title="Writes all neuromap s (candidates) that need writing. " alt="" coords="457,117,567,144"/>
+<area shape="rect" id="node5" href="$d6/d45/classneuromap.html#a5da738c0ecb7ba74a4fc435ca33b1fcb" title="It tries to find a neuromap. " alt="" coords="635,61,775,88"/>
+<area shape="rect" id="node6" href="$d6/d45/classneuromap.html#a5ad7c9c245129fc8a162742c11d4e972" title="It stabilizes a neuromap to a BCFF and then finds or writes the BCFF. " alt="" coords="827,88,971,115"/>
+<area shape="rect" id="node7" href="$d6/d45/classneuromap.html#a9c0e877474e2d17cf8b9da564de8b8c3" title="It stabilizes a neuromap to a BCFF. " alt="" coords="1019,81,1181,122"/>
+<area shape="rect" id="node8" href="$d7/dec/classsort__glb.html#ad87061a8532cc773200ba06d939a6dfc" title="It stabilizes two &#39;loaded&#39; (initialized) sort_glb with a neuromap (no further refinement is possible)..." alt="" coords="1229,59,1376,85"/>
+<area shape="rect" id="node13" href="$d7/dec/classsort__glb.html#abcd6c73d28df5efcf002c2aed63ccd92" title="It stabilizes two &#39;loaded&#39; (initialized) sort_glb with a neuromap to a BCFF. " alt="" coords="1229,110,1376,151"/>
+<area shape="rect" id="node9" href="$d7/dec/classsort__glb.html#a314081679beafcbbeac7f2e504558f18" title="It stabilizes neuron sortee s and quanton sortee s until no further refinement is possible..." alt="" coords="1424,88,1603,115"/>
+<area shape="rect" id="node10" href="$d7/dec/classsort__glb.html#a25baf3b8e0bc9bdca9c0d6658b298f07" title="It does sort_from operations on this sort_glb neuron sortee s. " alt="" coords="1651,37,1787,64"/>
+<area shape="rect" id="node11" href="$d7/dec/classsort__glb.html#a40a9304f2ef43071021472a8e020069a" title="It does sort_from operations on this sort_glb opposite quanton sortee s. " alt="" coords="1651,88,1787,115"/>
+<area shape="rect" id="node12" href="$d7/dec/classsort__glb.html#aa41c7303e4bae7eb7c466f119c3ace1f" title="It does sort_from operations on this sort_glb quanton sortee s. " alt="" coords="1651,139,1787,165"/>
+<area shape="rect" id="node15" href="$d6/d45/classneuromap.html#adb0c3a4698866c919272f9b4ba5998fd" title="It tries to write a neuromap. " alt="" coords="632,113,779,140"/>
+</map>

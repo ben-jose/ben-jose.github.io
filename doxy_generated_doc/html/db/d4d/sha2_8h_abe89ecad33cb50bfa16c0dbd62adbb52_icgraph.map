@@ -1,0 +1,8 @@
+<map id="sha2_update" name="sha2_update">
+<area shape="rect" id="node2" href="$db/d4d/sha2_8h.html#a4dbd38a93b5b61c637a8a29dd0e850f0" title="SHA&#45;256 final digest. " alt="" coords="173,34,261,61"/>
+<area shape="rect" id="node3" href="$db/d4d/sha2_8h.html#a3a32be6d62771a80c4baa302bf516f1d" title="Output = SHA&#45;256( input buffer ) " alt="" coords="373,9,424,35"/>
+<area shape="rect" id="node4" href="$db/d4d/sha2_8h.html#a26eb68bd8099e178f5110e6437596777" title="SHA&#45;256 HMAC final digest. " alt="" coords="335,85,462,111"/>
+<area shape="rect" id="node6" href="$db/d4d/sha2_8h.html#a2135b4741d1821a66ee0a2d15ae5d943" title="Output = SHA&#45;256( file contents ) " alt="" coords="334,135,463,162"/>
+<area shape="rect" id="node7" href="$db/d4d/sha2_8h.html#a5a0a7c2628e73dded8df2e530717a99a" title="SHA&#45;256 HMAC process buffer. " alt="" coords="150,186,285,213"/>
+<area shape="rect" id="node5" href="$db/d4d/sha2_8h.html#a33f96332050976275e169a7a676d703f" title="Output = HMAC&#45;SHA&#45;256( hmac key, input buffer ) " alt="" coords="513,135,602,162"/>
+</map>

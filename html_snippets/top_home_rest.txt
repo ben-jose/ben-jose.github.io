@@ -1,0 +1,13 @@
+<!-- START_OF top_home_rest.txt -->
+
+<table border="0" width="100%" ID="Table2" style="background-color:black">
+<tr style="color:white">
+	<td><img src="images/bj-mix.png" alt=""></td>
+	<td>
+		<h1>Trainable SAT Solver Library</h1>
+	</td>
+</tr>
+</table>
+
+<div class="container">
+

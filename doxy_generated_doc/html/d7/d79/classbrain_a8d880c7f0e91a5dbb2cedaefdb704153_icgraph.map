@@ -1,0 +1,8 @@
+<map id="brain::deduce_and_reverse_trail" name="brain::deduce_and_reverse_trail">
+<area shape="rect" id="node2" href="$d7/d79/classbrain.html#a9728a44b4e7b71ddb4a47bb25af05612" title="This is the basic step function while solving an instance. It does one full backtrack. " alt="" coords="233,56,333,83"/>
+<area shape="rect" id="node3" href="$d7/d79/classbrain.html#a8524441f8b863aec8fe2cc9c3ad2d21a" title="This is the main processing function to solve an instance. It get called by solve_instance. " alt="" coords="382,56,469,83"/>
+<area shape="rect" id="node4" href="$d7/d79/classbrain.html#a2daa8c1c03eea62a51a359470bb64cc7" title="This is the starting point to solve any instance. It is the main function of the implementation. " alt="" coords="518,56,663,83"/>
+<area shape="rect" id="node5" href="$dc/d3c/ben__jose_8h.html#a65eb23939cc4ae39654dbd93343580c8" title="bj_solve_file" alt="" coords="722,5,817,32"/>
+<area shape="rect" id="node6" href="$dc/d3c/ben__jose_8h.html#a45eef575a2ca6c6b90e0a1d998f1eb7d" title="bj_solve_data" alt="" coords="718,56,821,83"/>
+<area shape="rect" id="node7" href="$dc/d3c/ben__jose_8h.html#a2818f32df95b8d462f49a201ce371142" title="bj_solve_literals" alt="" coords="712,107,827,133"/>
+</map>
