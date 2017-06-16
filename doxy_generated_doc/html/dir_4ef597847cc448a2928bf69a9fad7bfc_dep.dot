@@ -1,0 +1,12 @@
+digraph "/home/jose/devel/ben-jose/src/library/brain" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_33f45cdec1a3925220ccec6ef1dd1d10 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="library" fontname="Helvetica", fontsize="10", URL="dir_33f45cdec1a3925220ccec6ef1dd1d10.html"]
+  dir_4ef597847cc448a2928bf69a9fad7bfc [shape=box, label="brain", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_4ef597847cc448a2928bf69a9fad7bfc.html"];
+  }
+  dir_9add911d2999efbef42db1e9fe020f98 [shape=box label="api" URL="dir_9add911d2999efbef42db1e9fe020f98.html"];
+  dir_4ef597847cc448a2928bf69a9fad7bfc->dir_9add911d2999efbef42db1e9fe020f98 [headlabel="3", labeldistance=1.5 headhref="dir_000005_000004.html"];
+  dir_9add911d2999efbef42db1e9fe020f98->dir_4ef597847cc448a2928bf69a9fad7bfc [headlabel="1", labeldistance=1.5 headhref="dir_000004_000005.html"];
+}

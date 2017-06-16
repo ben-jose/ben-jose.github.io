@@ -1,9 +1,8 @@
-\hypertarget{classneuromap}{\section{neuromap Class Reference}
+\hypertarget{classneuromap}{}\section{neuromap Class Reference}
 \label{classneuromap}\index{neuromap@{neuromap}}
-}
 
 
-A neuromap is a C\+N\+F sub-\/formula.  
+A neuromap is a C\+NF sub-\/formula.  
 
 
 
@@ -12,13 +11,8 @@ A neuromap is a C\+N\+F sub-\/formula.
 
 
 
-Collaboration diagram for neuromap\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d2/d85/classneuromap__coll__graph}
-\end{center}
-\end{figure}
+Collaboration diagram for neuromap\+:
+% FIG 0
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -27,24 +21,24 @@ bool \hyperlink{classneuromap_a5da738c0ecb7ba74a4fc435ca33b1fcb}{map\+\_\+find} 
 bool \hyperlink{classneuromap_adb0c3a4698866c919272f9b4ba5998fd}{map\+\_\+write} (bool force\+\_\+full=false)
 \begin{DoxyCompactList}\small\item\em It tries to write a \hyperlink{classneuromap}{neuromap}. \end{DoxyCompactList}\item 
 bool \hyperlink{classneuromap_a5ad7c9c245129fc8a162742c11d4e972}{map\+\_\+oper} (mem\+\_\+op\+\_\+t mm)
-\begin{DoxyCompactList}\small\item\em It stabilizes a \hyperlink{classneuromap}{neuromap} to a B\+C\+F\+F and then finds or writes the B\+C\+F\+F. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em It stabilizes a \hyperlink{classneuromap}{neuromap} to a B\+C\+FF and then finds or writes the B\+C\+FF. \end{DoxyCompactList}\item 
 bool \hyperlink{classneuromap_a9c0e877474e2d17cf8b9da564de8b8c3}{map\+\_\+prepare\+\_\+mem\+\_\+oper} (mem\+\_\+op\+\_\+t mm)
-\begin{DoxyCompactList}\small\item\em It stabilizes a \hyperlink{classneuromap}{neuromap} to a B\+C\+F\+F. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em It stabilizes a \hyperlink{classneuromap}{neuromap} to a B\+C\+FF. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-A neuromap is a C\+N\+F sub-\/formula. 
+A neuromap is a C\+NF sub-\/formula. 
 
-It is the pivot class to do all stabilization. It is maintained during B\+C\+P and used during backtracking in order to know what C\+N\+F sub-\/formulas are to be stabilized and searched for in the database (\hyperlink{classskeleton__glb}{skeleton\+\_\+glb} class). There is one neuromap per \hyperlink{classleveldat}{leveldat} and they are either active or inactive. Active when they are candidates for stabilizing, matching, searching and/or storing in the database, at backtrack time. During search, if a C\+N\+F sub-\/formula is found to be unsatisfiable, it is not trivial (too small), and both it's search branches had the same variables and clauses (so that it can latter be searched only with one of them), then the C\+N\+F sub-\/formula is stored in the database (\hyperlink{classskeleton__glb}{skeleton\+\_\+glb} class). Every time an still active neuromap has done its first branch of B\+C\+P, it is stabilized and searched for in the database (\hyperlink{classskeleton__glb}{skeleton\+\_\+glb} class). Trivial sub-\/formulas are basically ignored (see the use of 'brain\+::get\+\_\+min\+\_\+trainable\+\_\+num\+\_\+sub' method in the code). They are not searcned nor stored in \hyperlink{classskeleton__glb}{skeleton\+\_\+glb} (except for debugging purposes). 
+It is the pivot class to do all stabilization. It is maintained during B\+CP and used during backtracking in order to know what C\+NF sub-\/formulas are to be stabilized and searched for in the database (\hyperlink{classskeleton__glb}{skeleton\+\_\+glb} class). There is one neuromap per \hyperlink{classleveldat}{leveldat} and they are either active or inactive. Active when they are candidates for stabilizing, matching, searching and/or storing in the database, at backtrack time. During search, if a C\+NF sub-\/formula is found to be unsatisfiable, it is not trivial (too small), and both it\textquotesingle{}s search branches had the same variables and clauses (so that it can latter be searched only with one of them), then the C\+NF sub-\/formula is stored in the database (\hyperlink{classskeleton__glb}{skeleton\+\_\+glb} class). Every time an still active neuromap has done its first branch of B\+CP, it is stabilized and searched for in the database (\hyperlink{classskeleton__glb}{skeleton\+\_\+glb} class). Trivial sub-\/formulas are basically ignored (see the use of \textquotesingle{}brain\+::get\+\_\+min\+\_\+trainable\+\_\+num\+\_\+sub\textquotesingle{} method in the code). They are not searcned nor stored in \hyperlink{classskeleton__glb}{skeleton\+\_\+glb} (except for debugging purposes). 
 
 \subsection{Member Function Documentation}
-\hypertarget{classneuromap_a5da738c0ecb7ba74a4fc435ca33b1fcb}{\index{neuromap@{neuromap}!map\+\_\+find@{map\+\_\+find}}
+\index{neuromap@{neuromap}!map\+\_\+find@{map\+\_\+find}}
 \index{map\+\_\+find@{map\+\_\+find}!neuromap@{neuromap}}
-\subsubsection[{map\+\_\+find}]{\setlength{\rightskip}{0pt plus 5cm}bool neuromap\+::map\+\_\+find (
+\subsubsection[{\texorpdfstring{map\+\_\+find()}{map_find()}}]{\setlength{\rightskip}{0pt plus 5cm}bool neuromap\+::map\+\_\+find (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classneuromap_a5da738c0ecb7ba74a4fc435ca33b1fcb}
+)}\hypertarget{classneuromap_a5da738c0ecb7ba74a4fc435ca33b1fcb}{}\label{classneuromap_a5da738c0ecb7ba74a4fc435ca33b1fcb}
 
 
 It tries to find a \hyperlink{classneuromap}{neuromap}. 
@@ -54,33 +48,17 @@ It tries to find a \hyperlink{classneuromap}{neuromap}.
 \end{DoxySeeAlso}
 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d6/d45/classneuromap_a5da738c0ecb7ba74a4fc435ca33b1fcb_cgraph}
-\end{center}
-\end{figure}
+Here is the caller graph for this function\+:
+% FIG 1
 
 
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d6/d45/classneuromap_a5da738c0ecb7ba74a4fc435ca33b1fcb_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{classneuromap_adb0c3a4698866c919272f9b4ba5998fd}{\index{neuromap@{neuromap}!map\+\_\+write@{map\+\_\+write}}
+\index{neuromap@{neuromap}!map\+\_\+write@{map\+\_\+write}}
 \index{map\+\_\+write@{map\+\_\+write}!neuromap@{neuromap}}
-\subsubsection[{map\+\_\+write}]{\setlength{\rightskip}{0pt plus 5cm}bool neuromap\+::map\+\_\+write (
+\subsubsection[{\texorpdfstring{map\+\_\+write(bool force\+\_\+full=false)}{map_write(bool force_full=false)}}]{\setlength{\rightskip}{0pt plus 5cm}bool neuromap\+::map\+\_\+write (
 \begin{DoxyParamCaption}
 \item[{bool}]{force\+\_\+full = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}}\label{classneuromap_adb0c3a4698866c919272f9b4ba5998fd}
+)}\hypertarget{classneuromap_adb0c3a4698866c919272f9b4ba5998fd}{}\label{classneuromap_adb0c3a4698866c919272f9b4ba5998fd}
 
 
 It tries to write a \hyperlink{classneuromap}{neuromap}. 
@@ -90,96 +68,42 @@ It tries to write a \hyperlink{classneuromap}{neuromap}.
 \end{DoxySeeAlso}
 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d6/d45/classneuromap_adb0c3a4698866c919272f9b4ba5998fd_cgraph}
-\end{center}
-\end{figure}
+Here is the caller graph for this function\+:
+% FIG 2
 
 
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d6/d45/classneuromap_adb0c3a4698866c919272f9b4ba5998fd_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{classneuromap_a5ad7c9c245129fc8a162742c11d4e972}{\index{neuromap@{neuromap}!map\+\_\+oper@{map\+\_\+oper}}
+\index{neuromap@{neuromap}!map\+\_\+oper@{map\+\_\+oper}}
 \index{map\+\_\+oper@{map\+\_\+oper}!neuromap@{neuromap}}
-\subsubsection[{map\+\_\+oper}]{\setlength{\rightskip}{0pt plus 5cm}bool neuromap\+::map\+\_\+oper (
+\subsubsection[{\texorpdfstring{map\+\_\+oper(mem\+\_\+op\+\_\+t mm)}{map_oper(mem_op_t mm)}}]{\setlength{\rightskip}{0pt plus 5cm}bool neuromap\+::map\+\_\+oper (
 \begin{DoxyParamCaption}
 \item[{mem\+\_\+op\+\_\+t}]{mm}
 \end{DoxyParamCaption}
-)}}\label{classneuromap_a5ad7c9c245129fc8a162742c11d4e972}
+)}\hypertarget{classneuromap_a5ad7c9c245129fc8a162742c11d4e972}{}\label{classneuromap_a5ad7c9c245129fc8a162742c11d4e972}
 
 
-It stabilizes a \hyperlink{classneuromap}{neuromap} to a B\+C\+F\+F and then finds or writes the B\+C\+F\+F. 
+It stabilizes a \hyperlink{classneuromap}{neuromap} to a B\+C\+FF and then finds or writes the B\+C\+FF. 
 
 \begin{DoxySeeAlso}{See also}
 \hyperlink{macro__algorithm__ben__jose_8cpp}{macro\+\_\+algorithm\+\_\+ben\+\_\+jose.\+cpp} 
 \end{DoxySeeAlso}
-
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d6/d45/classneuromap_a5ad7c9c245129fc8a162742c11d4e972_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d6/d45/classneuromap_a5ad7c9c245129fc8a162742c11d4e972_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{classneuromap_a9c0e877474e2d17cf8b9da564de8b8c3}{\index{neuromap@{neuromap}!map\+\_\+prepare\+\_\+mem\+\_\+oper@{map\+\_\+prepare\+\_\+mem\+\_\+oper}}
+\index{neuromap@{neuromap}!map\+\_\+prepare\+\_\+mem\+\_\+oper@{map\+\_\+prepare\+\_\+mem\+\_\+oper}}
 \index{map\+\_\+prepare\+\_\+mem\+\_\+oper@{map\+\_\+prepare\+\_\+mem\+\_\+oper}!neuromap@{neuromap}}
-\subsubsection[{map\+\_\+prepare\+\_\+mem\+\_\+oper}]{\setlength{\rightskip}{0pt plus 5cm}bool neuromap\+::map\+\_\+prepare\+\_\+mem\+\_\+oper (
+\subsubsection[{\texorpdfstring{map\+\_\+prepare\+\_\+mem\+\_\+oper(mem\+\_\+op\+\_\+t mm)}{map_prepare_mem_oper(mem_op_t mm)}}]{\setlength{\rightskip}{0pt plus 5cm}bool neuromap\+::map\+\_\+prepare\+\_\+mem\+\_\+oper (
 \begin{DoxyParamCaption}
 \item[{mem\+\_\+op\+\_\+t}]{mm}
 \end{DoxyParamCaption}
-)}}\label{classneuromap_a9c0e877474e2d17cf8b9da564de8b8c3}
+)}\hypertarget{classneuromap_a9c0e877474e2d17cf8b9da564de8b8c3}{}\label{classneuromap_a9c0e877474e2d17cf8b9da564de8b8c3}
 
 
-It stabilizes a \hyperlink{classneuromap}{neuromap} to a B\+C\+F\+F. 
+It stabilizes a \hyperlink{classneuromap}{neuromap} to a B\+C\+FF. 
 
 \begin{DoxySeeAlso}{See also}
 \hyperlink{macro__algorithm__ben__jose_8cpp}{macro\+\_\+algorithm\+\_\+ben\+\_\+jose.\+cpp} 
 \end{DoxySeeAlso}
 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d6/d45/classneuromap_a9c0e877474e2d17cf8b9da564de8b8c3_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d6/d45/classneuromap_a9c0e877474e2d17cf8b9da564de8b8c3_icgraph}
-\end{center}
-\end{figure}
+Here is the call graph for this function\+:
+% FIG 3
 
 
 

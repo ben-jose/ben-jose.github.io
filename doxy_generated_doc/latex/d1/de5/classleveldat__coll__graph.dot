@@ -1,0 +1,58 @@
+digraph "leveldat"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="leveldat",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ld_brn" ];
+  Node2 [label="brain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html",tooltip="Class that holds all data used to solve a particular CNF instance. "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_dedcer" ];
+  Node3 [label="deducer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d0b/classdeducer.html",tooltip="Class that holds the data used to analyze a conflict. "];
+  Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" de_brain" ];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" de_next_bk_psig" ];
+  Node4 [label="prop_signal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/df2/classprop__signal.html",tooltip="Class for representing BCP propagation data. "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ps_source" ];
+  Node5 [label="neuron",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d00/classneuron.html",tooltip="Class for CNF clause behavior. So there is one neuron per clause. "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ne_reltee" ];
+  Node6 [label="sortrel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/de7/classsortrel.html",tooltip="A sortrel is a relation between two sortee s. "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" so_opposite" ];
+  Node7 [label="sortee",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d36/classsortee.html",tooltip="Class that is an item to be stabilized. "];
+  Node6 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" so_related" ];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" so_vessel" ];
+  Node8 [label="sorset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d62/classsorset.html",tooltip="A sorset is a group of sortee s. "];
+  Node8 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ss_parent_set" ];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ne_tee" ];
+  Node9 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ps_quanton" ];
+  Node9 [label="quanton",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/df5/classquanton.html",tooltip="Class for CNF variables (each variable has a positon and a negaton). "];
+  Node5 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" qu_source" ];
+  Node9 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" qu_inverse" ];
+  Node6 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" qu_reltee" ];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" qu_candidate_nmp" ];
+  Node10 [label="neuromap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d45/classneuromap.html",tooltip="A neuromap is a CNF sub-formula. "];
+  Node2 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" na_brn" ];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" na_tauto_col\nna_found_col\nna_pend_col\nna_guide_col" ];
+  Node11 [label="coloring",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d9a/classcoloring.html",tooltip="The initial and final state for an stabilization is a coloring. "];
+  Node2 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" co_brn" ];
+  Node9 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" na_orig_cho\nna_candidate_qua" ];
+  Node10 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" na_submap\nna_nxt_no_mono" ];
+  Node7 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" qu_tee" ];
+  Node11 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_dbg_full_col\nbr_tmp_ini_tauto_col\nbr_tmp_tauto_col\nbr_tmp_extra_col" ];
+  Node12 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_pulse_deduc" ];
+  Node12 [label="deduction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/df3/classdeduction.html",tooltip="Class that holds the result of analyzing (doing resolution) of a conflict. "];
+  Node2 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dt_brn" ];
+  Node5 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dt_confl" ];
+  Node10 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dt_last_found" ];
+  Node9 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_top_block" ];
+  Node13 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_guide_quas_srg\nbr_guide_neus_srg\nbr_tauto_quas_srg\nbr_forced_srg\nbr_filled_srg\nbr_tauto_neus_srg" ];
+  Node13 [label="sort_glb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html",tooltip="Class that holds all global data used to stabilize a group of items. "];
+  Node14 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sg_cnf_step" ];
+  Node14 [label="canon_cnf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/deb/classcanon__cnf.html",tooltip="A canon_cnf is a BCFF. An stabilized sub-formula. "];
+  Node14 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cf_tauto_cnf\ncf_guide_cnf" ];
+  Node15 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cf_inst_inf" ];
+  Node15 [label="instance_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dd0/classinstance__info.html",tooltip="Class that holds an instance data. "];
+  Node8 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sg_head\nsg_step_first_multiple" ];
+  Node7 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sg_step_next_choice" ];
+  Node10 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_candidate_next" ];
+  Node14 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_tmp_wrt_guide_cnf\nbr_tmp_wrt_diff_cnf\nbr_tmp_wrt_tauto_cnf" ];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ld_chosen" ];
+}

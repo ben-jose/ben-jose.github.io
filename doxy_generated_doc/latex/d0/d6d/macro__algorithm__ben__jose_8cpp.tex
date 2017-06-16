@@ -1,6 +1,5 @@
-\hypertarget{macro__algorithm__ben__jose_8cpp}{\section{/home/jose/devel/ben-\/jose/src/programs/macro\+\_\+ben\+\_\+jose/macro\+\_\+algorithm\+\_\+ben\+\_\+jose.cpp File Reference}
+\hypertarget{macro__algorithm__ben__jose_8cpp}{}\section{/home/jose/devel/ben-\/jose/src/programs/macro\+\_\+ben\+\_\+jose/macro\+\_\+algorithm\+\_\+ben\+\_\+jose.cpp File Reference}
 \label{macro__algorithm__ben__jose_8cpp}\index{/home/jose/devel/ben-\/jose/src/programs/macro\+\_\+ben\+\_\+jose/macro\+\_\+algorithm\+\_\+ben\+\_\+jose.\+cpp@{/home/jose/devel/ben-\/jose/src/programs/macro\+\_\+ben\+\_\+jose/macro\+\_\+algorithm\+\_\+ben\+\_\+jose.\+cpp}}
-}
 
 
 This is a documentation file to help understand the innerworking of the library. It is not compiled.  
@@ -9,7 +8,7 @@ This is a documentation file to help understand the innerworking of the library.
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{macro__algorithm__ben__jose_8cpp_a6c1ce86bc2c830291e5c4e027c26c90f}{\#define \hyperlink{macro__algorithm__ben__jose_8cpp_a6c1ce86bc2c830291e5c4e027c26c90f}{T\+H\+I\+S\+\_\+\+C\+O\+D\+E\+\_\+\+I\+S\+\_\+\+N\+O\+T\+\_\+\+C\+O\+M\+P\+I\+L\+E\+D}}\label{macro__algorithm__ben__jose_8cpp_a6c1ce86bc2c830291e5c4e027c26c90f}
+\#define \hyperlink{macro__algorithm__ben__jose_8cpp_a6c1ce86bc2c830291e5c4e027c26c90f}{T\+H\+I\+S\+\_\+\+C\+O\+D\+E\+\_\+\+I\+S\+\_\+\+N\+O\+T\+\_\+\+C\+O\+M\+P\+I\+L\+ED}\hypertarget{macro__algorithm__ben__jose_8cpp_a6c1ce86bc2c830291e5c4e027c26c90f}{}\label{macro__algorithm__ben__jose_8cpp_a6c1ce86bc2c830291e5c4e027c26c90f}
 
 \begin{DoxyCompactList}\small\item\em \mbox{[}macro\+\_\+bj\+\_\+id\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -17,7 +16,7 @@ This is a documentation file to help understand the innerworking of the library.
 \subsection{Detailed Description}
 This is a documentation file to help understand the innerworking of the library. It is not compiled. 
 
-It is an outline of the functions that get called during the solving of a S\+A\+T instance when the user of the library uses one of the three presentations of the ben-\/jose A\+P\+I top solve instances\+:
+It is an outline of the functions that get called during the solving of a S\+AT instance when the user of the library uses one of the three presentations of the ben-\/jose A\+PI top solve instances\+:
 
 \begin{DoxySeeAlso}{See also}
 \hyperlink{ben__jose_8h_a65eb23939cc4ae39654dbd93343580c8}{bj\+\_\+solve\+\_\+file} 
@@ -115,18 +114,18 @@ The following are its contents\+:
 
 \textcolor{keywordtype}{bool}
 \hyperlink{classneuromap_a5da738c0ecb7ba74a4fc435ca33b1fcb}{neuromap::map\_find}()\{
-    \textcolor{keywordflow}{return} \hyperlink{classneuromap_a5ad7c9c245129fc8a162742c11d4e972}{map\_oper}(mo\_find);
+    \textcolor{keywordflow}{return} map\_oper(mo\_find);
 \}
 
 \textcolor{keywordtype}{bool}
 \hyperlink{classneuromap_adb0c3a4698866c919272f9b4ba5998fd}{neuromap::map\_write}()\{
-    \textcolor{keywordflow}{return} \hyperlink{classneuromap_a5ad7c9c245129fc8a162742c11d4e972}{map\_oper}(mo\_save);
+    \textcolor{keywordflow}{return} map\_oper(mo\_save);
 \}
 
 \textcolor{keywordtype}{bool}
 \hyperlink{classneuromap_a5ad7c9c245129fc8a162742c11d4e972}{neuromap::map\_oper}(mem\_op\_t mm)\{
     \textcolor{comment}{// prepare the neuromap: stabilize it to find it's BCFF.}
-    \textcolor{keywordtype}{bool} prep\_ok = \hyperlink{classneuromap_a9c0e877474e2d17cf8b9da564de8b8c3}{map\_prepare\_mem\_oper}(mm);
+    \textcolor{keywordtype}{bool} prep\_ok = map\_prepare\_mem\_oper(mm);
     \textcolor{keywordflow}{if}(! prep\_ok)\{
         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
     \}
@@ -198,7 +197,7 @@ The following are its contents\+:
     \hyperlink{classsort__glb}{sort\_glb}& srg1 = *\textcolor{keyword}{this};
     \textcolor{keywordtype}{bool} all\_consec = \textcolor{keyword}{false};
     \textcolor{keywordflow}{while}(! all\_consec)\{
-        \hyperlink{classsort__glb_a314081679beafcbbeac7f2e504558f18}{stab\_mutual\_core}(srg2);
+        stab\_mutual\_core(srg2);
         all\_consec = srg2.sg\_step\_all\_consec;
         \textcolor{keywordflow}{if}(! all\_consec)\{
             srg2.stab\_mutual\_choose\_one(srg1);
@@ -209,7 +208,7 @@ The following are its contents\+:
 
 \textcolor{keywordtype}{void}
 \hyperlink{classsort__glb_ad87061a8532cc773200ba06d939a6dfc}{sort\_glb::stab\_mutual}(\hyperlink{classsort__glb}{sort\_glb}& srg2, \textcolor{keywordtype}{bool} one\_ccl\_per\_ss)\{
-    \hyperlink{classsort__glb_a314081679beafcbbeac7f2e504558f18}{stab\_mutual\_core}(srg2);
+    stab\_mutual\_core(srg2);
     stab\_mutual\_end(srg2, one\_ccl\_per\_ss);
 \}
 

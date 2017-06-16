@@ -1,0 +1,27 @@
+digraph "/home/jose/devel/ben-jose/src/utils/sha2.h"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/home/jose/devel/ben\l-jose/src/utils/sha2.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="/home/jose/devel/ben\l-jose/src/library/unsat\l_db/skeleton.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dcf/skeleton_8h_source.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="/home/jose/devel/ben\l-jose/src/library/brain\l/sortor.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dd0/sortor_8h_source.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="/home/jose/devel/ben\l-jose/src/library/brain\l/brain.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d3c/brain_8h.html",tooltip="Declarations of classes and that implement the solver&#39;s core functionality. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="/home/jose/devel/ben\l-jose/src/library/api\l/ben_jose.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d55/ben__jose_8cpp.html",tooltip="File containing the implementation code for the users API of ben_jose. "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="/home/jose/devel/ben\l-jose/src/library/unsat\l_db/proof.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dff/proof_8h_source.html"];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="/home/jose/devel/ben\l-jose/src/library/debug\l/dbg_sortor.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/de4/dbg__sortor_8h_source.html"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="/home/jose/devel/ben\l-jose/src/library/brain\l/solver.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d20/solver_8h_source.html"];
+  Node8 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="/home/jose/devel/ben\l-jose/src/utils/util\l_funcs.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d5a/util__funcs_8h_source.html"];
+  Node9 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="/home/jose/devel/ben\l-jose/src/programs/tests\l/solver/batch_solver.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d4d/batch__solver_8h_source.html"];
+}

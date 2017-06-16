@@ -1,0 +1,12 @@
+digraph "neuromap::map_prepare_mem_oper"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="neuromap::map_prepare\l_mem_oper",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="sort_glb::stab_mutual",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#ad87061a8532cc773200ba06d939a6dfc",tooltip="It stabilizes two &#39;loaded&#39; (initialized) sort_glb with a neuromap (no further refinement is possible)..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="sort_glb::stab_mutual\l_unique",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#abcd6c73d28df5efcf002c2aed63ccd92",tooltip="It stabilizes two &#39;loaded&#39; (initialized) sort_glb with a neuromap to a BCFF. "];
+}

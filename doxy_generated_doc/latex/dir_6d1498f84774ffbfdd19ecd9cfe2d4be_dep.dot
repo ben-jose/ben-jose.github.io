@@ -1,0 +1,11 @@
+digraph "/home/jose/devel/ben-jose/src/programs/bj-hello-world" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_112bf70602a9e99a8a282959fe94778c {
+    graph [ bgcolor="#ddddee", pencolor="black", label="programs" fontname="Helvetica", fontsize="10", URL="dir_112bf70602a9e99a8a282959fe94778c.html"]
+  dir_6d1498f84774ffbfdd19ecd9cfe2d4be [shape=box, label="bj-hello-world", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6d1498f84774ffbfdd19ecd9cfe2d4be.html"];
+  }
+  dir_33f45cdec1a3925220ccec6ef1dd1d10 [shape=box label="library" fillcolor="white" style="filled" color="red" URL="dir_33f45cdec1a3925220ccec6ef1dd1d10.html"];
+  dir_6d1498f84774ffbfdd19ecd9cfe2d4be->dir_33f45cdec1a3925220ccec6ef1dd1d10 [headlabel="1", labeldistance=1.5 headhref="dir_000014_000003.html"];
+}

@@ -1,0 +1,12 @@
+digraph "brain::candidate_find_analysis"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="brain::candidate_find\l_analysis",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="neuromap::map_find",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d45/classneuromap.html#a5da738c0ecb7ba74a4fc435ca33b1fcb",tooltip="It tries to find a neuromap. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="deducer::deduce",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d0b/classdeducer.html#a7db42a9dfc25ed6ed6747faea2c90961",tooltip="It does normal resolution analysis (CDCL). "];
+}

@@ -1,50 +1,6 @@
-\hypertarget{group__docgrp___a_p_i}{\section{User's A\+P\+I}
-\label{group__docgrp___a_p_i}\index{User's A\+P\+I@{User's A\+P\+I}}
-}
+\hypertarget{group__docgrp___a_p_i}{}\section{User\textquotesingle{}s A\+PI}
+\label{group__docgrp___a_p_i}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}
 \subsection*{Enumerations}
-\begin{DoxyCompactItemize}
-\item 
-enum \hyperlink{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69}{bj\+\_\+satisf\+\_\+val\+\_\+t} \{ \hyperlink{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69ad8dafe2640a5e989a73880526a853663}{bjr\+\_\+unknown\+\_\+satisf}, 
-\hyperlink{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69af4c1851202dc8838008241c2a527a069}{bjr\+\_\+yes\+\_\+satisf}, 
-\hyperlink{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69adc2a37bfd4482eb5167ebb9d47245e8b}{bjr\+\_\+no\+\_\+satisf}, 
-\hyperlink{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69a5cee678e06286f3dd31c2f8d60e88979}{bjr\+\_\+error}
- \}
-\begin{DoxyCompactList}\small\item\em Posible final results of the solving process. \end{DoxyCompactList}\item 
-enum \hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8b}{bj\+\_\+error\+\_\+t} \{ \\*
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba10f68d8ecd46425c1309870f0fc4b985}{bje\+\_\+no\+\_\+error}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba26058e34768efeb556c9d0302cd16c50}{bje\+\_\+internal}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8baf3e4c46547df8cc20b0c981091b319db}{bje\+\_\+internal\+\_\+ex}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bac46ec7727aca5600957ca9f439bd69de}{bje\+\_\+memout}, 
-\\*
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba6fa8dc875d3850aa4c65d42a83dd60d0}{bje\+\_\+timeout}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba4914924683de4dbb6c2941193bf5d646}{bje\+\_\+instance\+\_\+cannot\+\_\+load}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba1fc1eead7cc2a1fc65faea6832d64185}{bje\+\_\+file\+\_\+cannot\+\_\+open}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba7674cdd84494bdac1309e64f34f5fd0b}{bje\+\_\+file\+\_\+corrupted}, 
-\\*
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bab4c4ab802659f44c851b0c7ac26d2b04}{bje\+\_\+file\+\_\+too\+\_\+big}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bab61aaa38bf833274ebc7fff9c47b0c5e}{bje\+\_\+path\+\_\+too\+\_\+long}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba9d195477c68c16811bf5cf23169c3b31}{bje\+\_\+invalid\+\_\+root\+\_\+directory}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba2e7d14635ea1ce09425354fcce28ec34}{bje\+\_\+parse\+\_\+bad\+\_\+number}, 
-\\*
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba95ce31c3c6b7f9607da1a388c1294dc5}{bje\+\_\+dimacs\+\_\+no\+\_\+cnf\+\_\+declaration}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bad28b93ce42f1dced860ca4d09a65c79a}{bje\+\_\+dimacs\+\_\+bad\+\_\+cls\+\_\+num}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba623a8243a1abfc57ccae3fdd5c6306a6}{bje\+\_\+dimacs\+\_\+format\+\_\+err}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba2a1433a16bf3d7dd10ddcb482d0e0c37}{bje\+\_\+dimacs\+\_\+zero\+\_\+vars}, 
-\\*
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bafd159bf1e19199776e939ce653b0fc67}{bje\+\_\+dimacs\+\_\+zero\+\_\+clauses}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bafdf5d2a2a234f5121774eee578e33b20}{bje\+\_\+dimacs\+\_\+bad\+\_\+literal}, 
-\hyperlink{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bacc04d78fed88e04793eda1dafa568dbd}{bje\+\_\+dimacs\+\_\+clause\+\_\+too\+\_\+long}
- \}
-\begin{DoxyCompactList}\small\item\em Posible errors of the solving process. \end{DoxyCompactList}\item 
-enum \hyperlink{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29}{bj\+\_\+param\+\_\+t} \{ \\*
-\hyperlink{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a2592c03589e858b38e47894ae4ecd5e4}{bjp\+\_\+invalid}, 
-\hyperlink{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a0db55a86faed48577d5f154b45db3f32}{bjp\+\_\+as\+\_\+release}, 
-\hyperlink{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29abb18fe3e6afd7580f342e55de819391f}{bjp\+\_\+only\+\_\+deduc}, 
-\hyperlink{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a884d3116f70d0f32d13d5133588b9b29}{bjp\+\_\+write\+\_\+proofs}, 
-\\*
-\hyperlink{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a70cca54473e04ca877b7d9f5a08a3497}{bjp\+\_\+test\+\_\+result}
- \}
-\begin{DoxyCompactList}\small\item\em Posible parameters for the solving process. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -103,9 +59,9 @@ The basic interaction is best described by the bj-\/hello-\/world.\+c program
 
 
 \subsection{Enumeration Type Documentation}
-\hypertarget{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69}{\index{User's A\+P\+I@{User's A\+P\+I}!bj\+\_\+satisf\+\_\+val\+\_\+t@{bj\+\_\+satisf\+\_\+val\+\_\+t}}
-\index{bj\+\_\+satisf\+\_\+val\+\_\+t@{bj\+\_\+satisf\+\_\+val\+\_\+t}!User's A\+P\+I@{User's A\+P\+I}}
-\subsubsection[{bj\+\_\+satisf\+\_\+val\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf bj\+\_\+satisf\+\_\+val\+\_\+t}}}\label{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69}
+\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bj\+\_\+satisf\+\_\+val\+\_\+t@{bj\+\_\+satisf\+\_\+val\+\_\+t}}
+\index{bj\+\_\+satisf\+\_\+val\+\_\+t@{bj\+\_\+satisf\+\_\+val\+\_\+t}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}
+\subsubsection[{\texorpdfstring{bj\+\_\+satisf\+\_\+val\+\_\+t}{bj_satisf_val_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf bj\+\_\+satisf\+\_\+val\+\_\+t}}\hypertarget{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69}{}\label{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69}
 
 
 Posible final results of the solving process. 
@@ -113,19 +69,19 @@ Posible final results of the solving process.
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
-\index{bjr\+\_\+unknown\+\_\+satisf@{bjr\+\_\+unknown\+\_\+satisf}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bjr\+\_\+unknown\+\_\+satisf@{bjr\+\_\+unknown\+\_\+satisf}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69ad8dafe2640a5e989a73880526a853663}{bjr\+\_\+unknown\+\_\+satisf}\label{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69ad8dafe2640a5e989a73880526a853663}
-}]Unknown result. \index{bjr\+\_\+yes\+\_\+satisf@{bjr\+\_\+yes\+\_\+satisf}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bjr\+\_\+yes\+\_\+satisf@{bjr\+\_\+yes\+\_\+satisf}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69af4c1851202dc8838008241c2a527a069}{bjr\+\_\+yes\+\_\+satisf}\label{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69af4c1851202dc8838008241c2a527a069}
-}]Satisfiable C\+N\+F. \index{bjr\+\_\+no\+\_\+satisf@{bjr\+\_\+no\+\_\+satisf}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bjr\+\_\+no\+\_\+satisf@{bjr\+\_\+no\+\_\+satisf}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69adc2a37bfd4482eb5167ebb9d47245e8b}{bjr\+\_\+no\+\_\+satisf}\label{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69adc2a37bfd4482eb5167ebb9d47245e8b}
-}]Unsatisfiable C\+N\+F. \index{bjr\+\_\+error@{bjr\+\_\+error}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bjr\+\_\+error@{bjr\+\_\+error}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69a5cee678e06286f3dd31c2f8d60e88979}{bjr\+\_\+error}\label{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69a5cee678e06286f3dd31c2f8d60e88979}
+\index{bjr\+\_\+unknown\+\_\+satisf@{bjr\+\_\+unknown\+\_\+satisf}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bjr\+\_\+unknown\+\_\+satisf@{bjr\+\_\+unknown\+\_\+satisf}}\item[{\em 
+bjr\+\_\+unknown\+\_\+satisf\hypertarget{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69ad8dafe2640a5e989a73880526a853663}{}\label{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69ad8dafe2640a5e989a73880526a853663}
+}]Unknown result. \index{bjr\+\_\+yes\+\_\+satisf@{bjr\+\_\+yes\+\_\+satisf}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bjr\+\_\+yes\+\_\+satisf@{bjr\+\_\+yes\+\_\+satisf}}\item[{\em 
+bjr\+\_\+yes\+\_\+satisf\hypertarget{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69af4c1851202dc8838008241c2a527a069}{}\label{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69af4c1851202dc8838008241c2a527a069}
+}]Satisfiable C\+NF. \index{bjr\+\_\+no\+\_\+satisf@{bjr\+\_\+no\+\_\+satisf}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bjr\+\_\+no\+\_\+satisf@{bjr\+\_\+no\+\_\+satisf}}\item[{\em 
+bjr\+\_\+no\+\_\+satisf\hypertarget{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69adc2a37bfd4482eb5167ebb9d47245e8b}{}\label{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69adc2a37bfd4482eb5167ebb9d47245e8b}
+}]Unsatisfiable C\+NF. \index{bjr\+\_\+error@{bjr\+\_\+error}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bjr\+\_\+error@{bjr\+\_\+error}}\item[{\em 
+bjr\+\_\+error\hypertarget{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69a5cee678e06286f3dd31c2f8d60e88979}{}\label{group__docgrp___a_p_i_ga9aba221730ab694a549d25ee1aa28c69a5cee678e06286f3dd31c2f8d60e88979}
 }]Error result. \end{description}
 \end{Desc}
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8b}{\index{User's A\+P\+I@{User's A\+P\+I}!bj\+\_\+error\+\_\+t@{bj\+\_\+error\+\_\+t}}
-\index{bj\+\_\+error\+\_\+t@{bj\+\_\+error\+\_\+t}!User's A\+P\+I@{User's A\+P\+I}}
-\subsubsection[{bj\+\_\+error\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf bj\+\_\+error\+\_\+t}}}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8b}
+\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bj\+\_\+error\+\_\+t@{bj\+\_\+error\+\_\+t}}
+\index{bj\+\_\+error\+\_\+t@{bj\+\_\+error\+\_\+t}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}
+\subsubsection[{\texorpdfstring{bj\+\_\+error\+\_\+t}{bj_error_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf bj\+\_\+error\+\_\+t}}\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8b}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8b}
 
 
 Posible errors of the solving process. 
@@ -133,49 +89,49 @@ Posible errors of the solving process.
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
-\index{bje\+\_\+no\+\_\+error@{bje\+\_\+no\+\_\+error}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+no\+\_\+error@{bje\+\_\+no\+\_\+error}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba10f68d8ecd46425c1309870f0fc4b985}{bje\+\_\+no\+\_\+error}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba10f68d8ecd46425c1309870f0fc4b985}
-}]No error. \index{bje\+\_\+internal@{bje\+\_\+internal}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+internal@{bje\+\_\+internal}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba26058e34768efeb556c9d0302cd16c50}{bje\+\_\+internal}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba26058e34768efeb556c9d0302cd16c50}
-}]Internal. \index{bje\+\_\+internal\+\_\+ex@{bje\+\_\+internal\+\_\+ex}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+internal\+\_\+ex@{bje\+\_\+internal\+\_\+ex}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8baf3e4c46547df8cc20b0c981091b319db}{bje\+\_\+internal\+\_\+ex}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8baf3e4c46547df8cc20b0c981091b319db}
-}]Internal with explanation. \index{bje\+\_\+memout@{bje\+\_\+memout}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+memout@{bje\+\_\+memout}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bac46ec7727aca5600957ca9f439bd69de}{bje\+\_\+memout}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bac46ec7727aca5600957ca9f439bd69de}
-}]Out of memory. \index{bje\+\_\+timeout@{bje\+\_\+timeout}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+timeout@{bje\+\_\+timeout}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba6fa8dc875d3850aa4c65d42a83dd60d0}{bje\+\_\+timeout}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba6fa8dc875d3850aa4c65d42a83dd60d0}
-}]Timeout. \index{bje\+\_\+instance\+\_\+cannot\+\_\+load@{bje\+\_\+instance\+\_\+cannot\+\_\+load}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+instance\+\_\+cannot\+\_\+load@{bje\+\_\+instance\+\_\+cannot\+\_\+load}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba4914924683de4dbb6c2941193bf5d646}{bje\+\_\+instance\+\_\+cannot\+\_\+load}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba4914924683de4dbb6c2941193bf5d646}
-}]Can not load instance. \index{bje\+\_\+file\+\_\+cannot\+\_\+open@{bje\+\_\+file\+\_\+cannot\+\_\+open}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+file\+\_\+cannot\+\_\+open@{bje\+\_\+file\+\_\+cannot\+\_\+open}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba1fc1eead7cc2a1fc65faea6832d64185}{bje\+\_\+file\+\_\+cannot\+\_\+open}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba1fc1eead7cc2a1fc65faea6832d64185}
-}]Can not open file. \index{bje\+\_\+file\+\_\+corrupted@{bje\+\_\+file\+\_\+corrupted}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+file\+\_\+corrupted@{bje\+\_\+file\+\_\+corrupted}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba7674cdd84494bdac1309e64f34f5fd0b}{bje\+\_\+file\+\_\+corrupted}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba7674cdd84494bdac1309e64f34f5fd0b}
-}]Corrupted file. \index{bje\+\_\+file\+\_\+too\+\_\+big@{bje\+\_\+file\+\_\+too\+\_\+big}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+file\+\_\+too\+\_\+big@{bje\+\_\+file\+\_\+too\+\_\+big}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bab4c4ab802659f44c851b0c7ac26d2b04}{bje\+\_\+file\+\_\+too\+\_\+big}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bab4c4ab802659f44c851b0c7ac26d2b04}
-}]Too big file (must fit in memory) \index{bje\+\_\+path\+\_\+too\+\_\+long@{bje\+\_\+path\+\_\+too\+\_\+long}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+path\+\_\+too\+\_\+long@{bje\+\_\+path\+\_\+too\+\_\+long}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bab61aaa38bf833274ebc7fff9c47b0c5e}{bje\+\_\+path\+\_\+too\+\_\+long}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bab61aaa38bf833274ebc7fff9c47b0c5e}
-}]Path too long. \index{bje\+\_\+invalid\+\_\+root\+\_\+directory@{bje\+\_\+invalid\+\_\+root\+\_\+directory}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+invalid\+\_\+root\+\_\+directory@{bje\+\_\+invalid\+\_\+root\+\_\+directory}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba9d195477c68c16811bf5cf23169c3b31}{bje\+\_\+invalid\+\_\+root\+\_\+directory}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba9d195477c68c16811bf5cf23169c3b31}
-}]Invalid root (database) directory. \index{bje\+\_\+parse\+\_\+bad\+\_\+number@{bje\+\_\+parse\+\_\+bad\+\_\+number}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+parse\+\_\+bad\+\_\+number@{bje\+\_\+parse\+\_\+bad\+\_\+number}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba2e7d14635ea1ce09425354fcce28ec34}{bje\+\_\+parse\+\_\+bad\+\_\+number}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba2e7d14635ea1ce09425354fcce28ec34}
-}]Found a non number where a number is expected. \index{bje\+\_\+dimacs\+\_\+no\+\_\+cnf\+\_\+declaration@{bje\+\_\+dimacs\+\_\+no\+\_\+cnf\+\_\+declaration}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+dimacs\+\_\+no\+\_\+cnf\+\_\+declaration@{bje\+\_\+dimacs\+\_\+no\+\_\+cnf\+\_\+declaration}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba95ce31c3c6b7f9607da1a388c1294dc5}{bje\+\_\+dimacs\+\_\+no\+\_\+cnf\+\_\+declaration}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba95ce31c3c6b7f9607da1a388c1294dc5}
-}]Bad D\+I\+M\+A\+C\+S format. Non existant cnf declaration line. \index{bje\+\_\+dimacs\+\_\+bad\+\_\+cls\+\_\+num@{bje\+\_\+dimacs\+\_\+bad\+\_\+cls\+\_\+num}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+dimacs\+\_\+bad\+\_\+cls\+\_\+num@{bje\+\_\+dimacs\+\_\+bad\+\_\+cls\+\_\+num}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bad28b93ce42f1dced860ca4d09a65c79a}{bje\+\_\+dimacs\+\_\+bad\+\_\+cls\+\_\+num}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bad28b93ce42f1dced860ca4d09a65c79a}
-}]Bad D\+I\+M\+A\+C\+S format. Inconsistent clause count with cnf declaration. \index{bje\+\_\+dimacs\+\_\+format\+\_\+err@{bje\+\_\+dimacs\+\_\+format\+\_\+err}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+dimacs\+\_\+format\+\_\+err@{bje\+\_\+dimacs\+\_\+format\+\_\+err}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba623a8243a1abfc57ccae3fdd5c6306a6}{bje\+\_\+dimacs\+\_\+format\+\_\+err}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba623a8243a1abfc57ccae3fdd5c6306a6}
-}]Bad D\+I\+M\+A\+C\+S format. General format error. \index{bje\+\_\+dimacs\+\_\+zero\+\_\+vars@{bje\+\_\+dimacs\+\_\+zero\+\_\+vars}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+dimacs\+\_\+zero\+\_\+vars@{bje\+\_\+dimacs\+\_\+zero\+\_\+vars}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba2a1433a16bf3d7dd10ddcb482d0e0c37}{bje\+\_\+dimacs\+\_\+zero\+\_\+vars}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba2a1433a16bf3d7dd10ddcb482d0e0c37}
-}]Bad D\+I\+M\+A\+C\+S format. No variables found. \index{bje\+\_\+dimacs\+\_\+zero\+\_\+clauses@{bje\+\_\+dimacs\+\_\+zero\+\_\+clauses}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+dimacs\+\_\+zero\+\_\+clauses@{bje\+\_\+dimacs\+\_\+zero\+\_\+clauses}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bafd159bf1e19199776e939ce653b0fc67}{bje\+\_\+dimacs\+\_\+zero\+\_\+clauses}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bafd159bf1e19199776e939ce653b0fc67}
-}]Bad D\+I\+M\+A\+C\+S format. No clauses found. \index{bje\+\_\+dimacs\+\_\+bad\+\_\+literal@{bje\+\_\+dimacs\+\_\+bad\+\_\+literal}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+dimacs\+\_\+bad\+\_\+literal@{bje\+\_\+dimacs\+\_\+bad\+\_\+literal}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bafdf5d2a2a234f5121774eee578e33b20}{bje\+\_\+dimacs\+\_\+bad\+\_\+literal}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bafdf5d2a2a234f5121774eee578e33b20}
-}]Bad D\+I\+M\+A\+C\+S format. Invalid clause literal. \index{bje\+\_\+dimacs\+\_\+clause\+\_\+too\+\_\+long@{bje\+\_\+dimacs\+\_\+clause\+\_\+too\+\_\+long}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bje\+\_\+dimacs\+\_\+clause\+\_\+too\+\_\+long@{bje\+\_\+dimacs\+\_\+clause\+\_\+too\+\_\+long}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bacc04d78fed88e04793eda1dafa568dbd}{bje\+\_\+dimacs\+\_\+clause\+\_\+too\+\_\+long}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bacc04d78fed88e04793eda1dafa568dbd}
-}]Bad D\+I\+M\+A\+C\+S format. Clause too long. \end{description}
+\index{bje\+\_\+no\+\_\+error@{bje\+\_\+no\+\_\+error}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+no\+\_\+error@{bje\+\_\+no\+\_\+error}}\item[{\em 
+bje\+\_\+no\+\_\+error\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba10f68d8ecd46425c1309870f0fc4b985}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba10f68d8ecd46425c1309870f0fc4b985}
+}]No error. \index{bje\+\_\+internal@{bje\+\_\+internal}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+internal@{bje\+\_\+internal}}\item[{\em 
+bje\+\_\+internal\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba26058e34768efeb556c9d0302cd16c50}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba26058e34768efeb556c9d0302cd16c50}
+}]Internal. \index{bje\+\_\+internal\+\_\+ex@{bje\+\_\+internal\+\_\+ex}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+internal\+\_\+ex@{bje\+\_\+internal\+\_\+ex}}\item[{\em 
+bje\+\_\+internal\+\_\+ex\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8baf3e4c46547df8cc20b0c981091b319db}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8baf3e4c46547df8cc20b0c981091b319db}
+}]Internal with explanation. \index{bje\+\_\+memout@{bje\+\_\+memout}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+memout@{bje\+\_\+memout}}\item[{\em 
+bje\+\_\+memout\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bac46ec7727aca5600957ca9f439bd69de}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bac46ec7727aca5600957ca9f439bd69de}
+}]Out of memory. \index{bje\+\_\+timeout@{bje\+\_\+timeout}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+timeout@{bje\+\_\+timeout}}\item[{\em 
+bje\+\_\+timeout\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba6fa8dc875d3850aa4c65d42a83dd60d0}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba6fa8dc875d3850aa4c65d42a83dd60d0}
+}]Timeout. \index{bje\+\_\+instance\+\_\+cannot\+\_\+load@{bje\+\_\+instance\+\_\+cannot\+\_\+load}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+instance\+\_\+cannot\+\_\+load@{bje\+\_\+instance\+\_\+cannot\+\_\+load}}\item[{\em 
+bje\+\_\+instance\+\_\+cannot\+\_\+load\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba4914924683de4dbb6c2941193bf5d646}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba4914924683de4dbb6c2941193bf5d646}
+}]Can not load instance. \index{bje\+\_\+file\+\_\+cannot\+\_\+open@{bje\+\_\+file\+\_\+cannot\+\_\+open}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+file\+\_\+cannot\+\_\+open@{bje\+\_\+file\+\_\+cannot\+\_\+open}}\item[{\em 
+bje\+\_\+file\+\_\+cannot\+\_\+open\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba1fc1eead7cc2a1fc65faea6832d64185}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba1fc1eead7cc2a1fc65faea6832d64185}
+}]Can not open file. \index{bje\+\_\+file\+\_\+corrupted@{bje\+\_\+file\+\_\+corrupted}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+file\+\_\+corrupted@{bje\+\_\+file\+\_\+corrupted}}\item[{\em 
+bje\+\_\+file\+\_\+corrupted\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba7674cdd84494bdac1309e64f34f5fd0b}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba7674cdd84494bdac1309e64f34f5fd0b}
+}]Corrupted file. \index{bje\+\_\+file\+\_\+too\+\_\+big@{bje\+\_\+file\+\_\+too\+\_\+big}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+file\+\_\+too\+\_\+big@{bje\+\_\+file\+\_\+too\+\_\+big}}\item[{\em 
+bje\+\_\+file\+\_\+too\+\_\+big\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bab4c4ab802659f44c851b0c7ac26d2b04}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bab4c4ab802659f44c851b0c7ac26d2b04}
+}]Too big file (must fit in memory) \index{bje\+\_\+path\+\_\+too\+\_\+long@{bje\+\_\+path\+\_\+too\+\_\+long}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+path\+\_\+too\+\_\+long@{bje\+\_\+path\+\_\+too\+\_\+long}}\item[{\em 
+bje\+\_\+path\+\_\+too\+\_\+long\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bab61aaa38bf833274ebc7fff9c47b0c5e}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bab61aaa38bf833274ebc7fff9c47b0c5e}
+}]Path too long. \index{bje\+\_\+invalid\+\_\+root\+\_\+directory@{bje\+\_\+invalid\+\_\+root\+\_\+directory}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+invalid\+\_\+root\+\_\+directory@{bje\+\_\+invalid\+\_\+root\+\_\+directory}}\item[{\em 
+bje\+\_\+invalid\+\_\+root\+\_\+directory\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba9d195477c68c16811bf5cf23169c3b31}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba9d195477c68c16811bf5cf23169c3b31}
+}]Invalid root (database) directory. \index{bje\+\_\+parse\+\_\+bad\+\_\+number@{bje\+\_\+parse\+\_\+bad\+\_\+number}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+parse\+\_\+bad\+\_\+number@{bje\+\_\+parse\+\_\+bad\+\_\+number}}\item[{\em 
+bje\+\_\+parse\+\_\+bad\+\_\+number\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba2e7d14635ea1ce09425354fcce28ec34}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba2e7d14635ea1ce09425354fcce28ec34}
+}]Found a non number where a number is expected. \index{bje\+\_\+dimacs\+\_\+no\+\_\+cnf\+\_\+declaration@{bje\+\_\+dimacs\+\_\+no\+\_\+cnf\+\_\+declaration}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+dimacs\+\_\+no\+\_\+cnf\+\_\+declaration@{bje\+\_\+dimacs\+\_\+no\+\_\+cnf\+\_\+declaration}}\item[{\em 
+bje\+\_\+dimacs\+\_\+no\+\_\+cnf\+\_\+declaration\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba95ce31c3c6b7f9607da1a388c1294dc5}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba95ce31c3c6b7f9607da1a388c1294dc5}
+}]Bad D\+I\+M\+A\+CS format. Non existant cnf declaration line. \index{bje\+\_\+dimacs\+\_\+bad\+\_\+cls\+\_\+num@{bje\+\_\+dimacs\+\_\+bad\+\_\+cls\+\_\+num}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+dimacs\+\_\+bad\+\_\+cls\+\_\+num@{bje\+\_\+dimacs\+\_\+bad\+\_\+cls\+\_\+num}}\item[{\em 
+bje\+\_\+dimacs\+\_\+bad\+\_\+cls\+\_\+num\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bad28b93ce42f1dced860ca4d09a65c79a}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bad28b93ce42f1dced860ca4d09a65c79a}
+}]Bad D\+I\+M\+A\+CS format. Inconsistent clause count with cnf declaration. \index{bje\+\_\+dimacs\+\_\+format\+\_\+err@{bje\+\_\+dimacs\+\_\+format\+\_\+err}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+dimacs\+\_\+format\+\_\+err@{bje\+\_\+dimacs\+\_\+format\+\_\+err}}\item[{\em 
+bje\+\_\+dimacs\+\_\+format\+\_\+err\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba623a8243a1abfc57ccae3fdd5c6306a6}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba623a8243a1abfc57ccae3fdd5c6306a6}
+}]Bad D\+I\+M\+A\+CS format. General format error. \index{bje\+\_\+dimacs\+\_\+zero\+\_\+vars@{bje\+\_\+dimacs\+\_\+zero\+\_\+vars}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+dimacs\+\_\+zero\+\_\+vars@{bje\+\_\+dimacs\+\_\+zero\+\_\+vars}}\item[{\em 
+bje\+\_\+dimacs\+\_\+zero\+\_\+vars\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba2a1433a16bf3d7dd10ddcb482d0e0c37}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8ba2a1433a16bf3d7dd10ddcb482d0e0c37}
+}]Bad D\+I\+M\+A\+CS format. No variables found. \index{bje\+\_\+dimacs\+\_\+zero\+\_\+clauses@{bje\+\_\+dimacs\+\_\+zero\+\_\+clauses}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+dimacs\+\_\+zero\+\_\+clauses@{bje\+\_\+dimacs\+\_\+zero\+\_\+clauses}}\item[{\em 
+bje\+\_\+dimacs\+\_\+zero\+\_\+clauses\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bafd159bf1e19199776e939ce653b0fc67}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bafd159bf1e19199776e939ce653b0fc67}
+}]Bad D\+I\+M\+A\+CS format. No clauses found. \index{bje\+\_\+dimacs\+\_\+bad\+\_\+literal@{bje\+\_\+dimacs\+\_\+bad\+\_\+literal}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+dimacs\+\_\+bad\+\_\+literal@{bje\+\_\+dimacs\+\_\+bad\+\_\+literal}}\item[{\em 
+bje\+\_\+dimacs\+\_\+bad\+\_\+literal\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bafdf5d2a2a234f5121774eee578e33b20}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bafdf5d2a2a234f5121774eee578e33b20}
+}]Bad D\+I\+M\+A\+CS format. Invalid clause literal. \index{bje\+\_\+dimacs\+\_\+clause\+\_\+too\+\_\+long@{bje\+\_\+dimacs\+\_\+clause\+\_\+too\+\_\+long}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bje\+\_\+dimacs\+\_\+clause\+\_\+too\+\_\+long@{bje\+\_\+dimacs\+\_\+clause\+\_\+too\+\_\+long}}\item[{\em 
+bje\+\_\+dimacs\+\_\+clause\+\_\+too\+\_\+long\hypertarget{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bacc04d78fed88e04793eda1dafa568dbd}{}\label{group__docgrp___a_p_i_ga92a0ce4b68a949f501a3b1d4fb1ded8bacc04d78fed88e04793eda1dafa568dbd}
+}]Bad D\+I\+M\+A\+CS format. Clause too long. \end{description}
 \end{Desc}
-\hypertarget{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29}{\index{User's A\+P\+I@{User's A\+P\+I}!bj\+\_\+param\+\_\+t@{bj\+\_\+param\+\_\+t}}
-\index{bj\+\_\+param\+\_\+t@{bj\+\_\+param\+\_\+t}!User's A\+P\+I@{User's A\+P\+I}}
-\subsubsection[{bj\+\_\+param\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf bj\+\_\+param\+\_\+t}}}\label{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29}
+\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bj\+\_\+param\+\_\+t@{bj\+\_\+param\+\_\+t}}
+\index{bj\+\_\+param\+\_\+t@{bj\+\_\+param\+\_\+t}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}
+\subsubsection[{\texorpdfstring{bj\+\_\+param\+\_\+t}{bj_param_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf bj\+\_\+param\+\_\+t}}\hypertarget{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29}{}\label{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29}
 
 
 Posible parameters for the solving process. 
@@ -183,15 +139,15 @@ Posible parameters for the solving process.
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
-\index{bjp\+\_\+invalid@{bjp\+\_\+invalid}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bjp\+\_\+invalid@{bjp\+\_\+invalid}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a2592c03589e858b38e47894ae4ecd5e4}{bjp\+\_\+invalid}\label{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a2592c03589e858b38e47894ae4ecd5e4}
-}]Invalid parameter. \index{bjp\+\_\+as\+\_\+release@{bjp\+\_\+as\+\_\+release}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bjp\+\_\+as\+\_\+release@{bjp\+\_\+as\+\_\+release}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a0db55a86faed48577d5f154b45db3f32}{bjp\+\_\+as\+\_\+release}\label{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a0db55a86faed48577d5f154b45db3f32}
-}]Run debug version of library as release version. Assumes linking with the debug version. \index{bjp\+\_\+only\+\_\+deduc@{bjp\+\_\+only\+\_\+deduc}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bjp\+\_\+only\+\_\+deduc@{bjp\+\_\+only\+\_\+deduc}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29abb18fe3e6afd7580f342e55de819391f}{bjp\+\_\+only\+\_\+deduc}\label{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29abb18fe3e6afd7580f342e55de819391f}
-}]Run only deduction (do not use training). For debugging purposes only. \index{bjp\+\_\+write\+\_\+proofs@{bjp\+\_\+write\+\_\+proofs}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bjp\+\_\+write\+\_\+proofs@{bjp\+\_\+write\+\_\+proofs}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a884d3116f70d0f32d13d5133588b9b29}{bjp\+\_\+write\+\_\+proofs}\label{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a884d3116f70d0f32d13d5133588b9b29}
-}]Write a J\+S\+O\+N proof if the C\+N\+F is unsatisfiable. \index{bjp\+\_\+test\+\_\+result@{bjp\+\_\+test\+\_\+result}!User's A\+P\+I@{User's A\+P\+I}}\index{User's A\+P\+I@{User's A\+P\+I}!bjp\+\_\+test\+\_\+result@{bjp\+\_\+test\+\_\+result}}\item[{\em 
-\hypertarget{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a70cca54473e04ca877b7d9f5a08a3497}{bjp\+\_\+test\+\_\+result}\label{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a70cca54473e04ca877b7d9f5a08a3497}
+\index{bjp\+\_\+invalid@{bjp\+\_\+invalid}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bjp\+\_\+invalid@{bjp\+\_\+invalid}}\item[{\em 
+bjp\+\_\+invalid\hypertarget{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a2592c03589e858b38e47894ae4ecd5e4}{}\label{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a2592c03589e858b38e47894ae4ecd5e4}
+}]Invalid parameter. \index{bjp\+\_\+as\+\_\+release@{bjp\+\_\+as\+\_\+release}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bjp\+\_\+as\+\_\+release@{bjp\+\_\+as\+\_\+release}}\item[{\em 
+bjp\+\_\+as\+\_\+release\hypertarget{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a0db55a86faed48577d5f154b45db3f32}{}\label{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a0db55a86faed48577d5f154b45db3f32}
+}]Run debug version of library as release version. Assumes linking with the debug version. \index{bjp\+\_\+only\+\_\+deduc@{bjp\+\_\+only\+\_\+deduc}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bjp\+\_\+only\+\_\+deduc@{bjp\+\_\+only\+\_\+deduc}}\item[{\em 
+bjp\+\_\+only\+\_\+deduc\hypertarget{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29abb18fe3e6afd7580f342e55de819391f}{}\label{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29abb18fe3e6afd7580f342e55de819391f}
+}]Run only deduction (do not use training). For debugging purposes only. \index{bjp\+\_\+write\+\_\+proofs@{bjp\+\_\+write\+\_\+proofs}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bjp\+\_\+write\+\_\+proofs@{bjp\+\_\+write\+\_\+proofs}}\item[{\em 
+bjp\+\_\+write\+\_\+proofs\hypertarget{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a884d3116f70d0f32d13d5133588b9b29}{}\label{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a884d3116f70d0f32d13d5133588b9b29}
+}]Write a J\+S\+ON proof if the C\+NF is unsatisfiable. \index{bjp\+\_\+test\+\_\+result@{bjp\+\_\+test\+\_\+result}!User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}}\index{User\textquotesingle{}s A\+PI@{User\textquotesingle{}s A\+PI}!bjp\+\_\+test\+\_\+result@{bjp\+\_\+test\+\_\+result}}\item[{\em 
+bjp\+\_\+test\+\_\+result\hypertarget{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a70cca54473e04ca877b7d9f5a08a3497}{}\label{group__docgrp___a_p_i_gadb76574300f22fca6a209194e0254e29a70cca54473e04ca877b7d9f5a08a3497}
 }]Compare results to an existing .test file or write one if not found. \end{description}
 \end{Desc}

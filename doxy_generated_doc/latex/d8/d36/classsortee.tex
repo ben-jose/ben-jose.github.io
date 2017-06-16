@@ -1,6 +1,5 @@
-\hypertarget{classsortee}{\section{sortee Class Reference}
+\hypertarget{classsortee}{}\section{sortee Class Reference}
 \label{classsortee}\index{sortee@{sortee}}
-}
 
 
 Class that is an item to be stabilized.  
@@ -16,35 +15,30 @@ Inherits binder.
 
 
 
-Collaboration diagram for sortee\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=229pt]{d8/dd4/classsortee__coll__graph}
-\end{center}
-\end{figure}
+Collaboration diagram for sortee\+:
+% FIG 0
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classsortee_a5cc113e22e62dfcb3869c2786ae5345e}{sort\+\_\+from} (\hyperlink{classsort__glb}{sort\+\_\+glb} \&srg, sort\+\_\+id\+\_\+t curr\+\_\+nid, void $\ast$id\+\_\+src=N\+U\+L\+L\+\_\+\+P\+T)
+void \hyperlink{classsortee_a5cc113e22e62dfcb3869c2786ae5345e}{sort\+\_\+from} (\hyperlink{classsort__glb}{sort\+\_\+glb} \&srg, sort\+\_\+id\+\_\+t curr\+\_\+nid, void $\ast$id\+\_\+src=N\+U\+L\+L\+\_\+\+PT)
 \begin{DoxyCompactList}\small\item\em The basic stabilization step finds the next \hyperlink{classsorset}{sorset} and puts this \hyperlink{classsortee}{sortee} in it. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Class that is an item to be stabilized. 
 
-Each \hyperlink{classneuron}{neuron} contains one \hyperlink{classsortee}{sortee} and each \hyperlink{classquanton}{quanton} contains one \hyperlink{classsortee}{sortee}. Each \hyperlink{classsortee}{sortee} 'knows' (void pointer) which \hyperlink{classneuron}{neuron} or \hyperlink{classquanton}{quanton} contains it. It is a one-\/to-\/one relation that is used to stabilize C\+N\+F sub-\/formulas. During stabilization, the \hyperlink{classsort__glb}{sort\+\_\+glb} handles the \hyperlink{classsortee}{sortee} s not the \hyperlink{classneuron}{neuron} s and \hyperlink{classquanton}{quanton} s. containing them. 
+Each \hyperlink{classneuron}{neuron} contains one \hyperlink{classsortee}{sortee} and each \hyperlink{classquanton}{quanton} contains one \hyperlink{classsortee}{sortee}. Each \hyperlink{classsortee}{sortee} \textquotesingle{}knows\textquotesingle{} (void pointer) which \hyperlink{classneuron}{neuron} or \hyperlink{classquanton}{quanton} contains it. It is a one-\/to-\/one relation that is used to stabilize C\+NF sub-\/formulas. During stabilization, the \hyperlink{classsort__glb}{sort\+\_\+glb} handles the \hyperlink{classsortee}{sortee} s not the \hyperlink{classneuron}{neuron} s and \hyperlink{classquanton}{quanton} s. containing them. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classsortee_a5cc113e22e62dfcb3869c2786ae5345e}{\index{sortee@{sortee}!sort\+\_\+from@{sort\+\_\+from}}
+\index{sortee@{sortee}!sort\+\_\+from@{sort\+\_\+from}}
 \index{sort\+\_\+from@{sort\+\_\+from}!sortee@{sortee}}
-\subsubsection[{sort\+\_\+from}]{\setlength{\rightskip}{0pt plus 5cm}void sortee\+::sort\+\_\+from (
+\subsubsection[{\texorpdfstring{sort\+\_\+from(sort\+\_\+glb \&srg, sort\+\_\+id\+\_\+t curr\+\_\+nid, void $\ast$id\+\_\+src=\+N\+U\+L\+L\+\_\+\+P\+T)}{sort_from(sort_glb &srg, sort_id_t curr_nid, void *id_src=NULL_PT)}}]{\setlength{\rightskip}{0pt plus 5cm}void sortee\+::sort\+\_\+from (
 \begin{DoxyParamCaption}
 \item[{{\bf sort\+\_\+glb} \&}]{srg, }
 \item[{sort\+\_\+id\+\_\+t}]{curr\+\_\+id, }
 \item[{void $\ast$}]{id\+\_\+src = {\ttfamily NULL\+\_\+PT}}
 \end{DoxyParamCaption}
-)}}\label{classsortee_a5cc113e22e62dfcb3869c2786ae5345e}
+)}\hypertarget{classsortee_a5cc113e22e62dfcb3869c2786ae5345e}{}\label{classsortee_a5cc113e22e62dfcb3869c2786ae5345e}
 
 
 The basic stabilization step finds the next \hyperlink{classsorset}{sorset} and puts this \hyperlink{classsortee}{sortee} in it. 
@@ -52,6 +46,12 @@ The basic stabilization step finds the next \hyperlink{classsorset}{sorset} and 
 \begin{DoxySeeAlso}{See also}
 \hyperlink{macro__algorithm__ben__jose_8cpp}{macro\+\_\+algorithm\+\_\+ben\+\_\+jose.\+cpp} 
 \end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

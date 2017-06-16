@@ -1,0 +1,17 @@
+digraph "/home/jose/devel/ben-jose/src/library/unsat_db" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_33f45cdec1a3925220ccec6ef1dd1d10 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="library" fontname="Helvetica", fontsize="10", URL="dir_33f45cdec1a3925220ccec6ef1dd1d10.html"]
+  subgraph clusterdir_dc3eb0ee1e81c8a6b0365359a60b4773 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_dc3eb0ee1e81c8a6b0365359a60b4773.html"];
+    dir_dc3eb0ee1e81c8a6b0365359a60b4773 [shape=plaintext label="unsat_db"];
+    dir_9cd174b2d62bb0c63a91ef7ac31bdd53 [shape=box label="javascript" color="red" fillcolor="white" style="filled" URL="dir_9cd174b2d62bb0c63a91ef7ac31bdd53.html"];
+  }
+  }
+  dir_4ef597847cc448a2928bf69a9fad7bfc [shape=box label="brain" URL="dir_4ef597847cc448a2928bf69a9fad7bfc.html"];
+  dir_4fa68adaebe0493a9d392d7a3d8e0703 [shape=box label="utils" URL="dir_4fa68adaebe0493a9d392d7a3d8e0703.html"];
+  dir_dc3eb0ee1e81c8a6b0365359a60b4773->dir_4ef597847cc448a2928bf69a9fad7bfc [headlabel="2", labeldistance=1.5 headhref="dir_000009_000005.html"];
+  dir_dc3eb0ee1e81c8a6b0365359a60b4773->dir_4fa68adaebe0493a9d392d7a3d8e0703 [headlabel="1", labeldistance=1.5 headhref="dir_000009_000019.html"];
+}

@@ -1,0 +1,30 @@
+digraph "write_all_nmps"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="write_all_nmps",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="brain::analyse_conflicts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html#adec5742918fedd1636a6152502bd409c",tooltip="Does conflict analysis, BCFFs finding and BCFFs writing. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="brain::deduce_and_reverse\l_trail",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html#a8d880c7f0e91a5dbb2cedaefdb704153",tooltip="Does all analysis and one backtrack. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="brain::pulsate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html#a9728a44b4e7b71ddb4a47bb25af05612",tooltip="This is the basic step function while solving an instance. It does one full backtrack. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="brain::think",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html#a8524441f8b863aec8fe2cc9c3ad2d21a",tooltip="This is the main processing function to solve an instance. It get called by solve_instance. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="brain::solve_instance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html#a2daa8c1c03eea62a51a359470bb64cc7",tooltip="This is the starting point to solve any instance. It is the main function of the implementation. "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="bj_solve_file",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d3c/ben__jose_8h.html#a65eb23939cc4ae39654dbd93343580c8"];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="bj_solve_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d3c/ben__jose_8h.html#a45eef575a2ca6c6b90e0a1d998f1eb7d"];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="bj_solve_literals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d3c/ben__jose_8h.html#a2818f32df95b8d462f49a201ce371142"];
+  Node6 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="brain::propagate_signals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html#a28eeaf513dd81fcb3dcb21fb37f58ccb",tooltip="This is function does BCP and most of the maintaining of the neuromap s (candidates) to be written an..."];
+  Node10 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

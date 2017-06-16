@@ -1,0 +1,19 @@
+digraph "sort_glb::stab_mutual_core"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sort_glb::stab_mutual_core",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sort_glb::sort_all_from",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#ac755a6417f43e7860ca96317a8e8f4e8",tooltip="It calls sortee::sort_from operations for all sortee s in tees. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sorset::step_mutual\l_stabilize_rec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d62/classsorset.html#a9a85b9412bc1fc5bea86d416e52b55c7",tooltip="It does sortee::sort_from operations on this sorset &#39;s sortee s. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sort_glb::step_quas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#aa41c7303e4bae7eb7c466f119c3ace1f",tooltip="It does sort_from operations on this sort_glb quanton sortee s. "];
+  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

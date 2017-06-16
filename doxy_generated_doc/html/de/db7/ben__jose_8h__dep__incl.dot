@@ -1,0 +1,23 @@
+digraph "/home/jose/devel/ben-jose/src/library/api/ben_jose.h"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/home/jose/devel/ben\l-jose/src/library/api\l/ben_jose.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="/home/jose/devel/ben\l-jose/src/library/api\l/ben_jose.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d55/ben__jose_8cpp.html",tooltip="File containing the implementation code for the users API of ben_jose. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="/home/jose/devel/ben\l-jose/src/library/brain\l/brain.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d3c/brain_8h.html",tooltip="Declarations of classes and that implement the solver&#39;s core functionality. "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="/home/jose/devel/ben\l-jose/src/library/unsat\l_db/proof.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dff/proof_8h_source.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="/home/jose/devel/ben\l-jose/src/library/brain\l/instance_info.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d4a/instance__info_8h_source.html"];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="/home/jose/devel/ben\l-jose/src/library/brain\l/solver.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d20/solver_8h_source.html"];
+  Node6 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="/home/jose/devel/ben\l-jose/src/programs/tests\l/solver/batch_solver.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d4d/batch__solver_8h_source.html"];
+}

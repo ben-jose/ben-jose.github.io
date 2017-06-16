@@ -1,0 +1,19 @@
+digraph "sorset::step_mutual_stabilize_rec"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sorset::step_mutual\l_stabilize_rec",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sort_glb::step_quas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#aa41c7303e4bae7eb7c466f119c3ace1f",tooltip="It does sort_from operations on this sort_glb quanton sortee s. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sort_glb::stab_mutual_core",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#a314081679beafcbbeac7f2e504558f18",tooltip="It stabilizes neuron sortee s and quanton sortee s until no further refinement is possible..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sort_glb::sort_all_from",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#ac755a6417f43e7860ca96317a8e8f4e8",tooltip="It calls sortee::sort_from operations for all sortee s in tees. "];
+  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

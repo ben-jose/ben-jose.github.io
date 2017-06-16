@@ -1,0 +1,55 @@
+digraph "prop_signal"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="prop_signal",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ps_source" ,fontname="Helvetica"];
+  Node2 [label="neuron",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d00/classneuron.html",tooltip="Class for CNF clause behavior. So there is one neuron per clause. "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ne_reltee" ,fontname="Helvetica"];
+  Node3 [label="sortrel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/de7/classsortrel.html",tooltip="A sortrel is a relation between two sortee s. "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" so_opposite" ,fontname="Helvetica"];
+  Node4 [label="sortee",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d36/classsortee.html",tooltip="Class that is an item to be stabilized. "];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" so_related" ,fontname="Helvetica"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" so_vessel" ,fontname="Helvetica"];
+  Node5 [label="sorset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d62/classsorset.html",tooltip="A sorset is a group of sortee s. "];
+  Node5 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ss_parent_set" ,fontname="Helvetica"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ne_tee" ,fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ps_quanton" ,fontname="Helvetica"];
+  Node6 [label="quanton",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/df5/classquanton.html",tooltip="Class for CNF variables (each variable has a positon and a negaton). "];
+  Node2 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" qu_source" ,fontname="Helvetica"];
+  Node6 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" qu_inverse" ,fontname="Helvetica"];
+  Node3 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" qu_reltee" ,fontname="Helvetica"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" qu_candidate_nmp" ,fontname="Helvetica"];
+  Node7 [label="neuromap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d45/classneuromap.html",tooltip="A neuromap is a CNF sub-formula. "];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" na_brn" ,fontname="Helvetica"];
+  Node8 [label="brain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html",tooltip="Class that holds all data used to solve a particular CNF instance. "];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_dedcer" ,fontname="Helvetica"];
+  Node9 [label="deducer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d0b/classdeducer.html",tooltip="Class that holds the data used to analyze a conflict. "];
+  Node8 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" de_brain" ,fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" de_next_bk_psig" ,fontname="Helvetica"];
+  Node10 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_dbg_full_col\nbr_tmp_ini_tauto_col\nbr_tmp_tauto_col\nbr_tmp_extra_col" ,fontname="Helvetica"];
+  Node10 [label="coloring",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d9a/classcoloring.html",tooltip="The initial and final state for an stabilization is a coloring. "];
+  Node8 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" co_brn" ,fontname="Helvetica"];
+  Node11 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_pulse_deduc" ,fontname="Helvetica"];
+  Node11 [label="deduction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/df3/classdeduction.html",tooltip="Class that holds the result of analyzing (doing resolution) of a conflict. "];
+  Node8 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dt_brn" ,fontname="Helvetica"];
+  Node2 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dt_confl" ,fontname="Helvetica"];
+  Node7 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dt_last_found" ,fontname="Helvetica"];
+  Node6 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_top_block" ,fontname="Helvetica"];
+  Node12 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_guide_quas_srg\nbr_guide_neus_srg\nbr_tauto_quas_srg\nbr_forced_srg\nbr_filled_srg\nbr_tauto_neus_srg" ,fontname="Helvetica"];
+  Node12 [label="sort_glb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html",tooltip="Class that holds all global data used to stabilize a group of items. "];
+  Node13 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sg_cnf_step" ,fontname="Helvetica"];
+  Node13 [label="canon_cnf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/deb/classcanon__cnf.html",tooltip="A canon_cnf is a BCFF. An stabilized sub-formula. "];
+  Node13 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cf_tauto_cnf\ncf_guide_cnf" ,fontname="Helvetica"];
+  Node14 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cf_inst_inf" ,fontname="Helvetica"];
+  Node14 [label="instance_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dd0/classinstance__info.html",tooltip="Class that holds an instance data. "];
+  Node5 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sg_head\nsg_step_first_multiple" ,fontname="Helvetica"];
+  Node4 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sg_step_next_choice" ,fontname="Helvetica"];
+  Node7 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_candidate_next" ,fontname="Helvetica"];
+  Node13 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" br_tmp_wrt_guide_cnf\nbr_tmp_wrt_diff_cnf\nbr_tmp_wrt_tauto_cnf" ,fontname="Helvetica"];
+  Node10 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" na_tauto_col\nna_found_col\nna_pend_col\nna_guide_col" ,fontname="Helvetica"];
+  Node6 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" na_orig_cho\nna_candidate_qua" ,fontname="Helvetica"];
+  Node7 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" na_submap\nna_nxt_no_mono" ,fontname="Helvetica"];
+  Node4 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" qu_tee" ,fontname="Helvetica"];
+}

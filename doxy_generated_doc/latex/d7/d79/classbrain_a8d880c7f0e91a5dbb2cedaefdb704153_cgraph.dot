@@ -1,0 +1,21 @@
+digraph "brain::deduce_and_reverse_trail"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="brain::deduce_and_reverse\l_trail",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="brain::analyse_conflicts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html#adec5742918fedd1636a6152502bd409c",tooltip="Does conflict analysis, BCFFs finding and BCFFs writing. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="deducer::deduce",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d0b/classdeducer.html#a7db42a9dfc25ed6ed6747faea2c90961",tooltip="It does normal resolution analysis (CDCL). "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="brain::candidate_find\l_analysis",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html#a16dcda6892686c581ca095f51e6a9def",tooltip="Does full BCFF finding with active write candidates. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="neuromap::map_find",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d45/classneuromap.html#a5da738c0ecb7ba74a4fc435ca33b1fcb",tooltip="It tries to find a neuromap. "];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="write_all_nmps",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d3c/brain_8h.html#a14f74143760dde7c17a99c26c736c198",tooltip="Writes all neuromap s (candidates) that need writing. "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="neuromap::map_write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d45/classneuromap.html#adb0c3a4698866c919272f9b4ba5998fd",tooltip="It tries to write a neuromap. "];
+}

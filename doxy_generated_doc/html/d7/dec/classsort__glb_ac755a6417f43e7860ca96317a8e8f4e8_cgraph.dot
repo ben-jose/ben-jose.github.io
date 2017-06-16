@@ -1,0 +1,32 @@
+digraph "sort_glb::sort_all_from"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sort_glb::sort_all_from",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sorset::step_mutual\l_stabilize_rec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d62/classsorset.html#a9a85b9412bc1fc5bea86d416e52b55c7",tooltip="It does sortee::sort_from operations on this sorset &#39;s sortee s. "];
+  Node2 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sortee::sort_from",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d36/classsortee.html#a5cc113e22e62dfcb3869c2786ae5345e",tooltip="The basic stabilization step finds the next sorset and puts this sortee in it. "];
+  Node1 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sort_glb::stab_mutual",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#ad87061a8532cc773200ba06d939a6dfc",tooltip="It stabilizes two &#39;loaded&#39; (initialized) sort_glb with a neuromap (no further refinement is possible)..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sort_glb::stab_mutual_core",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#a314081679beafcbbeac7f2e504558f18",tooltip="It stabilizes neuron sortee s and quanton sortee s until no further refinement is possible..."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sort_glb::step_neus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#a25baf3b8e0bc9bdca9c0d6658b298f07",tooltip="It does sort_from operations on this sort_glb neuron sortee s. "];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sort_glb::step_opps",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#a40a9304f2ef43071021472a8e020069a",tooltip="It does sort_from operations on this sort_glb opposite quanton sortee s. "];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="sort_glb::step_quas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#aa41c7303e4bae7eb7c466f119c3ace1f",tooltip="It does sort_from operations on this sort_glb quanton sortee s. "];
+  Node8 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="sort_glb::stab_mutual\l_unique",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#abcd6c73d28df5efcf002c2aed63ccd92",tooltip="It stabilizes two &#39;loaded&#39; (initialized) sort_glb with a neuromap to a BCFF. "];
+}

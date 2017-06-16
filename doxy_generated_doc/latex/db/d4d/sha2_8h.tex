@@ -1,7 +1,7 @@
-\hypertarget{sha2_8h}{\section{/home/jose/devel/ben-\/jose/src/utils/sha2.h File Reference}
+\hypertarget{sha2_8h}{}\section{/home/jose/devel/ben-\/jose/src/utils/sha2.h File Reference}
 \label{sha2_8h}\index{/home/jose/devel/ben-\/jose/src/utils/sha2.\+h@{/home/jose/devel/ben-\/jose/src/utils/sha2.\+h}}
-}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -27,9 +27,9 @@ void \hyperlink{sha2_8h_a3a32be6d62771a80c4baa302bf516f1d}{sha2} (unsigned char 
 void \hyperlink{sha2_8h_a2135b4741d1821a66ee0a2d15ae5d943}{sha2\+\_\+hmac\+\_\+starts} (\hyperlink{structsha2__context}{sha2\+\_\+context} $\ast$ctx, int is224, unsigned char $\ast$key, int keylen)
 \begin{DoxyCompactList}\small\item\em Output = S\+H\+A-\/256( file contents ) \end{DoxyCompactList}\item 
 void \hyperlink{sha2_8h_a5a0a7c2628e73dded8df2e530717a99a}{sha2\+\_\+hmac\+\_\+update} (\hyperlink{structsha2__context}{sha2\+\_\+context} $\ast$ctx, unsigned char $\ast$input, int ilen)
-\begin{DoxyCompactList}\small\item\em S\+H\+A-\/256 H\+M\+A\+C process buffer. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em S\+H\+A-\/256 H\+M\+AC process buffer. \end{DoxyCompactList}\item 
 void \hyperlink{sha2_8h_a26eb68bd8099e178f5110e6437596777}{sha2\+\_\+hmac\+\_\+finish} (\hyperlink{structsha2__context}{sha2\+\_\+context} $\ast$ctx, unsigned char $\ast$output)
-\begin{DoxyCompactList}\small\item\em S\+H\+A-\/256 H\+M\+A\+C final digest. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em S\+H\+A-\/256 H\+M\+AC final digest. \end{DoxyCompactList}\item 
 void \hyperlink{sha2_8h_a33f96332050976275e169a7a676d703f}{sha2\+\_\+hmac} (unsigned char $\ast$key, int keylen, unsigned char $\ast$input, int ilen, unsigned char $\ast$output, int is224)
 \begin{DoxyCompactList}\small\item\em Output = H\+M\+A\+C-\/\+S\+H\+A-\/256( hmac key, input buffer ) \end{DoxyCompactList}\item 
 int \hyperlink{sha2_8h_a8a7026f38413c81e28966631a8dbc004}{sha2\+\_\+self\+\_\+test} (int verbose)
@@ -37,14 +37,14 @@ int \hyperlink{sha2_8h_a8a7026f38413c81e28966631a8dbc004}{sha2\+\_\+self\+\_\+te
 
 
 \subsection{Function Documentation}
-\hypertarget{sha2_8h_ae01444aa81c862eb74f0545b8d05371a}{\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+starts@{sha2\+\_\+starts}}
+\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+starts@{sha2\+\_\+starts}}
 \index{sha2\+\_\+starts@{sha2\+\_\+starts}!sha2.\+h@{sha2.\+h}}
-\subsubsection[{sha2\+\_\+starts}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+starts (
+\subsubsection[{\texorpdfstring{sha2\+\_\+starts(sha2\+\_\+context $\ast$ctx, int is224)}{sha2_starts(sha2_context *ctx, int is224)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+starts (
 \begin{DoxyParamCaption}
 \item[{{\bf sha2\+\_\+context} $\ast$}]{ctx, }
 \item[{int}]{is224}
 \end{DoxyParamCaption}
-)}}\label{sha2_8h_ae01444aa81c862eb74f0545b8d05371a}
+)}\hypertarget{sha2_8h_ae01444aa81c862eb74f0545b8d05371a}{}\label{sha2_8h_ae01444aa81c862eb74f0545b8d05371a}
 
 
 S\+H\+A-\/256 context setup. 
@@ -58,7 +58,8 @@ S\+H\+A-\/256 context setup.
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -67,15 +68,15 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{figure}
 
 
-\hypertarget{sha2_8h_abe89ecad33cb50bfa16c0dbd62adbb52}{\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+update@{sha2\+\_\+update}}
+\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+update@{sha2\+\_\+update}}
 \index{sha2\+\_\+update@{sha2\+\_\+update}!sha2.\+h@{sha2.\+h}}
-\subsubsection[{sha2\+\_\+update}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+update (
+\subsubsection[{\texorpdfstring{sha2\+\_\+update(sha2\+\_\+context $\ast$ctx, unsigned char $\ast$input, int ilen)}{sha2_update(sha2_context *ctx, unsigned char *input, int ilen)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+update (
 \begin{DoxyParamCaption}
 \item[{{\bf sha2\+\_\+context} $\ast$}]{ctx, }
 \item[{unsigned char $\ast$}]{input, }
 \item[{int}]{ilen}
 \end{DoxyParamCaption}
-)}}\label{sha2_8h_abe89ecad33cb50bfa16c0dbd62adbb52}
+)}\hypertarget{sha2_8h_abe89ecad33cb50bfa16c0dbd62adbb52}{}\label{sha2_8h_abe89ecad33cb50bfa16c0dbd62adbb52}
 
 
 S\+H\+A-\/256 process buffer. 
@@ -91,7 +92,8 @@ S\+H\+A-\/256 process buffer.
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -100,14 +102,14 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{figure}
 
 
-\hypertarget{sha2_8h_a4dbd38a93b5b61c637a8a29dd0e850f0}{\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+finish@{sha2\+\_\+finish}}
+\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+finish@{sha2\+\_\+finish}}
 \index{sha2\+\_\+finish@{sha2\+\_\+finish}!sha2.\+h@{sha2.\+h}}
-\subsubsection[{sha2\+\_\+finish}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+finish (
+\subsubsection[{\texorpdfstring{sha2\+\_\+finish(sha2\+\_\+context $\ast$ctx, unsigned char $\ast$output)}{sha2_finish(sha2_context *ctx, unsigned char *output)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+finish (
 \begin{DoxyParamCaption}
 \item[{{\bf sha2\+\_\+context} $\ast$}]{ctx, }
 \item[{unsigned char $\ast$}]{output}
 \end{DoxyParamCaption}
-)}}\label{sha2_8h_a4dbd38a93b5b61c637a8a29dd0e850f0}
+)}\hypertarget{sha2_8h_a4dbd38a93b5b61c637a8a29dd0e850f0}{}\label{sha2_8h_a4dbd38a93b5b61c637a8a29dd0e850f0}
 
 
 S\+H\+A-\/256 final digest. 
@@ -121,7 +123,8 @@ S\+H\+A-\/256 final digest.
 \end{DoxyParams}
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -132,7 +135,8 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -141,16 +145,16 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{figure}
 
 
-\hypertarget{sha2_8h_a3a32be6d62771a80c4baa302bf516f1d}{\index{sha2.\+h@{sha2.\+h}!sha2@{sha2}}
+\index{sha2.\+h@{sha2.\+h}!sha2@{sha2}}
 \index{sha2@{sha2}!sha2.\+h@{sha2.\+h}}
-\subsubsection[{sha2}]{\setlength{\rightskip}{0pt plus 5cm}void sha2 (
+\subsubsection[{\texorpdfstring{sha2(unsigned char $\ast$input, int ilen, unsigned char $\ast$output, int is224)}{sha2(unsigned char *input, int ilen, unsigned char *output, int is224)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha2 (
 \begin{DoxyParamCaption}
 \item[{unsigned char $\ast$}]{input, }
 \item[{int}]{ilen, }
 \item[{unsigned char $\ast$}]{output, }
 \item[{int}]{is224}
 \end{DoxyParamCaption}
-)}}\label{sha2_8h_a3a32be6d62771a80c4baa302bf516f1d}
+)}\hypertarget{sha2_8h_a3a32be6d62771a80c4baa302bf516f1d}{}\label{sha2_8h_a3a32be6d62771a80c4baa302bf516f1d}
 
 
 Output = S\+H\+A-\/256( input buffer ) 
@@ -168,7 +172,8 @@ Output = S\+H\+A-\/256( input buffer )
 \end{DoxyParams}
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -177,16 +182,16 @@ Here is the call graph for this function\+:\nopagebreak
 \end{figure}
 
 
-\hypertarget{sha2_8h_a2135b4741d1821a66ee0a2d15ae5d943}{\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+hmac\+\_\+starts@{sha2\+\_\+hmac\+\_\+starts}}
+\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+hmac\+\_\+starts@{sha2\+\_\+hmac\+\_\+starts}}
 \index{sha2\+\_\+hmac\+\_\+starts@{sha2\+\_\+hmac\+\_\+starts}!sha2.\+h@{sha2.\+h}}
-\subsubsection[{sha2\+\_\+hmac\+\_\+starts}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+hmac\+\_\+starts (
+\subsubsection[{\texorpdfstring{sha2\+\_\+hmac\+\_\+starts(sha2\+\_\+context $\ast$ctx, int is224, unsigned char $\ast$key, int keylen)}{sha2_hmac_starts(sha2_context *ctx, int is224, unsigned char *key, int keylen)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+hmac\+\_\+starts (
 \begin{DoxyParamCaption}
 \item[{{\bf sha2\+\_\+context} $\ast$}]{ctx, }
 \item[{int}]{is224, }
 \item[{unsigned char $\ast$}]{key, }
 \item[{int}]{keylen}
 \end{DoxyParamCaption}
-)}}\label{sha2_8h_a2135b4741d1821a66ee0a2d15ae5d943}
+)}\hypertarget{sha2_8h_a2135b4741d1821a66ee0a2d15ae5d943}{}\label{sha2_8h_a2135b4741d1821a66ee0a2d15ae5d943}
 
 
 Output = S\+H\+A-\/256( file contents ) 
@@ -201,22 +206,23 @@ Output = S\+H\+A-\/256( file contents )
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-0 if successful, 1 if fopen failed, or 2 if fread failed S\+H\+A-\/256 H\+M\+A\+C context setup
+0 if successful, 1 if fopen failed, or 2 if fread failed S\+H\+A-\/256 H\+M\+AC context setup
 \end{DoxyReturn}
 
 \begin{DoxyParams}{Parameters}
-{\em ctx} & H\+M\+A\+C context to be initialized \\
+{\em ctx} & H\+M\+AC context to be initialized \\
 \hline
 {\em is224} & 0 = use S\+H\+A256, 1 = use S\+H\+A224 \\
 \hline
-{\em key} & H\+M\+A\+C secret key \\
+{\em key} & H\+M\+AC secret key \\
 \hline
-{\em keylen} & length of the H\+M\+A\+C key \\
+{\em keylen} & length of the H\+M\+AC key \\
 \hline
 \end{DoxyParams}
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -227,7 +233,8 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -236,22 +243,22 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{figure}
 
 
-\hypertarget{sha2_8h_a5a0a7c2628e73dded8df2e530717a99a}{\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+hmac\+\_\+update@{sha2\+\_\+hmac\+\_\+update}}
+\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+hmac\+\_\+update@{sha2\+\_\+hmac\+\_\+update}}
 \index{sha2\+\_\+hmac\+\_\+update@{sha2\+\_\+hmac\+\_\+update}!sha2.\+h@{sha2.\+h}}
-\subsubsection[{sha2\+\_\+hmac\+\_\+update}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+hmac\+\_\+update (
+\subsubsection[{\texorpdfstring{sha2\+\_\+hmac\+\_\+update(sha2\+\_\+context $\ast$ctx, unsigned char $\ast$input, int ilen)}{sha2_hmac_update(sha2_context *ctx, unsigned char *input, int ilen)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+hmac\+\_\+update (
 \begin{DoxyParamCaption}
 \item[{{\bf sha2\+\_\+context} $\ast$}]{ctx, }
 \item[{unsigned char $\ast$}]{input, }
 \item[{int}]{ilen}
 \end{DoxyParamCaption}
-)}}\label{sha2_8h_a5a0a7c2628e73dded8df2e530717a99a}
+)}\hypertarget{sha2_8h_a5a0a7c2628e73dded8df2e530717a99a}{}\label{sha2_8h_a5a0a7c2628e73dded8df2e530717a99a}
 
 
-S\+H\+A-\/256 H\+M\+A\+C process buffer. 
+S\+H\+A-\/256 H\+M\+AC process buffer. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em ctx} & H\+M\+A\+C context \\
+{\em ctx} & H\+M\+AC context \\
 \hline
 {\em input} & buffer holding the data \\
 \hline
@@ -260,7 +267,8 @@ S\+H\+A-\/256 H\+M\+A\+C process buffer.
 \end{DoxyParams}
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -271,7 +279,8 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -280,28 +289,29 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{figure}
 
 
-\hypertarget{sha2_8h_a26eb68bd8099e178f5110e6437596777}{\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+hmac\+\_\+finish@{sha2\+\_\+hmac\+\_\+finish}}
+\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+hmac\+\_\+finish@{sha2\+\_\+hmac\+\_\+finish}}
 \index{sha2\+\_\+hmac\+\_\+finish@{sha2\+\_\+hmac\+\_\+finish}!sha2.\+h@{sha2.\+h}}
-\subsubsection[{sha2\+\_\+hmac\+\_\+finish}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+hmac\+\_\+finish (
+\subsubsection[{\texorpdfstring{sha2\+\_\+hmac\+\_\+finish(sha2\+\_\+context $\ast$ctx, unsigned char $\ast$output)}{sha2_hmac_finish(sha2_context *ctx, unsigned char *output)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+hmac\+\_\+finish (
 \begin{DoxyParamCaption}
 \item[{{\bf sha2\+\_\+context} $\ast$}]{ctx, }
 \item[{unsigned char $\ast$}]{output}
 \end{DoxyParamCaption}
-)}}\label{sha2_8h_a26eb68bd8099e178f5110e6437596777}
+)}\hypertarget{sha2_8h_a26eb68bd8099e178f5110e6437596777}{}\label{sha2_8h_a26eb68bd8099e178f5110e6437596777}
 
 
-S\+H\+A-\/256 H\+M\+A\+C final digest. 
+S\+H\+A-\/256 H\+M\+AC final digest. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em ctx} & H\+M\+A\+C context \\
+{\em ctx} & H\+M\+AC context \\
 \hline
-{\em output} & S\+H\+A-\/224/256 H\+M\+A\+C checksum result \\
+{\em output} & S\+H\+A-\/224/256 H\+M\+AC checksum result \\
 \hline
 \end{DoxyParams}
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -312,7 +322,8 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -321,9 +332,9 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{figure}
 
 
-\hypertarget{sha2_8h_a33f96332050976275e169a7a676d703f}{\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+hmac@{sha2\+\_\+hmac}}
+\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+hmac@{sha2\+\_\+hmac}}
 \index{sha2\+\_\+hmac@{sha2\+\_\+hmac}!sha2.\+h@{sha2.\+h}}
-\subsubsection[{sha2\+\_\+hmac}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+hmac (
+\subsubsection[{\texorpdfstring{sha2\+\_\+hmac(unsigned char $\ast$key, int keylen, unsigned char $\ast$input, int ilen, unsigned char $\ast$output, int is224)}{sha2_hmac(unsigned char *key, int keylen, unsigned char *input, int ilen, unsigned char *output, int is224)}}]{\setlength{\rightskip}{0pt plus 5cm}void sha2\+\_\+hmac (
 \begin{DoxyParamCaption}
 \item[{unsigned char $\ast$}]{key, }
 \item[{int}]{keylen, }
@@ -332,16 +343,16 @@ Here is the caller graph for this function\+:\nopagebreak
 \item[{unsigned char $\ast$}]{output, }
 \item[{int}]{is224}
 \end{DoxyParamCaption}
-)}}\label{sha2_8h_a33f96332050976275e169a7a676d703f}
+)}\hypertarget{sha2_8h_a33f96332050976275e169a7a676d703f}{}\label{sha2_8h_a33f96332050976275e169a7a676d703f}
 
 
 Output = H\+M\+A\+C-\/\+S\+H\+A-\/256( hmac key, input buffer ) 
 
 
 \begin{DoxyParams}{Parameters}
-{\em key} & H\+M\+A\+C secret key \\
+{\em key} & H\+M\+AC secret key \\
 \hline
-{\em keylen} & length of the H\+M\+A\+C key \\
+{\em keylen} & length of the H\+M\+AC key \\
 \hline
 {\em input} & buffer holding the data \\
 \hline
@@ -354,7 +365,8 @@ Output = H\+M\+A\+C-\/\+S\+H\+A-\/256( hmac key, input buffer )
 \end{DoxyParams}
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -363,13 +375,13 @@ Here is the call graph for this function\+:\nopagebreak
 \end{figure}
 
 
-\hypertarget{sha2_8h_a8a7026f38413c81e28966631a8dbc004}{\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+self\+\_\+test@{sha2\+\_\+self\+\_\+test}}
+\index{sha2.\+h@{sha2.\+h}!sha2\+\_\+self\+\_\+test@{sha2\+\_\+self\+\_\+test}}
 \index{sha2\+\_\+self\+\_\+test@{sha2\+\_\+self\+\_\+test}!sha2.\+h@{sha2.\+h}}
-\subsubsection[{sha2\+\_\+self\+\_\+test}]{\setlength{\rightskip}{0pt plus 5cm}int sha2\+\_\+self\+\_\+test (
+\subsubsection[{\texorpdfstring{sha2\+\_\+self\+\_\+test(int verbose)}{sha2_self_test(int verbose)}}]{\setlength{\rightskip}{0pt plus 5cm}int sha2\+\_\+self\+\_\+test (
 \begin{DoxyParamCaption}
 \item[{int}]{verbose}
 \end{DoxyParamCaption}
-)}}\label{sha2_8h_a8a7026f38413c81e28966631a8dbc004}
+)}\hypertarget{sha2_8h_a8a7026f38413c81e28966631a8dbc004}{}\label{sha2_8h_a8a7026f38413c81e28966631a8dbc004}
 
 
 Checkup routine. 
@@ -377,3 +389,6 @@ Checkup routine.
 \begin{DoxyReturn}{Returns}
 0 if successful, or 1 if the test failed 
 \end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:

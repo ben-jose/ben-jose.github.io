@@ -1,0 +1,10 @@
+digraph "/home/jose/devel/ben-jose" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6bfc9a6677dca4d4b6102e819cd9ddf3 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_6bfc9a6677dca4d4b6102e819cd9ddf3.html"];
+    dir_6bfc9a6677dca4d4b6102e819cd9ddf3 [shape=plaintext label="ben-jose"];
+    dir_e91c823ba9044f9eb8e63af177e5cc3c [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_e91c823ba9044f9eb8e63af177e5cc3c.html"];
+  }
+}

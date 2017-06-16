@@ -1,0 +1,39 @@
+digraph "sort_glb::stab_mutual"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sort_glb::stab_mutual",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="neuromap::map_prepare\l_mem_oper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d45/classneuromap.html#a9c0e877474e2d17cf8b9da564de8b8c3",tooltip="It stabilizes a neuromap to a BCFF. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="brain::propagate_signals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html#a28eeaf513dd81fcb3dcb21fb37f58ccb",tooltip="This is function does BCP and most of the maintaining of the neuromap s (candidates) to be written an..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="brain::pulsate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html#a9728a44b4e7b71ddb4a47bb25af05612",tooltip="This is the basic step function while solving an instance. It does one full backtrack. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="brain::think",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html#a8524441f8b863aec8fe2cc9c3ad2d21a",tooltip="This is the main processing function to solve an instance. It get called by solve_instance. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="brain::solve_instance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d79/classbrain.html#a2daa8c1c03eea62a51a359470bb64cc7",tooltip="This is the starting point to solve any instance. It is the main function of the implementation. "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="bj_solve_file",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d3c/ben__jose_8h.html#a65eb23939cc4ae39654dbd93343580c8"];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="bj_solve_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d3c/ben__jose_8h.html#a45eef575a2ca6c6b90e0a1d998f1eb7d"];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="bj_solve_literals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d3c/ben__jose_8h.html#a2818f32df95b8d462f49a201ce371142"];
+  Node6 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="sort_glb::sort_all_from",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#ac755a6417f43e7860ca96317a8e8f4e8",tooltip="It calls sortee::sort_from operations for all sortee s in tees. "];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="sorset::step_mutual\l_stabilize_rec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d62/classsorset.html#a9a85b9412bc1fc5bea86d416e52b55c7",tooltip="It does sortee::sort_from operations on this sorset &#39;s sortee s. "];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="sort_glb::step_quas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#aa41c7303e4bae7eb7c466f119c3ace1f",tooltip="It does sort_from operations on this sort_glb quanton sortee s. "];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="sort_glb::stab_mutual_core",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/classsort__glb.html#a314081679beafcbbeac7f2e504558f18",tooltip="It stabilizes neuron sortee s and quanton sortee s until no further refinement is possible..."];
+  Node13 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

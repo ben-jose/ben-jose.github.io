@@ -1,0 +1,18 @@
+digraph "/home/jose/devel/ben-jose/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6bfc9a6677dca4d4b6102e819cd9ddf3 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ben-jose" fontname="Helvetica", fontsize="10", URL="dir_6bfc9a6677dca4d4b6102e819cd9ddf3.html"]
+  subgraph clusterdir_e91c823ba9044f9eb8e63af177e5cc3c {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e91c823ba9044f9eb8e63af177e5cc3c.html"];
+    dir_e91c823ba9044f9eb8e63af177e5cc3c [shape=plaintext label="src"];
+    dir_8db448230d659bd90d241c51c0aa8975 [shape=box label="external" color="black" fillcolor="white" style="filled" URL="dir_8db448230d659bd90d241c51c0aa8975.html"];
+    dir_33f45cdec1a3925220ccec6ef1dd1d10 [shape=box label="library" color="red" fillcolor="white" style="filled" URL="dir_33f45cdec1a3925220ccec6ef1dd1d10.html"];
+    dir_112bf70602a9e99a8a282959fe94778c [shape=box label="programs" color="red" fillcolor="white" style="filled" URL="dir_112bf70602a9e99a8a282959fe94778c.html"];
+    dir_4fa68adaebe0493a9d392d7a3d8e0703 [shape=box label="utils" color="black" fillcolor="white" style="filled" URL="dir_4fa68adaebe0493a9d392d7a3d8e0703.html"];
+  }
+  }
+  dir_112bf70602a9e99a8a282959fe94778c->dir_33f45cdec1a3925220ccec6ef1dd1d10 [headlabel="5", labeldistance=1.5 headhref="dir_000013_000003.html"];
+  dir_33f45cdec1a3925220ccec6ef1dd1d10->dir_4fa68adaebe0493a9d392d7a3d8e0703 [headlabel="1", labeldistance=1.5 headhref="dir_000003_000019.html"];
+}

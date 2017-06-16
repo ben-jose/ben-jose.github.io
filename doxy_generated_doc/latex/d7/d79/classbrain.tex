@@ -1,9 +1,8 @@
-\hypertarget{classbrain}{\section{brain Class Reference}
+\hypertarget{classbrain}{}\section{brain Class Reference}
 \label{classbrain}\index{brain@{brain}}
-}
 
 
-Class that holds all data used to solve a particular C\+N\+F instance.  
+Class that holds all data used to solve a particular C\+NF instance.  
 
 
 
@@ -12,24 +11,19 @@ Class that holds all data used to solve a particular C\+N\+F instance.
 
 
 
-Collaboration diagram for brain\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{da/dc9/classbrain__coll__graph}
-\end{center}
-\end{figure}
+Collaboration diagram for brain\+:
+% FIG 0
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 long \hyperlink{classbrain_a28eeaf513dd81fcb3dcb21fb37f58ccb}{propagate\+\_\+signals} ()
-\begin{DoxyCompactList}\small\item\em This is function does B\+C\+P and most of the maintaining of the \hyperlink{classneuromap}{neuromap} s (candidates) to be written and found. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This is function does B\+CP and most of the maintaining of the \hyperlink{classneuromap}{neuromap} s (candidates) to be written and found. \end{DoxyCompactList}\item 
 void \hyperlink{classbrain_a9728a44b4e7b71ddb4a47bb25af05612}{pulsate} ()
 \begin{DoxyCompactList}\small\item\em This is the basic step function while solving an instance. It does one full backtrack. \end{DoxyCompactList}\item 
 bool \hyperlink{classbrain_a8d880c7f0e91a5dbb2cedaefdb704153}{deduce\+\_\+and\+\_\+reverse\+\_\+trail} ()
 \begin{DoxyCompactList}\small\item\em Does all analysis and one backtrack. \end{DoxyCompactList}\item 
 void \hyperlink{classbrain_a16dcda6892686c581ca095f51e6a9def}{candidate\+\_\+find\+\_\+analysis} (\hyperlink{classdeducer}{deducer} \&dedcer, \hyperlink{classdeduction}{deduction} \&dct)
-\begin{DoxyCompactList}\small\item\em Does full B\+C\+F\+F finding with active write candidates. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Does full B\+C\+FF finding with active write candidates. \end{DoxyCompactList}\item 
 void \hyperlink{classbrain_adec5742918fedd1636a6152502bd409c}{analyse\+\_\+conflicts} (row$<$ \hyperlink{classprop__signal}{prop\+\_\+signal} $>$ \&all\+\_\+confl, \hyperlink{classdeduction}{deduction} \&dct)
 \begin{DoxyCompactList}\small\item\em Does conflict analysis, B\+C\+F\+Fs finding and B\+C\+F\+Fs writing. \end{DoxyCompactList}\item 
 void \hyperlink{classbrain_a8524441f8b863aec8fe2cc9c3ad2d21a}{think} ()
@@ -39,43 +33,44 @@ void \hyperlink{classbrain_a8524441f8b863aec8fe2cc9c3ad2d21a}{think} ()
 
 
 \subsection{Detailed Description}
-Class that holds all data used to solve a particular C\+N\+F instance. 
+Class that holds all data used to solve a particular C\+NF instance. 
 
-There is one brain per C\+N\+F instance. It is created to solve an instance, and destroyed after solving that particular instance. 
+There is one brain per C\+NF instance. It is created to solve an instance, and destroyed after solving that particular instance. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classbrain_a28eeaf513dd81fcb3dcb21fb37f58ccb}{\index{brain@{brain}!propagate\+\_\+signals@{propagate\+\_\+signals}}
+\index{brain@{brain}!propagate\+\_\+signals@{propagate\+\_\+signals}}
 \index{propagate\+\_\+signals@{propagate\+\_\+signals}!brain@{brain}}
-\subsubsection[{propagate\+\_\+signals}]{\setlength{\rightskip}{0pt plus 5cm}long brain\+::propagate\+\_\+signals (
+\subsubsection[{\texorpdfstring{propagate\+\_\+signals()}{propagate_signals()}}]{\setlength{\rightskip}{0pt plus 5cm}long brain\+::propagate\+\_\+signals (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classbrain_a28eeaf513dd81fcb3dcb21fb37f58ccb}
+)}\hypertarget{classbrain_a28eeaf513dd81fcb3dcb21fb37f58ccb}{}\label{classbrain_a28eeaf513dd81fcb3dcb21fb37f58ccb}
 
 
-This is function does B\+C\+P and most of the maintaining of the \hyperlink{classneuromap}{neuromap} s (candidates) to be written and found. 
+This is function does B\+CP and most of the maintaining of the \hyperlink{classneuromap}{neuromap} s (candidates) to be written and found. 
 
 It also does all maintaining of monos and choices. \begin{DoxySeeAlso}{See also}
 \hyperlink{macro__algorithm__ben__jose_8cpp}{macro\+\_\+algorithm\+\_\+ben\+\_\+jose.\+cpp} 
 \end{DoxySeeAlso}
 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d7/d79/classbrain_a28eeaf513dd81fcb3dcb21fb37f58ccb_icgraph}
-\end{center}
-\end{figure}
+Here is the call graph for this function\+:
+% FIG 1
 
 
-\hypertarget{classbrain_a9728a44b4e7b71ddb4a47bb25af05612}{\index{brain@{brain}!pulsate@{pulsate}}
+
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\index{brain@{brain}!pulsate@{pulsate}}
 \index{pulsate@{pulsate}!brain@{brain}}
-\subsubsection[{pulsate}]{\setlength{\rightskip}{0pt plus 5cm}void brain\+::pulsate (
+\subsubsection[{\texorpdfstring{pulsate()}{pulsate()}}]{\setlength{\rightskip}{0pt plus 5cm}void brain\+::pulsate (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classbrain_a9728a44b4e7b71ddb4a47bb25af05612}
+)}\hypertarget{classbrain_a9728a44b4e7b71ddb4a47bb25af05612}{}\label{classbrain_a9728a44b4e7b71ddb4a47bb25af05612}
 
 
 This is the basic step function while solving an instance. It does one full backtrack. 
@@ -85,33 +80,23 @@ Observe that this function might ddo more than one retract while selecting the b
 \end{DoxySeeAlso}
 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d7/d79/classbrain_a9728a44b4e7b71ddb4a47bb25af05612_cgraph}
-\end{center}
-\end{figure}
+Here is the call graph for this function\+:
+% FIG 3
 
 
 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d7/d79/classbrain_a9728a44b4e7b71ddb4a47bb25af05612_icgraph}
-\end{center}
-\end{figure}
+Here is the caller graph for this function\+:
+% FIG 4
 
 
-\hypertarget{classbrain_a8d880c7f0e91a5dbb2cedaefdb704153}{\index{brain@{brain}!deduce\+\_\+and\+\_\+reverse\+\_\+trail@{deduce\+\_\+and\+\_\+reverse\+\_\+trail}}
+\index{brain@{brain}!deduce\+\_\+and\+\_\+reverse\+\_\+trail@{deduce\+\_\+and\+\_\+reverse\+\_\+trail}}
 \index{deduce\+\_\+and\+\_\+reverse\+\_\+trail@{deduce\+\_\+and\+\_\+reverse\+\_\+trail}!brain@{brain}}
-\subsubsection[{deduce\+\_\+and\+\_\+reverse\+\_\+trail}]{\setlength{\rightskip}{0pt plus 5cm}void brain\+::deduce\+\_\+and\+\_\+reverse\+\_\+trail (
+\subsubsection[{\texorpdfstring{deduce\+\_\+and\+\_\+reverse\+\_\+trail()}{deduce_and_reverse_trail()}}]{\setlength{\rightskip}{0pt plus 5cm}void brain\+::deduce\+\_\+and\+\_\+reverse\+\_\+trail (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classbrain_a8d880c7f0e91a5dbb2cedaefdb704153}
+)}\hypertarget{classbrain_a8d880c7f0e91a5dbb2cedaefdb704153}{}\label{classbrain_a8d880c7f0e91a5dbb2cedaefdb704153}
 
 
 Does all analysis and one backtrack. 
@@ -121,71 +106,51 @@ Does all analysis and one backtrack.
 \end{DoxySeeAlso}
 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d7/d79/classbrain_a8d880c7f0e91a5dbb2cedaefdb704153_cgraph}
-\end{center}
-\end{figure}
+Here is the call graph for this function\+:
+% FIG 5
 
 
 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d7/d79/classbrain_a8d880c7f0e91a5dbb2cedaefdb704153_icgraph}
-\end{center}
-\end{figure}
+Here is the caller graph for this function\+:
+% FIG 6
 
 
-\hypertarget{classbrain_a16dcda6892686c581ca095f51e6a9def}{\index{brain@{brain}!candidate\+\_\+find\+\_\+analysis@{candidate\+\_\+find\+\_\+analysis}}
+\index{brain@{brain}!candidate\+\_\+find\+\_\+analysis@{candidate\+\_\+find\+\_\+analysis}}
 \index{candidate\+\_\+find\+\_\+analysis@{candidate\+\_\+find\+\_\+analysis}!brain@{brain}}
-\subsubsection[{candidate\+\_\+find\+\_\+analysis}]{\setlength{\rightskip}{0pt plus 5cm}void brain\+::candidate\+\_\+find\+\_\+analysis (
+\subsubsection[{\texorpdfstring{candidate\+\_\+find\+\_\+analysis(deducer \&dedcer, deduction \&dct)}{candidate_find_analysis(deducer &dedcer, deduction &dct)}}]{\setlength{\rightskip}{0pt plus 5cm}void brain\+::candidate\+\_\+find\+\_\+analysis (
 \begin{DoxyParamCaption}
 \item[{{\bf deducer} \&}]{dedcer, }
 \item[{{\bf deduction} \&}]{dct}
 \end{DoxyParamCaption}
-)}}\label{classbrain_a16dcda6892686c581ca095f51e6a9def}
+)}\hypertarget{classbrain_a16dcda6892686c581ca095f51e6a9def}{}\label{classbrain_a16dcda6892686c581ca095f51e6a9def}
 
 
-Does full B\+C\+F\+F finding with active write candidates. 
+Does full B\+C\+FF finding with active write candidates. 
 
 \begin{DoxySeeAlso}{See also}
 \hyperlink{macro__algorithm__ben__jose_8cpp}{macro\+\_\+algorithm\+\_\+ben\+\_\+jose.\+cpp} 
 \end{DoxySeeAlso}
 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d7/d79/classbrain_a16dcda6892686c581ca095f51e6a9def_cgraph}
-\end{center}
-\end{figure}
+Here is the call graph for this function\+:
+% FIG 7
 
 
 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d7/d79/classbrain_a16dcda6892686c581ca095f51e6a9def_icgraph}
-\end{center}
-\end{figure}
+Here is the caller graph for this function\+:
+% FIG 8
 
 
-\hypertarget{classbrain_adec5742918fedd1636a6152502bd409c}{\index{brain@{brain}!analyse\+\_\+conflicts@{analyse\+\_\+conflicts}}
+\index{brain@{brain}!analyse\+\_\+conflicts@{analyse\+\_\+conflicts}}
 \index{analyse\+\_\+conflicts@{analyse\+\_\+conflicts}!brain@{brain}}
-\subsubsection[{analyse\+\_\+conflicts}]{\setlength{\rightskip}{0pt plus 5cm}void brain\+::analyse\+\_\+conflicts (
+\subsubsection[{\texorpdfstring{analyse\+\_\+conflicts(row$<$ prop\+\_\+signal $>$ \&all\+\_\+confl, deduction \&dct)}{analyse_conflicts(row< prop_signal > &all_confl, deduction &dct)}}]{\setlength{\rightskip}{0pt plus 5cm}void brain\+::analyse\+\_\+conflicts (
 \begin{DoxyParamCaption}
 \item[{row$<$ {\bf prop\+\_\+signal} $>$ \&}]{all\+\_\+confl, }
 \item[{{\bf deduction} \&}]{dct}
 \end{DoxyParamCaption}
-)}}\label{classbrain_adec5742918fedd1636a6152502bd409c}
+)}\hypertarget{classbrain_adec5742918fedd1636a6152502bd409c}{}\label{classbrain_adec5742918fedd1636a6152502bd409c}
 
 
 Does conflict analysis, B\+C\+F\+Fs finding and B\+C\+F\+Fs writing. 
@@ -195,33 +160,23 @@ Does conflict analysis, B\+C\+F\+Fs finding and B\+C\+F\+Fs writing.
 \end{DoxySeeAlso}
 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d7/d79/classbrain_adec5742918fedd1636a6152502bd409c_cgraph}
-\end{center}
-\end{figure}
+Here is the call graph for this function\+:
+% FIG 9
 
 
 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d7/d79/classbrain_adec5742918fedd1636a6152502bd409c_icgraph}
-\end{center}
-\end{figure}
+Here is the caller graph for this function\+:
+% FIG 10
 
 
-\hypertarget{classbrain_a8524441f8b863aec8fe2cc9c3ad2d21a}{\index{brain@{brain}!think@{think}}
+\index{brain@{brain}!think@{think}}
 \index{think@{think}!brain@{brain}}
-\subsubsection[{think}]{\setlength{\rightskip}{0pt plus 5cm}void brain\+::think (
+\subsubsection[{\texorpdfstring{think()}{think()}}]{\setlength{\rightskip}{0pt plus 5cm}void brain\+::think (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classbrain_a8524441f8b863aec8fe2cc9c3ad2d21a}
+)}\hypertarget{classbrain_a8524441f8b863aec8fe2cc9c3ad2d21a}{}\label{classbrain_a8524441f8b863aec8fe2cc9c3ad2d21a}
 
 
 This is the main processing function to solve an instance. It get called by solve\+\_\+instance. 
@@ -231,33 +186,23 @@ This is the main processing function to solve an instance. It get called by solv
 \end{DoxySeeAlso}
 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d7/d79/classbrain_a8524441f8b863aec8fe2cc9c3ad2d21a_cgraph}
-\end{center}
-\end{figure}
+Here is the call graph for this function\+:
+% FIG 11
 
 
 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d7/d79/classbrain_a8524441f8b863aec8fe2cc9c3ad2d21a_icgraph}
-\end{center}
-\end{figure}
+Here is the caller graph for this function\+:
+% FIG 12
 
 
-\hypertarget{classbrain_a2daa8c1c03eea62a51a359470bb64cc7}{\index{brain@{brain}!solve\+\_\+instance@{solve\+\_\+instance}}
+\index{brain@{brain}!solve\+\_\+instance@{solve\+\_\+instance}}
 \index{solve\+\_\+instance@{solve\+\_\+instance}!brain@{brain}}
-\subsubsection[{solve\+\_\+instance}]{\setlength{\rightskip}{0pt plus 5cm}void brain\+::solve\+\_\+instance (
+\subsubsection[{\texorpdfstring{solve\+\_\+instance(bool load\+\_\+it)}{solve_instance(bool load_it)}}]{\setlength{\rightskip}{0pt plus 5cm}void brain\+::solve\+\_\+instance (
 \begin{DoxyParamCaption}
 \item[{bool}]{load\+\_\+it}
 \end{DoxyParamCaption}
-)}}\label{classbrain_a2daa8c1c03eea62a51a359470bb64cc7}
+)}\hypertarget{classbrain_a2daa8c1c03eea62a51a359470bb64cc7}{}\label{classbrain_a2daa8c1c03eea62a51a359470bb64cc7}
 
 
 This is the starting point to solve any instance. It is the main function of the implementation. 
@@ -272,24 +217,14 @@ To better understand the implementation have a look at \hyperlink{macro__algorit
 \end{DoxySeeAlso}
 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{d7/d79/classbrain_a2daa8c1c03eea62a51a359470bb64cc7_cgraph}
-\end{center}
-\end{figure}
+Here is the call graph for this function\+:
+% FIG 13
 
 
 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=312pt]{d7/d79/classbrain_a2daa8c1c03eea62a51a359470bb64cc7_icgraph}
-\end{center}
-\end{figure}
+Here is the caller graph for this function\+:
+% FIG 14
 
 
 

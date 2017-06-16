@@ -1,0 +1,12 @@
+digraph "skeleton_glb"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="skeleton_glb",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" kg_tmp_cnf" ];
+  Node2 [label="canon_cnf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/deb/classcanon__cnf.html",tooltip="A canon_cnf is a BCFF. An stabilized sub-formula. "];
+  Node2 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cf_tauto_cnf\ncf_guide_cnf" ];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cf_inst_inf" ];
+  Node3 [label="instance_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dd0/classinstance__info.html",tooltip="Class that holds an instance data. "];
+}
