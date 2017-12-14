@@ -28,7 +28,7 @@ Pigeon Hole Principle (PHP) instances of the SAT problem, and still be competiti
 
 <p>
 Ben-Jose is been reimplemented from scratch. It's algorithm has been redesigned to be highly parallel while preserving the proposed trainable <a href="https://github.com/ben-jose/ben-jose/raw/master/doc/ben-jose.pdf">
-strategy</a>. An asynchronous messaging library <a href="https://messaging-cells.github.io/">Messaging Cells</a> was developed for the <a href="http://parallella.org/">Parallella board</a> and an implementation for the <a href="http://parallel.princeton.edu/openpiton/">OpenPiton architecture</a> is going to be developed in order to implement the new algorithm. It is research work in progress. 
+strategy</a>. An asynchronous messaging library <a href="https://messaging-cells.github.io/">Messaging Cells</a> was developed in order to implement the new algorithm. It is research work in progress. 
 
 <p>
 Current ben-jose never left pre-alpha stage. It's current state is just a proof of concept tool for the <a href="https://github.com/ben-jose/ben-jose/raw/master/doc/ben-jose.pdf">proposed</a> general strategy to solve SAT problems. It is the result of more than ten years of research in SAT solving.
