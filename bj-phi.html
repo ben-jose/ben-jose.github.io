@@ -75,7 +75,10 @@
 <p>
 Tha bj-phi program that comes with the library generates HTML pages with 
 <a href="http://js.cytoscape.org/">cytoscape.js</a> graphs to visualize the solving of 
-Pigeon Hole Principle (PHP) instances.
+<a href="https://en.wikipedia.org/wiki/Pigeonhole_principle">Pigeon Hole Principle (PHP)</a> instances. 
+
+<p>
+This example shows that the ben-jose SAT solver can be trained and that it generates short proofs for Pigeon Hole Principle instances.
 
 <p>
 Assuming the program ''bj-phi'' is in the path, and from the source tree directory, do:
@@ -98,7 +101,7 @@ will execute the bj-phi program for PHP-4 and it will use the file
 to configure the debugging system to generate an HTML log file of the the solving process for PHP-4. 
 
 <div class="alert alert-warning" role="alert">
-The second run generates different HTML because it does only <strong>one</strong> backtrack.
+The second run generates different HTML because it does only <strong>one</strong> backtrack. Tha means that the solver uses previous results or training to solve any future instance in less number of steps (even shorter proofs based on previous proofs).
 </div>
 
 <p>
