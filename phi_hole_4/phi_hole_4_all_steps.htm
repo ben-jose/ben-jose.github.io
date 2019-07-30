@@ -1,0 +1,1633 @@
+<html>
+	<head>
+		<title>phi_hole_4 debug output</title>
+		 <script src='draw_cnf_js_lib/cytoscape.js'></script>
+		 <script src='draw_cnf_js_lib/show_cnf_fn.js'></script>
+		 <style>
+		 pre {
+			 white-space: pre-wrap;       /* css-3 */
+			 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+			 white-space: -pre-wrap;      /* Opera 4-6 */
+			 white-space: -o-pre-wrap;    /* Opera 7 */
+			 word-wrap: break-word;       /* Internet Explorer 5.5+ */
+		 }
+		 </style>
+	</head>
+	<body>
+	<pre>
+<H1>
+phi_hole_4 debug output
+</H1>
+<button onclick='export_all_gphs()'>Freeze for printing</button>
+<select id='gph_theme' onclick='change_theme()'>
+	 <option value='white_nodes' selected='selected'>White_nodes_graph_theme
+	 <option value='black_nodes'>Black_nodes_graph_theme
+</select>
+
+
+ck71.0.1.FINDING_PHI_REPE
+ck40.0.5.bef_ana=
+TRAIL=[L1C0/1\.t1 o3/-5\.t2 o2/-4\.t2 o1/-3\.t2 o0/-2\.t2 L2C1/-16\.t3.m.1 L2/-11\.t3.m.1 L2/-6\.t3.m.1 L3C2/7\.t4 o16/-10\.t5 o15/-9\.t5 o14/-8\.t5 L4C3/-17\.t6.m.3 L4/-12\.t6.m.3 L5C4/-13\.t7 o42/18\.t8 o38/-20\.t9 o37/-19\.t9 o44/15\.t10 o43/14\.t10 ]
+ num_conf=1 br_lv=5 br_ti=10
+ck40.0.5.<H1>out_rsn=</H1>dt={ mots=[o2\4/.t2 o3\5/.t2 o15\9/.t5 o16\10/.t5 ]  qu:o42\-18/.t8 lv:3}
+ck39.0.5.#f=1.1.out_nmp=ca{ {na_idx=4.tk=[rc:5 lv:5].cho=-13}T.C.(0xf03200) cand_tk=[rc:5 lv:5] o_cho=L5C4/-13\.t7 #sub=0 o_lv=5 cand=L5C4/-13\.t7
+ all_sub=[{na_idx=4.tk=[rc:5 lv:5].cho=-13}]
+ #qu=6
+ nmp_quas=[o43/14\.t10 o44/15\.t10 o37/-19\.t9 o38/-20\.t9 o42/18\.t8 L5C4/-13\.t7 ] 
+
+ nmp_neus_idxs=[43.44.37.38.42.39.28.29.27.]
+}
+ qua= L5C4/-13\.t7 q_lv= 5 nxt_lv= 3
+ck39.0.5.#f=1.1 (q_lv > (nxt_lv + 1))
+ck39.0.5.#f=1.2.out_nmp=ca{ {M.na_idx=3.tk=[rc:3 lv:4].cho=-17}C.(0xf02c88) cand_tk=[rc:3 lv:4] o_cho=L4C3/-17\.t6.m.3 #sub=1 o_lv=4 cand=L4C3/-17\.t6.m.3
+ all_sub=[{M.na_idx=3.tk=[rc:3 lv:4].cho=-17} ->> {na_idx=4.tk=[rc:5 lv:5].cho=-13}]
+ #qu=8
+ nmp_quas=[o43/14\.t10 o44/15\.t10 o37/-19\.t9 o38/-20\.t9 o42/18\.t8 L5C4/-13\.t7 L4/-12\.t6.m.3 L4C3/-17\.t6.m.3 ] 
+
+ nmp_neus_idxs=[43.44.37.38.42.39.28.29.27.24.34.36.35.26.25.]
+}
+ qua= L4C3/-17\.t6.m.3 q_lv= 4 nxt_lv= 3
+ck39.0.5.quick_find failed nmp=0xf03200
+ck47.0.5.map_oper skip (prepare == false) nmp={na_idx=4.tk=[rc:5 lv:5].cho=-13}
+ck39.0.5.#f=1.CANNOT find na_idx=3
+ nxt_rsn=dt={ mots=[o2\4/.t2 o3\5/.t2 o15\9/.t5 o16\10/.t5 ]  qu:o42\-18/.t8 lv:3}
+ nxt_lv=3
+[] 
+ck70.0.5.#f=1.2.find_analysis
+		 <H1>BRN_recoil=5</H1>
+<H2>0.5.<H1>FindNOT</H1> {na_idx=4.tk=[rc:5 lv:5].cho=-13} '[] '</H2>
+nmp=ca{ {na_idx=4.tk=[rc:5 lv:5].cho=-13}T.C.(0xf03200) cand_tk=[rc:5 lv:5] o_cho=L5C4/-13\.t7 #sub=0 o_lv=5 cand=L5C4/-13\.t7
+ all_sub=[{na_idx=4.tk=[rc:5 lv:5].cho=-13}]
+ #qu=6
+ nmp_quas=[o43/14\.t10 o44/15\.t10 o37/-19\.t9 o38/-20\.t9 o42/18\.t8 L5C4/-13\.t7 ] 
+
+ nmp_neus_idxs=[43.44.37.38.42.39.28.29.27.]
+}
+ is_MONO=0 #sub=0 has_sub=0
+all_sub=[{na_idx=4.tk=[rc:5 lv:5].cho=-13}]
+
+ALL_MONOS=[ (16.1), (11.1), (6.1), (17.3), (12.3)]
+nmp_phi_id='[] '
+min_sha=invalid_minsha
+tauto_sha=invalid_sha
+guide_sha=invalid_sha
+quick_sha=invalid_sha
+TAUTO_path=
+invalid_path
+COL=
+[]
+
+
+
+		 Graph #1
+		 <div id='cnf_graph_1' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('1')">No labels</button><button onclick="update_png('1')">Update PNG</button><button onclick="switch_theme('1')">Switch theme</button>
+
+		 <div id='png_cnf_graph_1' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_1.js'></script>
+		 <script>show_cnf('cnf_graph_1', nmp_grph_1, 'preset', all_plays_1);
+		 </script>
+
+
+
+ck40.0.5.AFT_ana=
+TRAIL=[L1C0/1\.t1 o3/-5\.t2 o2/-4\.t2 o1/-3\.t2 o0/-2\.t2 L2C1/-16\.t3.m.1 L2/-11\.t3.m.1 L2/-6\.t3.m.1 L3C2/7\.t4 o16/-10\.t5 o15/-9\.t5 o14/-8\.t5 L4C3/-17\.t6.m.3 L4/-12\.t6.m.3 L5C4/-13\.t7 o42/18\.t8 o38/-20\.t9 o37/-19\.t9 o44/15\.t10 o43/14\.t10 ]
+dt={ mots=[o2\4/.t2 o3\5/.t2 o15\9/.t5 o16\10/.t5 ]  qu:o42\-18/.t8 lv:3}
+
+ck40.1.6.bef_ana=
+TRAIL=[L1C0/1\.t1 o3/-5\.t2 o2/-4\.t2 o1/-3\.t2 o0/-2\.t2 L2C1/-16\.t3.m.1 L2/-11\.t3.m.1 L2/-6\.t3.m.1 L3C2/7\.t4 o16/-10\.t5 o15/-9\.t5 o14/-8\.t5 C3+45/-18\.t6 o42/13\.t7 o28/-15\.t8 o27/-14\.t8 o24/-12\.t8 o44/20\.t9 o43/19\.t9 o36/-17\.t10 ]
+ num_conf=1 br_lv=3 br_ti=10
+ck55.1.6.NOT_CAND_to_wrt qua=L3C2/7\.t4 not-has-learned_source.
+ck40.1.6.<H1>out_rsn=</H1>dt={ mots=[o2\4/.t2 o3\5/.t2 o1\3/.t2 ]  qu:L3\-7/.t4 lv:1}
+ck39.1.6.#f=2.find.NULL_NMP !to_wrt.empty && h_s_lv+1
+ck47.1.6.map_oper_go nmp={na_idx=4.tk=[rc:5 lv:5].cho=-13}
+ck70.1.6.		 <H1>BRN_recoil=6</H1>
+<H2>1.6.WriteYES {na_idx=4.tk=[rc:5 lv:5].cho=-13} '[0 0 3 3 ] '</H2>
+nmp=ca{ {na_idx=4.tk=[rc:5 lv:5].cho=-13}T.(0xf03200) cand_tk=[rc:5 lv:5] o_cho=o42\-13/.t7 #sub=0 o_lv=5
+ all_sub=[{na_idx=4.tk=[rc:5 lv:5].cho=-13}]
+ #qu=6
+ nmp_quas=[o27\14/.t8 o28\15/.t8 o43\-19/.t9 o44\-20/.t9 +45\18/.t6 o42\-13/.t7 ] 
+
+ nmp_neus_idxs=[43.44.37.38.42.39.28.29.27.]
+}
+ is_MONO=0 #sub=0 has_sub=0
+all_sub=[{na_idx=4.tk=[rc:5 lv:5].cho=-13}]
+
+ALL_MONOS=[ (16.1), (11.1), (6.1), (17.3), (12.3)]
+nmp_phi_id='[0 0 3 3 ] '
+min_sha=d1f7284949
+tauto_sha=260cd43295986b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c
+guide_sha=7fc4ae7bef22ef478db02579b447f3c798ea02866e16c002e0fc8c9086c9a489
+quick_sha=/SKELETON/REF/cnf+f94/dd90/e0a8/b05ea9e180ec5220315f65222457985d606eda4f3bc47fec26352+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+260/cd43/2959/86b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c+oo/ed4ca2b3e9/
+COL=
+[ -18=1 -20=2 -19=3 -13=4 -15=5 -14=6]
+
+
+
+		 Graph #2
+		 <div id='cnf_graph_2' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('2')">No labels</button><button onclick="update_png('2')">Update PNG</button><button onclick="switch_theme('2')">Switch theme</button>
+
+		 <div id='png_cnf_graph_2' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_2.js'></script>
+		 <script>show_cnf('cnf_graph_2', nmp_grph_2, 'preset', all_plays_2);
+		 </script>
+
+
+
+ck71.1.6.ADDED wrt_id=[0 0 3 3 ] 
+ wrt_phi_id_str='[0 0 3 3 ] '
+
+ck71.1.6.FIRST_WRITE_OK for wrt_id=[0 0 3 3 ] 
+ wrt_phi_id_str='[0 0 3 3 ] '
+ cur_sha=260cd43295986b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c
+
+ck40.1.6.AFT_ana=
+TRAIL=[L1C0/1\.t1 o3/-5\.t2 o2/-4\.t2 o1/-3\.t2 o0/-2\.t2 L2C1/-16\.t3.m.1 L2/-11\.t3.m.1 L2/-6\.t3.m.1 L3C2/7\.t4 o16/-10\.t5 o15/-9\.t5 o14/-8\.t5 C3+45/-18\.t6 o42/13\.t7 o28/-15\.t8 o27/-14\.t8 o24/-12\.t8 o44/20\.t9 o43/19\.t9 o36/-17\.t10 ]
+dt={ mots=[o2\4/.t2 o3\5/.t2 o1\3/.t2 ]  qu:L3\-7/.t4 lv:1}
+
+ck40.2.10.bef_ana=
+TRAIL=[L1C0/1\.t1 o3/-5\.t2 o2/-4\.t2 o1/-3\.t2 o0/-2\.t2 C1+45/-7\.t3 L2C5/-16\.t4.m.1 L2/-11\.t4.m.1 L2/-6\.t4.m.1 L3C6/10\.t5 o19/-9\.t6 o18/-8\.t6 L4C7/-20\.t7.m.3 L4/-15\.t7.m.3 L5C8/-17\.t8 o41/12\.t9 o25/-14\.t10 o24/-13\.t10 o43/19\.t11 o42/18\.t11 ]
+ num_conf=1 br_lv=5 br_ti=11
+ck40.2.10.<H1>out_rsn=</H1>dt={ mots=[o1\3/.t2 o2\4/.t2 o18\8/.t6 o19\9/.t6 ]  qu:o41\-12/.t9 lv:3}
+ck39.2.10.#f=3.1.out_nmp=ca{ {na_idx=8.tk=[rc:10 lv:6].cho=-17}T.C.(0xf047e0) cand_tk=[rc:10 lv:6] o_cho=L5C8/-17\.t8 #sub=0 o_lv=5 cand=L5C8/-17\.t8
+ all_sub=[{na_idx=8.tk=[rc:10 lv:6].cho=-17}]
+ #qu=6
+ nmp_quas=[o42/18\.t11 o43/19\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C8/-17\.t8 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.27.35.37.34.]
+}
+ qua= L5C8/-17\.t8 q_lv= 5 nxt_lv= 3
+ck39.2.10.#f=3.1 (q_lv > (nxt_lv + 1))
+ck39.2.10.#f=3.2.out_nmp=ca{ {M.na_idx=7.tk=[rc:8 lv:5].cho=-20}C.(0xf04268) cand_tk=[rc:8 lv:5] o_cho=L4C7/-20\.t7.m.3 #sub=1 o_lv=4 cand=L4C7/-20\.t7.m.3
+ all_sub=[{M.na_idx=7.tk=[rc:8 lv:5].cho=-20} ->> {na_idx=8.tk=[rc:10 lv:6].cho=-17}]
+ #qu=8
+ nmp_quas=[o42/18\.t11 o43/19\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C8/-17\.t8 L4/-15\.t7.m.3 L4C7/-20\.t7.m.3 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.27.35.37.34.36.26.29.28.39.38.]
+}
+ qua= L4C7/-20\.t7.m.3 q_lv= 4 nxt_lv= 3
+ck47.2.10.map_oper_go nmp={na_idx=8.tk=[rc:10 lv:6].cho=-17}
+ck70.2.10.		 <H1>BRN_recoil=10</H1>
+<H2>2.10.FindYES {na_idx=8.tk=[rc:10 lv:6].cho=-17} '[0 0 3 3 ] '</H2>
+nmp=ca{ {na_idx=8.tk=[rc:10 lv:6].cho=-17}T.C.(0xf047e0) cand_tk=[rc:10 lv:6] o_cho=L5C8/-17\.t8 #sub=0 o_lv=5 cand=L5C8/-17\.t8
+ all_sub=[{na_idx=8.tk=[rc:10 lv:6].cho=-17}]
+ #qu=6
+ nmp_quas=[o42/18\.t11 o43/19\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C8/-17\.t8 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.27.35.37.34.]
+}
+ is_MONO=0 #sub=0 has_sub=0
+all_sub=[{na_idx=8.tk=[rc:10 lv:6].cho=-17}]
+
+ALL_MONOS=[ (16.1), (11.1), (6.1), (20.3), (15.3)]
+nmp_phi_id='[0 0 3 3 ] '
+min_sha=d1f7284949
+tauto_sha=260cd43295986b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c
+guide_sha=7fc4ae7bef22ef478db02579b447f3c798ea02866e16c002e0fc8c9086c9a489
+quick_sha=/SKELETON/REF/cnf+f94/dd90/e0a8/b05ea9e180ec5220315f65222457985d606eda4f3bc47fec26352+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+260/cd43/2959/86b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c+oo/ed4ca2b3e9/
+COL=
+[ -12=1 -13=2 -14=3 -17=4 -18=5 -19=6]
+
+
+
+		 Graph #3
+		 <div id='cnf_graph_3' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('3')">No labels</button><button onclick="update_png('3')">Update PNG</button><button onclick="switch_theme('3')">Switch theme</button>
+
+		 <div id='png_cnf_graph_3' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_3.js'></script>
+		 <script>show_cnf('cnf_graph_3', nmp_grph_3, 'preset', all_plays_3);
+		 </script>
+
+
+
+ck39.2.10.#f=3.2.found_nmp=ca{ {na_idx=8.tk=[rc:10 lv:6].cho=-17}T.C.(0xf047e0) cand_tk=[rc:10 lv:6] o_cho=L5C8/-17\.t8 #sub=0 o_lv=5 cand=L5C8/-17\.t8
+ all_sub=[{na_idx=8.tk=[rc:10 lv:6].cho=-17}]
+ #qu=6
+ nmp_quas=[o42/18\.t11 o43/19\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C8/-17\.t8 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.27.35.37.34.]
+}
+ out_nmp=ca{ {M.na_idx=7.tk=[rc:8 lv:5].cho=-20}C.(0xf04268) cand_tk=[rc:8 lv:5] o_cho=L4C7/-20\.t7.m.3 #sub=1 o_lv=4 cand=L4C7/-20\.t7.m.3
+ all_sub=[{M.na_idx=7.tk=[rc:8 lv:5].cho=-20} ->> {na_idx=8.tk=[rc:10 lv:6].cho=-17}]
+ #qu=8
+ nmp_quas=[o42/18\.t11 o43/19\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C8/-17\.t8 L4/-15\.t7.m.3 L4C7/-20\.t7.m.3 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.27.35.37.34.36.26.29.28.39.38.]
+}
+
+ck55.2.10.NOT_CAND_to_wrt qua=L3C6/10\.t5 not-has-learned_source.
+ck39.2.10.#f=3.3.out_nmp=ca{ {na_idx=6.tk=[rc:8 lv:4].cho=10}C.(0xf03cf0) cand_tk=[rc:8 lv:4] o_cho=L3C6/10\.t5 #sub=2 o_lv=3 cand=L3C6/10\.t5
+ all_sub=[{na_idx=6.tk=[rc:8 lv:4].cho=10} ->> {M.na_idx=7.tk=[rc:8 lv:5].cho=-20} ->> {na_idx=8.tk=[rc:10 lv:6].cho=-17}]
+ #qu=11
+ nmp_quas=[o42/18\.t11 o43/19\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C8/-17\.t8 L4/-15\.t7.m.3 L4C7/-20\.t7.m.3 o18/-8\.t6 o19/-9\.t6 L3C6/10\.t5 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.18.19.27.35.37.34.36.26.29.28.39.38.17.44.]
+}
+ qua= L3C6/10\.t5 q_lv= 3 nxt_lv= 1
+ck39.2.10.#f=3.3 (q_lv > (nxt_lv + 1))
+ck39.2.10.#f=3.4.out_nmp=ca{H. {M.na_idx=5.tk=[rc:7 lv:3].cho=-16}C.(0xf03778) cand_tk=[rc:7 lv:3] o_cho=L2C5/-16\.t4.m.1 #sub=3 o_lv=2 cand=L2C5/-16\.t4.m.1
+ all_sub=[{M.na_idx=5.tk=[rc:7 lv:3].cho=-16} ->> {na_idx=6.tk=[rc:8 lv:4].cho=10} ->> {M.na_idx=7.tk=[rc:8 lv:5].cho=-20} ->> {na_idx=8.tk=[rc:10 lv:6].cho=-17}]
+ #qu=14
+ nmp_quas=[o42/18\.t11 o43/19\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C8/-17\.t8 L4/-15\.t7.m.3 L4C7/-20\.t7.m.3 o18/-8\.t6 o19/-9\.t6 L3C6/10\.t5 L2/-6\.t4.m.1 L2/-11\.t4.m.1 L2C5/-16\.t4.m.1 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.18.19.27.35.37.34.36.26.29.28.39.38.17.44.30.20.22.21.32.31.33.23.13.12.11.]
+}
+ qua= L2C5/-16\.t4.m.1 q_lv= 2 nxt_lv= 1
+ck39.2.10.quick_find failed nmp=0xf03cf0
+ck47.2.10.map_oper skip (prepare == false) nmp={na_idx=6.tk=[rc:8 lv:4].cho=10}
+ck39.2.10.#f=3.CANNOT find na_idx=5
+ nxt_rsn=dt={ mots=[o1\3/.t2 o2\4/.t2 +45\7/.t3 o0\2/.t2 ]  qu:L3\-10/.t5 lv:1}
+ nxt_lv=1
+[] 
+ck70.2.10.#f=3.4.find_analysis
+		 <H1>BRN_recoil=10</H1>
+<H2>2.10.<H1>FindNOT</H1> {na_idx=6.tk=[rc:8 lv:4].cho=10} '[] '</H2>
+nmp=ca{ {na_idx=6.tk=[rc:8 lv:4].cho=10}C.(0xf03cf0) cand_tk=[rc:8 lv:4] o_cho=L3C6/10\.t5 #sub=2 o_lv=3 cand=L3C6/10\.t5
+ all_sub=[{na_idx=6.tk=[rc:8 lv:4].cho=10} ->> {M.na_idx=7.tk=[rc:8 lv:5].cho=-20} ->> {na_idx=8.tk=[rc:10 lv:6].cho=-17}]
+ #qu=11
+ nmp_quas=[o42/18\.t11 o43/19\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C8/-17\.t8 L4/-15\.t7.m.3 L4C7/-20\.t7.m.3 o18/-8\.t6 o19/-9\.t6 L3C6/10\.t5 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.18.19.27.35.37.34.36.26.29.28.39.38.17.44.]
+}
+ is_MONO=0 #sub=2 has_sub=1
+all_sub=[{na_idx=6.tk=[rc:8 lv:4].cho=10} ->> {M.na_idx=7.tk=[rc:8 lv:5].cho=-20} ->> {na_idx=8.tk=[rc:10 lv:6].cho=-17}]
+
+ALL_MONOS=[ (16.1), (11.1), (6.1), (20.3), (15.3)]
+nmp_phi_id='[] '
+min_sha=invalid_minsha
+tauto_sha=invalid_sha
+guide_sha=invalid_sha
+quick_sha=invalid_sha
+TAUTO_path=
+invalid_path
+COL=
+[]
+
+
+
+		 Graph #4
+		 <div id='cnf_graph_4' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('4')">No labels</button><button onclick="update_png('4')">Update PNG</button><button onclick="switch_theme('4')">Switch theme</button>
+
+		 <div id='png_cnf_graph_4' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_4.js'></script>
+		 <script>show_cnf('cnf_graph_4', nmp_grph_4, 'preset', all_plays_4);
+		 </script>
+
+
+
+ck40.2.10.AFT_ana=
+TRAIL=[L1C0/1\.t1 o3/-5\.t2 o2/-4\.t2 o1/-3\.t2 o0/-2\.t2 C1+45/-7\.t3 L2C5/-16\.t4.m.1 L2/-11\.t4.m.1 L2/-6\.t4.m.1 L3C6/10\.t5 o19/-9\.t6 o18/-8\.t6 L4C7/-20\.t7.m.3 L4/-15\.t7.m.3 L5C8/-17\.t8 o41/12\.t9 o25/-14\.t10 o24/-13\.t10 o43/19\.t11 o42/18\.t11 ]
+dt={ mots=[o1\3/.t2 o2\4/.t2 +45\7/.t3 o0\2/.t2 ]  qu:L3\-10/.t5 lv:1}
+
+ck40.3.14.bef_ana=
+TRAIL=[L1C0/1\.t1 o3/-5\.t2 o2/-4\.t2 o1/-3\.t2 o0/-2\.t2 C1+45/-7\.t3 C5+46/-10\.t4 L2C9/-16\.t5.m.1 L2/-11\.t5.m.1 L2/-6\.t5.m.1 L3C10/9\.t6 o17/-8\.t7 L4C11/-19\.t8.m.3 L4/-14\.t8.m.3 L5C12/-20\.t9 o44/15\.t10 o28/-13\.t11 o26/-12\.t11 o42/18\.t12 o41/17\.t12 ]
+ num_conf=1 br_lv=5 br_ti=12
+ck40.3.14.<H1>out_rsn=</H1>dt={ mots=[+45\7/.t3 o0\2/.t2 o1\3/.t2 o17\8/.t7 ]  qu:o44\-15/.t10 lv:3}
+ck39.3.14.#f=4.1.out_nmp=ca{ {na_idx=12.tk=[rc:14 lv:7].cho=-20}T.C.(0xf05dc0) cand_tk=[rc:14 lv:7] o_cho=L5C12/-20\.t9 #sub=0 o_lv=5 cand=L5C12/-20\.t9
+ all_sub=[{na_idx=12.tk=[rc:14 lv:7].cho=-20}]
+ #qu=6
+ nmp_quas=[o41/17\.t12 o42/18\.t12 o26/-12\.t11 o28/-13\.t11 o44/15\.t10 L5C12/-20\.t9 ] 
+
+ nmp_neus_idxs=[41.42.26.28.44.24.38.36.34.]
+}
+ qua= L5C12/-20\.t9 q_lv= 5 nxt_lv= 3
+ck39.3.14.#f=4.1 (q_lv > (nxt_lv + 1))
+ck39.3.14.#f=4.2.out_nmp=ca{ {M.na_idx=11.tk=[rc:12 lv:6].cho=-19}C.(0xf05848) cand_tk=[rc:12 lv:6] o_cho=L4C11/-19\.t8.m.3 #sub=1 o_lv=4 cand=L4C11/-19\.t8.m.3
+ all_sub=[{M.na_idx=11.tk=[rc:12 lv:6].cho=-19} ->> {na_idx=12.tk=[rc:14 lv:7].cho=-20}]
+ #qu=8
+ nmp_quas=[o41/17\.t12 o42/18\.t12 o26/-12\.t11 o28/-13\.t11 o44/15\.t10 L5C12/-20\.t9 L4/-14\.t8.m.3 L4C11/-19\.t8.m.3 ] 
+
+ nmp_neus_idxs=[41.42.26.28.44.24.38.36.34.39.29.27.25.37.35.]
+}
+ qua= L4C11/-19\.t8.m.3 q_lv= 4 nxt_lv= 3
+ck47.3.14.map_oper_go nmp={na_idx=12.tk=[rc:14 lv:7].cho=-20}
+ck70.3.14.		 <H1>BRN_recoil=14</H1>
+<H2>3.14.FindYES {na_idx=12.tk=[rc:14 lv:7].cho=-20} '[0 0 3 3 ] '</H2>
+nmp=ca{ {na_idx=12.tk=[rc:14 lv:7].cho=-20}T.C.(0xf05dc0) cand_tk=[rc:14 lv:7] o_cho=L5C12/-20\.t9 #sub=0 o_lv=5 cand=L5C12/-20\.t9
+ all_sub=[{na_idx=12.tk=[rc:14 lv:7].cho=-20}]
+ #qu=6
+ nmp_quas=[o41/17\.t12 o42/18\.t12 o26/-12\.t11 o28/-13\.t11 o44/15\.t10 L5C12/-20\.t9 ] 
+
+ nmp_neus_idxs=[41.42.26.28.44.24.38.36.34.]
+}
+ is_MONO=0 #sub=0 has_sub=0
+all_sub=[{na_idx=12.tk=[rc:14 lv:7].cho=-20}]
+
+ALL_MONOS=[ (16.1), (11.1), (6.1), (19.3), (14.3)]
+nmp_phi_id='[0 0 3 3 ] '
+min_sha=d1f7284949
+tauto_sha=260cd43295986b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c
+guide_sha=7fc4ae7bef22ef478db02579b447f3c798ea02866e16c002e0fc8c9086c9a489
+quick_sha=/SKELETON/REF/cnf+f94/dd90/e0a8/b05ea9e180ec5220315f65222457985d606eda4f3bc47fec26352+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+260/cd43/2959/86b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c+oo/ed4ca2b3e9/
+COL=
+[ -15=1 -12=2 -13=3 -20=4 -17=5 -18=6]
+
+
+
+		 Graph #5
+		 <div id='cnf_graph_5' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('5')">No labels</button><button onclick="update_png('5')">Update PNG</button><button onclick="switch_theme('5')">Switch theme</button>
+
+		 <div id='png_cnf_graph_5' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_5.js'></script>
+		 <script>show_cnf('cnf_graph_5', nmp_grph_5, 'preset', all_plays_5);
+		 </script>
+
+
+
+ck39.3.14.#f=4.2.found_nmp=ca{ {na_idx=12.tk=[rc:14 lv:7].cho=-20}T.C.(0xf05dc0) cand_tk=[rc:14 lv:7] o_cho=L5C12/-20\.t9 #sub=0 o_lv=5 cand=L5C12/-20\.t9
+ all_sub=[{na_idx=12.tk=[rc:14 lv:7].cho=-20}]
+ #qu=6
+ nmp_quas=[o41/17\.t12 o42/18\.t12 o26/-12\.t11 o28/-13\.t11 o44/15\.t10 L5C12/-20\.t9 ] 
+
+ nmp_neus_idxs=[41.42.26.28.44.24.38.36.34.]
+}
+ out_nmp=ca{ {M.na_idx=11.tk=[rc:12 lv:6].cho=-19}C.(0xf05848) cand_tk=[rc:12 lv:6] o_cho=L4C11/-19\.t8.m.3 #sub=1 o_lv=4 cand=L4C11/-19\.t8.m.3
+ all_sub=[{M.na_idx=11.tk=[rc:12 lv:6].cho=-19} ->> {na_idx=12.tk=[rc:14 lv:7].cho=-20}]
+ #qu=8
+ nmp_quas=[o41/17\.t12 o42/18\.t12 o26/-12\.t11 o28/-13\.t11 o44/15\.t10 L5C12/-20\.t9 L4/-14\.t8.m.3 L4C11/-19\.t8.m.3 ] 
+
+ nmp_neus_idxs=[41.42.26.28.44.24.38.36.34.39.29.27.25.37.35.]
+}
+
+ck39.3.14.#f=4.3.out_nmp=ca{ {na_idx=10.tk=[rc:12 lv:5].cho=9}C.(0xf052d0) cand_tk=[rc:12 lv:5] o_cho=L3C10/9\.t6 #sub=2 o_lv=3 cand=L3C10/9\.t6
+ all_sub=[{na_idx=10.tk=[rc:12 lv:5].cho=9} ->> {M.na_idx=11.tk=[rc:12 lv:6].cho=-19} ->> {na_idx=12.tk=[rc:14 lv:7].cho=-20}]
+ #qu=10
+ nmp_quas=[o41/17\.t12 o42/18\.t12 o26/-12\.t11 o28/-13\.t11 o44/15\.t10 L5C12/-20\.t9 L4/-14\.t8.m.3 L4C11/-19\.t8.m.3 o17/-8\.t7 L3C10/9\.t6 ] 
+
+ nmp_neus_idxs=[41.42.26.28.44.17.24.38.36.34.39.29.27.25.37.35.43.]
+}
+ qua= L3C10/9\.t6 q_lv= 3 nxt_lv= 1
+ck39.3.14.#f=4.3 (q_lv > (nxt_lv + 1))
+ck39.3.14.#f=4.4.out_nmp=ca{H. {M.na_idx=9.tk=[rc:11 lv:4].cho=-16}C.(0xf04d58) cand_tk=[rc:11 lv:4] o_cho=L2C9/-16\.t5.m.1 #sub=3 o_lv=2 cand=L2C9/-16\.t5.m.1
+ all_sub=[{M.na_idx=9.tk=[rc:11 lv:4].cho=-16} ->> {na_idx=10.tk=[rc:12 lv:5].cho=9} ->> {M.na_idx=11.tk=[rc:12 lv:6].cho=-19} ->> {na_idx=12.tk=[rc:14 lv:7].cho=-20}]
+ #qu=13
+ nmp_quas=[o41/17\.t12 o42/18\.t12 o26/-12\.t11 o28/-13\.t11 o44/15\.t10 L5C12/-20\.t9 L4/-14\.t8.m.3 L4C11/-19\.t8.m.3 o17/-8\.t7 L3C10/9\.t6 L2/-6\.t5.m.1 L2/-11\.t5.m.1 L2C9/-16\.t5.m.1 ] 
+
+ nmp_neus_idxs=[41.42.26.28.44.17.24.38.36.34.39.29.27.25.37.35.43.33.23.21.20.31.30.32.22.12.11.]
+}
+ qua= L2C9/-16\.t5.m.1 q_lv= 2 nxt_lv= 1
+ck39.3.14.quick_find failed nmp=0xf052d0
+ck47.3.14.map_oper skip (prepare == false) nmp={na_idx=10.tk=[rc:12 lv:5].cho=9}
+ck39.3.14.#f=4.CANNOT find na_idx=9
+ nxt_rsn=dt={ mots=[+45\7/.t3 o0\2/.t2 o1\3/.t2 +46\10/.t4 o3\5/.t2 ]  qu:o17\8/.t7 lv:1}
+ nxt_lv=1
+[] 
+ck70.3.14.#f=4.4.find_analysis
+		 <H1>BRN_recoil=14</H1>
+<H2>3.14.<H1>FindNOT</H1> {na_idx=10.tk=[rc:12 lv:5].cho=9} '[] '</H2>
+nmp=ca{ {na_idx=10.tk=[rc:12 lv:5].cho=9}C.(0xf052d0) cand_tk=[rc:12 lv:5] o_cho=L3C10/9\.t6 #sub=2 o_lv=3 cand=L3C10/9\.t6
+ all_sub=[{na_idx=10.tk=[rc:12 lv:5].cho=9} ->> {M.na_idx=11.tk=[rc:12 lv:6].cho=-19} ->> {na_idx=12.tk=[rc:14 lv:7].cho=-20}]
+ #qu=10
+ nmp_quas=[o41/17\.t12 o42/18\.t12 o26/-12\.t11 o28/-13\.t11 o44/15\.t10 L5C12/-20\.t9 L4/-14\.t8.m.3 L4C11/-19\.t8.m.3 o17/-8\.t7 L3C10/9\.t6 ] 
+
+ nmp_neus_idxs=[41.42.26.28.44.17.24.38.36.34.39.29.27.25.37.35.43.]
+}
+ is_MONO=0 #sub=2 has_sub=1
+all_sub=[{na_idx=10.tk=[rc:12 lv:5].cho=9} ->> {M.na_idx=11.tk=[rc:12 lv:6].cho=-19} ->> {na_idx=12.tk=[rc:14 lv:7].cho=-20}]
+
+ALL_MONOS=[ (16.1), (11.1), (6.1), (19.3), (14.3)]
+nmp_phi_id='[] '
+min_sha=invalid_minsha
+tauto_sha=invalid_sha
+guide_sha=invalid_sha
+quick_sha=invalid_sha
+TAUTO_path=
+invalid_path
+COL=
+[]
+
+
+
+		 Graph #6
+		 <div id='cnf_graph_6' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('6')">No labels</button><button onclick="update_png('6')">Update PNG</button><button onclick="switch_theme('6')">Switch theme</button>
+
+		 <div id='png_cnf_graph_6' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_6.js'></script>
+		 <script>show_cnf('cnf_graph_6', nmp_grph_6, 'preset', all_plays_6);
+		 </script>
+
+
+
+ck40.3.14.AFT_ana=
+TRAIL=[L1C0/1\.t1 o3/-5\.t2 o2/-4\.t2 o1/-3\.t2 o0/-2\.t2 C1+45/-7\.t3 C5+46/-10\.t4 L2C9/-16\.t5.m.1 L2/-11\.t5.m.1 L2/-6\.t5.m.1 L3C10/9\.t6 o17/-8\.t7 L4C11/-19\.t8.m.3 L4/-14\.t8.m.3 L5C12/-20\.t9 o44/15\.t10 o28/-13\.t11 o26/-12\.t11 o42/18\.t12 o41/17\.t12 ]
+dt={ mots=[+45\7/.t3 o0\2/.t2 o1\3/.t2 +46\10/.t4 o3\5/.t2 ]  qu:o17\8/.t7 lv:1}
+
+ck40.4.17.bef_ana=
+TRAIL=[L1C0/1\.t1 o3/-5\.t2 o2/-4\.t2 o1/-3\.t2 o0/-2\.t2 C1+45/-7\.t3 C5+46/-10\.t4 C9+47/8\.t5 o17/-9\.t6 o11/-6\.t6 L2C13/-16\.t7.m.1 L2/-11\.t7.m.1 L2/-18\.t7.m.1 L2/-13\.t7.m.1 L3C14/-19\.t8 o43/14\.t9 o29/-15\.t10 o25/-12\.t10 o44/20\.t11 o41/17\.t11 ]
+ num_conf=1 br_lv=3 br_ti=11
+ck40.4.17.<H1>out_rsn=</H1>dt={ mots=[+45\7/.t3 o0\2/.t2 +46\10/.t4 o3\5/.t2 ]  qu:o43\-14/.t9 lv:1}
+ck39.4.17.#f=5.1.out_nmp=ca{ {na_idx=14.tk=[rc:17 lv:6].cho=-19}T.C.(0xf068b0) cand_tk=[rc:17 lv:6] o_cho=L3C14/-19\.t8 #sub=0 o_lv=3 cand=L3C14/-19\.t8
+ all_sub=[{na_idx=14.tk=[rc:17 lv:6].cho=-19}]
+ #qu=6
+ nmp_quas=[o41/17\.t11 o44/20\.t11 o25/-12\.t10 o29/-15\.t10 o43/14\.t9 L3C14/-19\.t8 ] 
+
+ nmp_neus_idxs=[41.44.25.29.43.26.39.36.35.]
+}
+ qua= L3C14/-19\.t8 q_lv= 3 nxt_lv= 1
+ck39.4.17.#f=5.1 (q_lv > (nxt_lv + 1))
+ck39.4.17.#f=5.2.out_nmp=ca{H. {M.na_idx=13.tk=[rc:15 lv:5].cho=-16}C.(0xf06338) cand_tk=[rc:15 lv:5] o_cho=L2C13/-16\.t7.m.1 #sub=1 o_lv=2 cand=L2C13/-16\.t7.m.1
+ all_sub=[{M.na_idx=13.tk=[rc:15 lv:5].cho=-16} ->> {na_idx=14.tk=[rc:17 lv:6].cho=-19}]
+ #qu=10
+ nmp_quas=[o41/17\.t11 o44/20\.t11 o25/-12\.t10 o29/-15\.t10 o43/14\.t9 L3C14/-19\.t8 L2/-13\.t7.m.1 L2/-18\.t7.m.1 L2/-11\.t7.m.1 L2C13/-16\.t7.m.1 ] 
+
+ nmp_neus_idxs=[41.44.25.29.43.26.39.36.35.31.21.37.32.27.22.28.23.24.20.38.33.34.30.]
+}
+ qua= L2C13/-16\.t7.m.1 q_lv= 2 nxt_lv= 1
+ck47.4.17.map_oper_go nmp={na_idx=14.tk=[rc:17 lv:6].cho=-19}
+ck70.4.17.		 <H1>BRN_recoil=17</H1>
+<H2>4.17.FindYES {na_idx=14.tk=[rc:17 lv:6].cho=-19} '[0 0 3 3 ] '</H2>
+nmp=ca{ {na_idx=14.tk=[rc:17 lv:6].cho=-19}T.C.(0xf068b0) cand_tk=[rc:17 lv:6] o_cho=L3C14/-19\.t8 #sub=0 o_lv=3 cand=L3C14/-19\.t8
+ all_sub=[{na_idx=14.tk=[rc:17 lv:6].cho=-19}]
+ #qu=6
+ nmp_quas=[o41/17\.t11 o44/20\.t11 o25/-12\.t10 o29/-15\.t10 o43/14\.t9 L3C14/-19\.t8 ] 
+
+ nmp_neus_idxs=[41.44.25.29.43.26.39.36.35.]
+}
+ is_MONO=0 #sub=0 has_sub=0
+all_sub=[{na_idx=14.tk=[rc:17 lv:6].cho=-19}]
+
+ALL_MONOS=[ (16.1), (11.1), (6.1), (18.1), (13.1)]
+nmp_phi_id='[0 0 3 3 ] '
+min_sha=d1f7284949
+tauto_sha=260cd43295986b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c
+guide_sha=7fc4ae7bef22ef478db02579b447f3c798ea02866e16c002e0fc8c9086c9a489
+quick_sha=/SKELETON/REF/cnf+f94/dd90/e0a8/b05ea9e180ec5220315f65222457985d606eda4f3bc47fec26352+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+260/cd43/2959/86b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c+oo/ed4ca2b3e9/
+COL=
+[ -14=1 -12=2 -15=3 -19=4 -17=5 -20=6]
+
+
+
+		 Graph #7
+		 <div id='cnf_graph_7' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('7')">No labels</button><button onclick="update_png('7')">Update PNG</button><button onclick="switch_theme('7')">Switch theme</button>
+
+		 <div id='png_cnf_graph_7' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_7.js'></script>
+		 <script>show_cnf('cnf_graph_7', nmp_grph_7, 'preset', all_plays_7);
+		 </script>
+
+
+
+ck39.4.17.#f=5.2.found_nmp=ca{ {na_idx=14.tk=[rc:17 lv:6].cho=-19}T.C.(0xf068b0) cand_tk=[rc:17 lv:6] o_cho=L3C14/-19\.t8 #sub=0 o_lv=3 cand=L3C14/-19\.t8
+ all_sub=[{na_idx=14.tk=[rc:17 lv:6].cho=-19}]
+ #qu=6
+ nmp_quas=[o41/17\.t11 o44/20\.t11 o25/-12\.t10 o29/-15\.t10 o43/14\.t9 L3C14/-19\.t8 ] 
+
+ nmp_neus_idxs=[41.44.25.29.43.26.39.36.35.]
+}
+ out_nmp=ca{H. {M.na_idx=13.tk=[rc:15 lv:5].cho=-16}C.(0xf06338) cand_tk=[rc:15 lv:5] o_cho=L2C13/-16\.t7.m.1 #sub=1 o_lv=2 cand=L2C13/-16\.t7.m.1
+ all_sub=[{M.na_idx=13.tk=[rc:15 lv:5].cho=-16} ->> {na_idx=14.tk=[rc:17 lv:6].cho=-19}]
+ #qu=10
+ nmp_quas=[o41/17\.t11 o44/20\.t11 o25/-12\.t10 o29/-15\.t10 o43/14\.t9 L3C14/-19\.t8 L2/-13\.t7.m.1 L2/-18\.t7.m.1 L2/-11\.t7.m.1 L2C13/-16\.t7.m.1 ] 
+
+ nmp_neus_idxs=[41.44.25.29.43.26.39.36.35.31.21.37.32.27.22.28.23.24.20.38.33.34.30.]
+}
+
+ck55.4.17.NOT_CAND_to_wrt qua=L1C0/1\.t1 not-has-learned_source.
+ck39.4.17.#f=5.2.find_stop_3. has_to_wrt && has_stup. nmp=ca{H. {M.na_idx=13.tk=[rc:15 lv:5].cho=-16}C.(0xf06338) cand_tk=[rc:15 lv:5] o_cho=L2C13/-16\.t7.m.1 #sub=1 o_lv=2 cand=L2C13/-16\.t7.m.1
+ all_sub=[{M.na_idx=13.tk=[rc:15 lv:5].cho=-16} ->> {na_idx=14.tk=[rc:17 lv:6].cho=-19}]
+ #qu=10
+ nmp_quas=[o41/17\.t11 o44/20\.t11 o25/-12\.t10 o29/-15\.t10 o43/14\.t9 L3C14/-19\.t8 L2/-13\.t7.m.1 L2/-18\.t7.m.1 L2/-11\.t7.m.1 L2C13/-16\.t7.m.1 ] 
+
+ nmp_neus_idxs=[41.44.25.29.43.26.39.36.35.31.21.37.32.27.22.28.23.24.20.38.33.34.30.]
+}
+ nxt_rsn=dt={ mots=[]  qu:L1\-1/.t1 lv:0}
+ck47.4.17.map_oper_go nmp={na_idx=10.tk=[rc:12 lv:5].cho=9}
+ck70.4.17.		 <H1>BRN_recoil=17</H1>
+<H2>4.17.WriteYES {na_idx=10.tk=[rc:12 lv:5].cho=9} '[0 2 4 4 ] '</H2>
+nmp=ca{ {na_idx=10.tk=[rc:12 lv:5].cho=9}(0xf052d0) cand_tk=[rc:12 lv:5] o_cho=o17\9/.t6 #sub=2 o_lv=3
+ all_sub=[{na_idx=10.tk=[rc:12 lv:5].cho=9} ->> {M.na_idx=11.tk=[rc:12 lv:6].cho=-19} ->> {na_idx=12.tk=[rc:14 lv:7].cho=-20}]
+ #qu=10
+ nmp_quas=[o41/17\.t11 L2\18/.t7.M.1 o25/-12\.t10 L2/-13\.t7.m.1 o29\15/.t10 o44\-20/.t11 o43\-14/.t9 L3C14/-19\.t8 +47\-8/.t5 o17\9/.t6 ] 
+
+ nmp_neus_idxs=[41.42.26.28.44.17.24.38.36.34.39.29.27.25.37.35.43.]
+}
+ is_MONO=0 #sub=2 has_sub=1
+all_sub=[{na_idx=10.tk=[rc:12 lv:5].cho=9} ->> {M.na_idx=11.tk=[rc:12 lv:6].cho=-19} ->> {na_idx=12.tk=[rc:14 lv:7].cho=-20}]
+
+ALL_MONOS=[ (16.1), (11.1), (6.1), (18.1), (13.1)]
+nmp_phi_id='[0 2 4 4 ] '
+min_sha=51f024c072
+tauto_sha=7244b6d5445e67d24fc0ccf86dfe968d2c02d9be38d0c7be50638c23ec6dcaa1
+guide_sha=0fdd8a3d84584564f1d2f9f012aa099c611ab91f9e7b6ffa58b0bd322e92acbc
+quick_sha=/SKELETON/REF/cnf+e83/2200/b4ab/8bc4fa0e8a32cd029241880e1e68e6f4d38d13ab6cd1a9bcbf69e+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+724/4b6d/5445/e67d24fc0ccf86dfe968d2c02d9be38d0c7be50638c23ec6dcaa1+oo/312616745c/
+COL=
+[ -15=1 20=2 18=3 17=4 -13=5 -12=6 8=7 -9=8 -19=9 -14=10]
+
+
+
+		 Graph #8
+		 <div id='cnf_graph_8' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('8')">No labels</button><button onclick="update_png('8')">Update PNG</button><button onclick="switch_theme('8')">Switch theme</button>
+
+		 <div id='png_cnf_graph_8' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_8.js'></script>
+		 <script>show_cnf('cnf_graph_8', nmp_grph_8, 'preset', all_plays_8);
+		 </script>
+
+
+
+ck71.4.17.ADDED wrt_id=[0 2 4 4 ] 
+ wrt_phi_id_str='[0 2 4 4 ] '
+
+ck71.4.17.FIRST_WRITE_OK for wrt_id=[0 2 4 4 ] 
+ wrt_phi_id_str='[0 2 4 4 ] '
+ cur_sha=7244b6d5445e67d24fc0ccf86dfe968d2c02d9be38d0c7be50638c23ec6dcaa1
+
+ck47.4.17.map_oper_go nmp={na_idx=6.tk=[rc:8 lv:4].cho=10}
+ck70.4.17.		 <H1>BRN_recoil=17</H1>
+<H2>4.17.WriteYES {na_idx=6.tk=[rc:8 lv:4].cho=10} '[0 3 4 4 ] '</H2>
+nmp=ca{ {na_idx=6.tk=[rc:8 lv:4].cho=10}(0xf03cf0) cand_tk=[rc:8 lv:4] o_cho=+46\10/.t4 #sub=2 o_lv=3
+ all_sub=[{na_idx=6.tk=[rc:8 lv:4].cho=10} ->> {M.na_idx=7.tk=[rc:8 lv:5].cho=-20} ->> {na_idx=8.tk=[rc:10 lv:6].cho=-17}]
+ #qu=11
+ nmp_quas=[L2\18/.t7.M.1 L3\19/.t8 L2/-13\.t7.m.1 o43\-14/.t9 o25\12/.t10 o41\-17/.t11 o29/-15\.t10 o44\-20/.t11 +47\-8/.t5 o17/-9\.t6 +46\10/.t4 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.18.19.27.35.37.34.36.26.29.28.39.38.17.44.]
+}
+ is_MONO=0 #sub=2 has_sub=1
+all_sub=[{na_idx=6.tk=[rc:8 lv:4].cho=10} ->> {M.na_idx=7.tk=[rc:8 lv:5].cho=-20} ->> {na_idx=8.tk=[rc:10 lv:6].cho=-17}]
+
+ALL_MONOS=[ (16.1), (11.1), (6.1), (18.1), (13.1)]
+nmp_phi_id='[0 3 4 4 ] '
+min_sha=d909796931
+tauto_sha=ad844915f8831ff9de3e75355d27b88f7eb7816a17a67ec89cdf23ade8dfde85
+guide_sha=fc5a1e4276cefa29acc8f50d4d0ce855637555aea58a27e2efa3498bacc79076
+quick_sha=/SKELETON/REF/cnf+1c3/4fbd/1a5e/265d760b6e67c23a1ed00e19d09b952c4a3bdb9b479ff240f765c+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+ad8/4491/5f88/31ff9de3e75355d27b88f7eb7816a17a67ec89cdf23ade8dfde85+oo/02e2bf692b/
+COL=
+[ -12=1 17=2 18=3 19=4 -13=5 -14=6 8=7 9=8 -10=9 -20=10 -15=11]
+
+
+
+		 Graph #9
+		 <div id='cnf_graph_9' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('9')">No labels</button><button onclick="update_png('9')">Update PNG</button><button onclick="switch_theme('9')">Switch theme</button>
+
+		 <div id='png_cnf_graph_9' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_9.js'></script>
+		 <script>show_cnf('cnf_graph_9', nmp_grph_9, 'preset', all_plays_9);
+		 </script>
+
+
+
+ck71.4.17.ADDED wrt_id=[0 3 4 4 ] 
+ wrt_phi_id_str='[0 3 4 4 ] '
+
+ck71.4.17.FIRST_WRITE_OK for wrt_id=[0 3 4 4 ] 
+ wrt_phi_id_str='[0 3 4 4 ] '
+ cur_sha=ad844915f8831ff9de3e75355d27b88f7eb7816a17a67ec89cdf23ade8dfde85
+
+ck47.4.17.map_oper_go nmp={na_idx=2.tk=[rc:3 lv:3].cho=7}
+ck70.4.17.		 <H1>BRN_recoil=17</H1>
+<H2>4.17.WriteYES {na_idx=2.tk=[rc:3 lv:3].cho=7} '[0 4 4 4 ] '</H2>
+nmp=ca{ {na_idx=2.tk=[rc:3 lv:3].cho=7}(0xf02710) cand_tk=[rc:3 lv:3] o_cho=+45\7/.t3 #sub=2 o_lv=3
+ all_sub=[{na_idx=2.tk=[rc:3 lv:3].cho=7} ->> {M.na_idx=3.tk=[rc:3 lv:4].cho=-17} ->> {na_idx=4.tk=[rc:5 lv:5].cho=-13}]
+ #qu=12
+ nmp_quas=[o43/14\.t9 o29\15/.t10 L3C14/-19\.t8 o44\-20/.t11 L2\18/.t7.M.1 L2/-13\.t7.m.1 o25/-12\.t10 o41\-17/.t11 +47\-8/.t5 o17/-9\.t6 C5+46/-10\.t4 +45\7/.t3 ] 
+
+ nmp_neus_idxs=[43.44.37.38.42.14.15.16.39.28.29.27.24.34.36.35.26.25.19.18.17.41.]
+}
+ is_MONO=0 #sub=2 has_sub=1
+all_sub=[{na_idx=2.tk=[rc:3 lv:3].cho=7} ->> {M.na_idx=3.tk=[rc:3 lv:4].cho=-17} ->> {na_idx=4.tk=[rc:5 lv:5].cho=-13}]
+
+ALL_MONOS=[ (16.1), (11.1), (6.1), (18.1), (13.1)]
+nmp_phi_id='[0 4 4 4 ] '
+min_sha=3a9523aea9
+tauto_sha=73713a9682a7e1d64df37bb2c6a8a5e51883616bc0c029fad1f2ed82840adb9c
+guide_sha=2c925227d58f0161c92b372f25b9d55481d6bf02fbd0f98b11c89c611f34e0eb
+quick_sha=/SKELETON/REF/cnf+587/96ee/e42e/c36419e19dfb55e5780270ec50e8f996e7c0b558111ae8f9fd13f+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+737/13a9/682a/7e1d64df37bb2c6a8a5e51883616bc0c029fad1f2ed82840adb9c+oo/d082b0b76f/
+COL=
+[ -18=1 13=2 14=3 15=4 -19=5 -20=6 8=7 9=8 10=9 -7=10 -12=11 -17=12]
+
+
+
+		 Graph #10
+		 <div id='cnf_graph_10' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('10')">No labels</button><button onclick="update_png('10')">Update PNG</button><button onclick="switch_theme('10')">Switch theme</button>
+
+		 <div id='png_cnf_graph_10' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_10.js'></script>
+		 <script>show_cnf('cnf_graph_10', nmp_grph_10, 'preset', all_plays_10);
+		 </script>
+
+
+
+ck71.4.17.ADDED wrt_id=[0 4 4 4 ] 
+ wrt_phi_id_str='[0 4 4 4 ] '
+
+ck71.4.17.FIRST_WRITE_OK for wrt_id=[0 4 4 4 ] 
+ wrt_phi_id_str='[0 4 4 4 ] '
+ cur_sha=73713a9682a7e1d64df37bb2c6a8a5e51883616bc0c029fad1f2ed82840adb9c
+
+ck40.4.17.AFT_ana=
+TRAIL=[L1C0/1\.t1 o3/-5\.t2 o2/-4\.t2 o1/-3\.t2 o0/-2\.t2 C1+45/-7\.t3 C5+46/-10\.t4 C9+47/8\.t5 o17/-9\.t6 o11/-6\.t6 L2C13/-16\.t7.m.1 L2/-11\.t7.m.1 L2/-18\.t7.m.1 L2/-13\.t7.m.1 L3C14/-19\.t8 o43/14\.t9 o29/-15\.t10 o25/-12\.t10 o44/20\.t11 o41/17\.t11 ]
+dt={ mots=[]  qu:L1\-1/.t1 lv:0}
+
+ck40.5.21.bef_ana=
+TRAIL=[#L0UC0/-1\.t1 L1C5/5\.t2 o9/-4\.t3 o8/-3\.t3 o6/-2\.t3 L2C6/-20\.t4.m.1 L2/-15\.t4.m.1 L2/-10\.t4.m.1 L3C7/16\.t5 o32/-19\.t6 o31/-18\.t6 o30/-17\.t6 L4C8/-11\.t7.m.3 L4/-6\.t7.m.3 L5C9/-7\.t8 o41/12\.t9 o25/-14\.t10 o24/-13\.t10 o43/9\.t11 o42/8\.t11 ]
+ num_conf=1 br_lv=5 br_ti=11
+ck40.5.21.<H1>out_rsn=</H1>dt={ mots=[o8\3/.t3 o9\4/.t3 o31\18/.t6 o32\19/.t6 ]  qu:o41\-12/.t9 lv:3}
+ck39.5.21.#f=6.1.out_nmp=ca{ {na_idx=9.tk=[rc:21 lv:6].cho=-7}T.C.(0xf04d58) cand_tk=[rc:21 lv:6] o_cho=L5C9/-7\.t8 #sub=0 o_lv=5 cand=L5C9/-7\.t8
+ all_sub=[{na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+ #qu=6
+ nmp_quas=[o42/8\.t11 o43/9\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C9/-7\.t8 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.27.15.17.14.]
+}
+ qua= L5C9/-7\.t8 q_lv= 5 nxt_lv= 3
+ck39.5.21.#f=6.1 (q_lv > (nxt_lv + 1))
+ck39.5.21.#f=6.2.out_nmp=ca{ {M.na_idx=8.tk=[rc:20 lv:5].cho=-11}C.(0xf047e0) cand_tk=[rc:20 lv:5] o_cho=L4C8/-11\.t7.m.3 #sub=1 o_lv=4 cand=L4C8/-11\.t7.m.3
+ all_sub=[{M.na_idx=8.tk=[rc:20 lv:5].cho=-11} ->> {na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+ #qu=8
+ nmp_quas=[o42/8\.t11 o43/9\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C9/-7\.t8 L4/-6\.t7.m.3 L4C8/-11\.t7.m.3 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.27.15.17.14.10.20.22.21.12.11.]
+}
+ qua= L4C8/-11\.t7.m.3 q_lv= 4 nxt_lv= 3
+ck47.5.21.map_oper_go nmp={na_idx=9.tk=[rc:21 lv:6].cho=-7}
+ck70.5.21.		 <H1>BRN_recoil=21</H1>
+<H2>5.21.FindYES {na_idx=9.tk=[rc:21 lv:6].cho=-7} '[0 0 3 3 ] '</H2>
+nmp=ca{ {na_idx=9.tk=[rc:21 lv:6].cho=-7}T.C.(0xf04d58) cand_tk=[rc:21 lv:6] o_cho=L5C9/-7\.t8 #sub=0 o_lv=5 cand=L5C9/-7\.t8
+ all_sub=[{na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+ #qu=6
+ nmp_quas=[o42/8\.t11 o43/9\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C9/-7\.t8 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.27.15.17.14.]
+}
+ is_MONO=0 #sub=0 has_sub=0
+all_sub=[{na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+
+ALL_MONOS=[ (20.1), (15.1), (10.1), (11.3), (6.3)]
+nmp_phi_id='[0 0 3 3 ] '
+min_sha=d1f7284949
+tauto_sha=260cd43295986b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c
+guide_sha=7fc4ae7bef22ef478db02579b447f3c798ea02866e16c002e0fc8c9086c9a489
+quick_sha=/SKELETON/REF/cnf+f94/dd90/e0a8/b05ea9e180ec5220315f65222457985d606eda4f3bc47fec26352+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+260/cd43/2959/86b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c+oo/ed4ca2b3e9/
+COL=
+[ -12=1 -13=2 -14=3 -7=4 -8=5 -9=6]
+
+
+
+		 Graph #11
+		 <div id='cnf_graph_11' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('11')">No labels</button><button onclick="update_png('11')">Update PNG</button><button onclick="switch_theme('11')">Switch theme</button>
+
+		 <div id='png_cnf_graph_11' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_11.js'></script>
+		 <script>show_cnf('cnf_graph_11', nmp_grph_11, 'preset', all_plays_11);
+		 </script>
+
+
+
+ck39.5.21.#f=6.2.found_nmp=ca{ {na_idx=9.tk=[rc:21 lv:6].cho=-7}T.C.(0xf04d58) cand_tk=[rc:21 lv:6] o_cho=L5C9/-7\.t8 #sub=0 o_lv=5 cand=L5C9/-7\.t8
+ all_sub=[{na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+ #qu=6
+ nmp_quas=[o42/8\.t11 o43/9\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C9/-7\.t8 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.27.15.17.14.]
+}
+ out_nmp=ca{ {M.na_idx=8.tk=[rc:20 lv:5].cho=-11}C.(0xf047e0) cand_tk=[rc:20 lv:5] o_cho=L4C8/-11\.t7.m.3 #sub=1 o_lv=4 cand=L4C8/-11\.t7.m.3
+ all_sub=[{M.na_idx=8.tk=[rc:20 lv:5].cho=-11} ->> {na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+ #qu=8
+ nmp_quas=[o42/8\.t11 o43/9\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C9/-7\.t8 L4/-6\.t7.m.3 L4C8/-11\.t7.m.3 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.27.15.17.14.10.20.22.21.12.11.]
+}
+
+ck55.5.21.NOT_CAND_to_wrt qua=L3C7/16\.t5 not-has-learned_source.
+ck39.5.21.#f=6.3.out_nmp=ca{ {na_idx=7.tk=[rc:20 lv:4].cho=16}C.(0xf04268) cand_tk=[rc:20 lv:4] o_cho=L3C7/16\.t5 #sub=2 o_lv=3 cand=L3C7/16\.t5
+ all_sub=[{na_idx=7.tk=[rc:20 lv:4].cho=16} ->> {M.na_idx=8.tk=[rc:20 lv:5].cho=-11} ->> {na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+ #qu=12
+ nmp_quas=[o42/8\.t11 o43/9\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C9/-7\.t8 L4/-6\.t7.m.3 L4C8/-11\.t7.m.3 o30/-17\.t6 o31/-18\.t6 o32/-19\.t6 L3C7/16\.t5 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.30.31.32.27.15.17.14.10.20.22.21.12.11.37.35.34.40.]
+}
+ qua= L3C7/16\.t5 q_lv= 3 nxt_lv= 1
+ck39.5.21.#f=6.3 (q_lv > (nxt_lv + 1))
+ck39.5.21.#f=6.4.out_nmp=ca{ {M.na_idx=6.tk=[rc:19 lv:3].cho=-20}C.(0xf03cf0) cand_tk=[rc:19 lv:3] o_cho=L2C6/-20\.t4.m.1 #sub=3 o_lv=2 cand=L2C6/-20\.t4.m.1
+ all_sub=[{M.na_idx=6.tk=[rc:19 lv:3].cho=-20} ->> {na_idx=7.tk=[rc:20 lv:4].cho=16} ->> {M.na_idx=8.tk=[rc:20 lv:5].cho=-11} ->> {na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+ #qu=15
+ nmp_quas=[o42/8\.t11 o43/9\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C9/-7\.t8 L4/-6\.t7.m.3 L4C8/-11\.t7.m.3 o30/-17\.t6 o31/-18\.t6 o32/-19\.t6 L3C7/16\.t5 L2/-10\.t4.m.1 L2/-15\.t4.m.1 L2C6/-20\.t4.m.1 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.30.31.32.27.15.17.14.10.20.22.21.12.11.37.35.34.40.16.26.29.28.19.18.23.13.33.39.38.36.]
+}
+ qua= L2C6/-20\.t4.m.1 q_lv= 2 nxt_lv= 1
+ck47.5.21.map_oper_go nmp={na_idx=7.tk=[rc:20 lv:4].cho=16}
+ck70.5.21.		 <H1>BRN_recoil=21</H1>
+<H2>5.21.FindYES {na_idx=7.tk=[rc:20 lv:4].cho=16} '[0 4 4 4 ] '</H2>
+nmp=ca{ {na_idx=7.tk=[rc:20 lv:4].cho=16}C.(0xf04268) cand_tk=[rc:20 lv:4] o_cho=L3C7/16\.t5 #sub=2 o_lv=3 cand=L3C7/16\.t5
+ all_sub=[{na_idx=7.tk=[rc:20 lv:4].cho=16} ->> {M.na_idx=8.tk=[rc:20 lv:5].cho=-11} ->> {na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+ #qu=12
+ nmp_quas=[o42/8\.t11 o43/9\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C9/-7\.t8 L4/-6\.t7.m.3 L4C8/-11\.t7.m.3 o30/-17\.t6 o31/-18\.t6 o32/-19\.t6 L3C7/16\.t5 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.30.31.32.27.15.17.14.10.20.22.21.12.11.37.35.34.40.]
+}
+ is_MONO=0 #sub=2 has_sub=1
+all_sub=[{na_idx=7.tk=[rc:20 lv:4].cho=16} ->> {M.na_idx=8.tk=[rc:20 lv:5].cho=-11} ->> {na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+
+ALL_MONOS=[ (20.1), (15.1), (10.1), (11.3), (6.3)]
+nmp_phi_id='[0 4 4 4 ] '
+min_sha=3a9523aea9
+tauto_sha=73713a9682a7e1d64df37bb2c6a8a5e51883616bc0c029fad1f2ed82840adb9c
+guide_sha=2c925227d58f0161c92b372f25b9d55481d6bf02fbd0f98b11c89c611f34e0eb
+quick_sha=/SKELETON/REF/cnf+587/96ee/e42e/c36419e19dfb55e5780270ec50e8f996e7c0b558111ae8f9fd13f+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+737/13a9/682a/7e1d64df37bb2c6a8a5e51883616bc0c029fad1f2ed82840adb9c+oo/d082b0b76f/
+COL=
+[ -12=1 7=2 8=3 9=4 -13=5 -14=6 17=7 18=8 19=9 -16=10 -6=11 -11=12]
+
+
+
+		 Graph #12
+		 <div id='cnf_graph_12' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('12')">No labels</button><button onclick="update_png('12')">Update PNG</button><button onclick="switch_theme('12')">Switch theme</button>
+
+		 <div id='png_cnf_graph_12' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_12.js'></script>
+		 <script>show_cnf('cnf_graph_12', nmp_grph_12, 'preset', all_plays_12);
+		 </script>
+
+
+
+ck39.5.21.#f=6.4.found_nmp=ca{ {na_idx=7.tk=[rc:20 lv:4].cho=16}C.(0xf04268) cand_tk=[rc:20 lv:4] o_cho=L3C7/16\.t5 #sub=2 o_lv=3 cand=L3C7/16\.t5
+ all_sub=[{na_idx=7.tk=[rc:20 lv:4].cho=16} ->> {M.na_idx=8.tk=[rc:20 lv:5].cho=-11} ->> {na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+ #qu=12
+ nmp_quas=[o42/8\.t11 o43/9\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C9/-7\.t8 L4/-6\.t7.m.3 L4C8/-11\.t7.m.3 o30/-17\.t6 o31/-18\.t6 o32/-19\.t6 L3C7/16\.t5 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.30.31.32.27.15.17.14.10.20.22.21.12.11.37.35.34.40.]
+}
+ out_nmp=ca{ {M.na_idx=6.tk=[rc:19 lv:3].cho=-20}C.(0xf03cf0) cand_tk=[rc:19 lv:3] o_cho=L2C6/-20\.t4.m.1 #sub=3 o_lv=2 cand=L2C6/-20\.t4.m.1
+ all_sub=[{M.na_idx=6.tk=[rc:19 lv:3].cho=-20} ->> {na_idx=7.tk=[rc:20 lv:4].cho=16} ->> {M.na_idx=8.tk=[rc:20 lv:5].cho=-11} ->> {na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+ #qu=15
+ nmp_quas=[o42/8\.t11 o43/9\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C9/-7\.t8 L4/-6\.t7.m.3 L4C8/-11\.t7.m.3 o30/-17\.t6 o31/-18\.t6 o32/-19\.t6 L3C7/16\.t5 L2/-10\.t4.m.1 L2/-15\.t4.m.1 L2C6/-20\.t4.m.1 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.30.31.32.27.15.17.14.10.20.22.21.12.11.37.35.34.40.16.26.29.28.19.18.23.13.33.39.38.36.]
+}
+
+ck55.5.21.NOT_CAND_to_wrt qua=L1C5/5\.t2 not-has-learned_source.
+ck39.5.21.#f=6.5.out_nmp=ca{H. {na_idx=5.tk=[rc:19 lv:2].cho=5}C.(0xf03778) cand_tk=[rc:19 lv:2] o_cho=L1C5/5\.t2 #sub=4 o_lv=1 cand=L1C5/5\.t2
+ all_sub=[{na_idx=5.tk=[rc:19 lv:2].cho=5} ->> {M.na_idx=6.tk=[rc:19 lv:3].cho=-20} ->> {na_idx=7.tk=[rc:20 lv:4].cho=16} ->> {M.na_idx=8.tk=[rc:20 lv:5].cho=-11} ->> {na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+ #qu=19
+ nmp_quas=[o42/8\.t11 o43/9\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C9/-7\.t8 L4/-6\.t7.m.3 L4C8/-11\.t7.m.3 o30/-17\.t6 o31/-18\.t6 o32/-19\.t6 L3C7/16\.t5 L2/-10\.t4.m.1 L2/-15\.t4.m.1 L2C6/-20\.t4.m.1 o6/-2\.t3 o8/-3\.t3 o9/-4\.t3 L1C5/5\.t2 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.30.31.32.6.8.9.27.15.17.14.10.20.22.21.12.11.37.35.34.40.16.26.29.28.19.18.23.13.33.39.38.36.7.5.4.44.]
+}
+ qua= L1C5/5\.t2 q_lv= 1 nxt_lv= 0
+ck39.5.21.quick_find failed nmp=0xf03778
+ck47.5.21.map_oper skip (prepare == false) nmp={na_idx=5.tk=[rc:19 lv:2].cho=5}
+ck39.5.21.#f=6.CANNOT find na_idx=5
+ nxt_rsn=dt={ mots=[#L0\1/.t1 ]  qu:L1\-5/.t2 lv:0}
+ nxt_lv=0
+[] 
+ck70.5.21.#f=6.5.find_analysis
+		 <H1>BRN_recoil=21</H1>
+<H2>5.21.<H1>FindNOT</H1> {na_idx=5.tk=[rc:19 lv:2].cho=5} '[] '</H2>
+nmp=ca{H. {na_idx=5.tk=[rc:19 lv:2].cho=5}C.(0xf03778) cand_tk=[rc:19 lv:2] o_cho=L1C5/5\.t2 #sub=4 o_lv=1 cand=L1C5/5\.t2
+ all_sub=[{na_idx=5.tk=[rc:19 lv:2].cho=5} ->> {M.na_idx=6.tk=[rc:19 lv:3].cho=-20} ->> {na_idx=7.tk=[rc:20 lv:4].cho=16} ->> {M.na_idx=8.tk=[rc:20 lv:5].cho=-11} ->> {na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+ #qu=19
+ nmp_quas=[o42/8\.t11 o43/9\.t11 o24/-13\.t10 o25/-14\.t10 o41/12\.t9 L5C9/-7\.t8 L4/-6\.t7.m.3 L4C8/-11\.t7.m.3 o30/-17\.t6 o31/-18\.t6 o32/-19\.t6 L3C7/16\.t5 L2/-10\.t4.m.1 L2/-15\.t4.m.1 L2C6/-20\.t4.m.1 o6/-2\.t3 o8/-3\.t3 o9/-4\.t3 L1C5/5\.t2 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.30.31.32.6.8.9.27.15.17.14.10.20.22.21.12.11.37.35.34.40.16.26.29.28.19.18.23.13.33.39.38.36.7.5.4.44.]
+}
+ is_MONO=0 #sub=4 has_sub=1
+all_sub=[{na_idx=5.tk=[rc:19 lv:2].cho=5} ->> {M.na_idx=6.tk=[rc:19 lv:3].cho=-20} ->> {na_idx=7.tk=[rc:20 lv:4].cho=16} ->> {M.na_idx=8.tk=[rc:20 lv:5].cho=-11} ->> {na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+
+ALL_MONOS=[ (20.1), (15.1), (10.1), (11.3), (6.3)]
+nmp_phi_id='[] '
+min_sha=invalid_minsha
+tauto_sha=invalid_sha
+guide_sha=invalid_sha
+quick_sha=invalid_sha
+TAUTO_path=
+invalid_path
+COL=
+[]
+
+
+
+		 Graph #13
+		 <div id='cnf_graph_13' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('13')">No labels</button><button onclick="update_png('13')">Update PNG</button><button onclick="switch_theme('13')">Switch theme</button>
+
+		 <div id='png_cnf_graph_13' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_13.js'></script>
+		 <script>show_cnf('cnf_graph_13', nmp_grph_13, 'preset', all_plays_13);
+		 </script>
+
+
+
+ck40.5.21.AFT_ana=
+TRAIL=[#L0UC0/-1\.t1 L1C5/5\.t2 o9/-4\.t3 o8/-3\.t3 o6/-2\.t3 L2C6/-20\.t4.m.1 L2/-15\.t4.m.1 L2/-10\.t4.m.1 L3C7/16\.t5 o32/-19\.t6 o31/-18\.t6 o30/-17\.t6 L4C8/-11\.t7.m.3 L4/-6\.t7.m.3 L5C9/-7\.t8 o41/12\.t9 o25/-14\.t10 o24/-13\.t10 o43/9\.t11 o42/8\.t11 ]
+dt={ mots=[#L0\1/.t1 ]  qu:L1\-5/.t2 lv:0}
+
+ck40.6.26.bef_ana=
+TRAIL=[#L0UC0/-1\.t1 #C5+46/-5\.t2 L1C10/4\.t3 o7/-3\.t4 o5/-2\.t4 L2C11/-19\.t5.m.1 L2/-14\.t5.m.1 L2/-9\.t5.m.1 L3C12/20\.t6 o38/-18\.t7 o36/-17\.t7 o33/-16\.t7 L4C13/-15\.t8.m.3 L4/-10\.t8.m.3 L5C14/-11\.t9 o40/6\.t10 o11/-8\.t11 o10/-7\.t11 o42/13\.t12 o41/12\.t12 ]
+ num_conf=1 br_lv=5 br_ti=12
+ck40.6.26.<H1>out_rsn=</H1>dt={ mots=[o5\2/.t4 o7\3/.t4 o36\17/.t7 o38\18/.t7 ]  qu:o40\-6/.t10 lv:3}
+ck39.6.26.#f=7.1.out_nmp=ca{ {na_idx=14.tk=[rc:26 lv:7].cho=-11}T.C.(0xf068b0) cand_tk=[rc:26 lv:7] o_cho=L5C14/-11\.t9 #sub=0 o_lv=5 cand=L5C14/-11\.t9
+ all_sub=[{na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+ #qu=6
+ nmp_quas=[o41/12\.t12 o42/13\.t12 o10/-7\.t11 o11/-8\.t11 o40/6\.t10 L5C14/-11\.t9 ] 
+
+ nmp_neus_idxs=[41.42.10.11.40.14.21.24.20.]
+}
+ qua= L5C14/-11\.t9 q_lv= 5 nxt_lv= 3
+ck39.6.26.#f=7.1 (q_lv > (nxt_lv + 1))
+ck39.6.26.#f=7.2.out_nmp=ca{ {M.na_idx=13.tk=[rc:24 lv:6].cho=-15}C.(0xf06338) cand_tk=[rc:24 lv:6] o_cho=L4C13/-15\.t8.m.3 #sub=1 o_lv=4 cand=L4C13/-15\.t8.m.3
+ all_sub=[{M.na_idx=13.tk=[rc:24 lv:6].cho=-15} ->> {na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+ #qu=8
+ nmp_quas=[o41/12\.t12 o42/13\.t12 o10/-7\.t11 o11/-8\.t11 o40/6\.t10 L5C14/-11\.t9 L4/-10\.t8.m.3 L4C13/-15\.t8.m.3 ] 
+
+ nmp_neus_idxs=[41.42.10.11.40.14.21.24.20.23.13.18.16.28.26.]
+}
+ qua= L4C13/-15\.t8.m.3 q_lv= 4 nxt_lv= 3
+ck47.6.26.map_oper_go nmp={na_idx=14.tk=[rc:26 lv:7].cho=-11}
+ck70.6.26.		 <H1>BRN_recoil=26</H1>
+<H2>6.26.FindYES {na_idx=14.tk=[rc:26 lv:7].cho=-11} '[0 0 3 3 ] '</H2>
+nmp=ca{ {na_idx=14.tk=[rc:26 lv:7].cho=-11}T.C.(0xf068b0) cand_tk=[rc:26 lv:7] o_cho=L5C14/-11\.t9 #sub=0 o_lv=5 cand=L5C14/-11\.t9
+ all_sub=[{na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+ #qu=6
+ nmp_quas=[o41/12\.t12 o42/13\.t12 o10/-7\.t11 o11/-8\.t11 o40/6\.t10 L5C14/-11\.t9 ] 
+
+ nmp_neus_idxs=[41.42.10.11.40.14.21.24.20.]
+}
+ is_MONO=0 #sub=0 has_sub=0
+all_sub=[{na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+
+ALL_MONOS=[ (19.1), (14.1), (9.1), (15.3), (10.3)]
+nmp_phi_id='[0 0 3 3 ] '
+min_sha=d1f7284949
+tauto_sha=260cd43295986b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c
+guide_sha=7fc4ae7bef22ef478db02579b447f3c798ea02866e16c002e0fc8c9086c9a489
+quick_sha=/SKELETON/REF/cnf+f94/dd90/e0a8/b05ea9e180ec5220315f65222457985d606eda4f3bc47fec26352+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+260/cd43/2959/86b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c+oo/ed4ca2b3e9/
+COL=
+[ -6=1 -7=2 -8=3 -11=4 -12=5 -13=6]
+
+
+
+		 Graph #14
+		 <div id='cnf_graph_14' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('14')">No labels</button><button onclick="update_png('14')">Update PNG</button><button onclick="switch_theme('14')">Switch theme</button>
+
+		 <div id='png_cnf_graph_14' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_14.js'></script>
+		 <script>show_cnf('cnf_graph_14', nmp_grph_14, 'preset', all_plays_14);
+		 </script>
+
+
+
+ck39.6.26.#f=7.2.found_nmp=ca{ {na_idx=14.tk=[rc:26 lv:7].cho=-11}T.C.(0xf068b0) cand_tk=[rc:26 lv:7] o_cho=L5C14/-11\.t9 #sub=0 o_lv=5 cand=L5C14/-11\.t9
+ all_sub=[{na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+ #qu=6
+ nmp_quas=[o41/12\.t12 o42/13\.t12 o10/-7\.t11 o11/-8\.t11 o40/6\.t10 L5C14/-11\.t9 ] 
+
+ nmp_neus_idxs=[41.42.10.11.40.14.21.24.20.]
+}
+ out_nmp=ca{ {M.na_idx=13.tk=[rc:24 lv:6].cho=-15}C.(0xf06338) cand_tk=[rc:24 lv:6] o_cho=L4C13/-15\.t8.m.3 #sub=1 o_lv=4 cand=L4C13/-15\.t8.m.3
+ all_sub=[{M.na_idx=13.tk=[rc:24 lv:6].cho=-15} ->> {na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+ #qu=8
+ nmp_quas=[o41/12\.t12 o42/13\.t12 o10/-7\.t11 o11/-8\.t11 o40/6\.t10 L5C14/-11\.t9 L4/-10\.t8.m.3 L4C13/-15\.t8.m.3 ] 
+
+ nmp_neus_idxs=[41.42.10.11.40.14.21.24.20.23.13.18.16.28.26.]
+}
+
+ck55.6.26.NOT_CAND_to_wrt qua=L3C12/20\.t6 not-has-learned_source.
+ck39.6.26.#f=7.3.out_nmp=ca{ {na_idx=12.tk=[rc:24 lv:5].cho=20}C.(0xf05dc0) cand_tk=[rc:24 lv:5] o_cho=L3C12/20\.t6 #sub=2 o_lv=3 cand=L3C12/20\.t6
+ all_sub=[{na_idx=12.tk=[rc:24 lv:5].cho=20} ->> {M.na_idx=13.tk=[rc:24 lv:6].cho=-15} ->> {na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+ #qu=12
+ nmp_quas=[o41/12\.t12 o42/13\.t12 o10/-7\.t11 o11/-8\.t11 o40/6\.t10 L5C14/-11\.t9 L4/-10\.t8.m.3 L4C13/-15\.t8.m.3 o33/-16\.t7 o36/-17\.t7 o38/-18\.t7 L3C12/20\.t6 ] 
+
+ nmp_neus_idxs=[41.42.10.11.40.33.36.38.14.21.24.20.23.13.18.16.28.26.34.31.30.44.]
+}
+ qua= L3C12/20\.t6 q_lv= 3 nxt_lv= 1
+ck39.6.26.#f=7.3 (q_lv > (nxt_lv + 1))
+ck39.6.26.#f=7.4.out_nmp=ca{ {M.na_idx=11.tk=[rc:23 lv:4].cho=-19}C.(0xf05848) cand_tk=[rc:23 lv:4] o_cho=L2C11/-19\.t5.m.1 #sub=3 o_lv=2 cand=L2C11/-19\.t5.m.1
+ all_sub=[{M.na_idx=11.tk=[rc:23 lv:4].cho=-19} ->> {na_idx=12.tk=[rc:24 lv:5].cho=20} ->> {M.na_idx=13.tk=[rc:24 lv:6].cho=-15} ->> {na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+ #qu=15
+ nmp_quas=[o41/12\.t12 o42/13\.t12 o10/-7\.t11 o11/-8\.t11 o40/6\.t10 L5C14/-11\.t9 L4/-10\.t8.m.3 L4C13/-15\.t8.m.3 o33/-16\.t7 o36/-17\.t7 o38/-18\.t7 L3C12/20\.t6 L2/-9\.t5.m.1 L2/-14\.t5.m.1 L2C11/-19\.t5.m.1 ] 
+
+ nmp_neus_idxs=[41.42.10.11.40.33.36.38.14.21.24.20.23.13.18.16.28.26.34.31.30.44.22.12.17.15.27.25.29.19.39.37.35.32.]
+}
+ qua= L2C11/-19\.t5.m.1 q_lv= 2 nxt_lv= 1
+ck47.6.26.map_oper_go nmp={na_idx=12.tk=[rc:24 lv:5].cho=20}
+ck70.6.26.		 <H1>BRN_recoil=26</H1>
+<H2>6.26.FindYES {na_idx=12.tk=[rc:24 lv:5].cho=20} '[0 4 4 4 ] '</H2>
+nmp=ca{ {na_idx=12.tk=[rc:24 lv:5].cho=20}C.(0xf05dc0) cand_tk=[rc:24 lv:5] o_cho=L3C12/20\.t6 #sub=2 o_lv=3 cand=L3C12/20\.t6
+ all_sub=[{na_idx=12.tk=[rc:24 lv:5].cho=20} ->> {M.na_idx=13.tk=[rc:24 lv:6].cho=-15} ->> {na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+ #qu=12
+ nmp_quas=[o41/12\.t12 o42/13\.t12 o10/-7\.t11 o11/-8\.t11 o40/6\.t10 L5C14/-11\.t9 L4/-10\.t8.m.3 L4C13/-15\.t8.m.3 o33/-16\.t7 o36/-17\.t7 o38/-18\.t7 L3C12/20\.t6 ] 
+
+ nmp_neus_idxs=[41.42.10.11.40.33.36.38.14.21.24.20.23.13.18.16.28.26.34.31.30.44.]
+}
+ is_MONO=0 #sub=2 has_sub=1
+all_sub=[{na_idx=12.tk=[rc:24 lv:5].cho=20} ->> {M.na_idx=13.tk=[rc:24 lv:6].cho=-15} ->> {na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+
+ALL_MONOS=[ (19.1), (14.1), (9.1), (15.3), (10.3)]
+nmp_phi_id='[0 4 4 4 ] '
+min_sha=3a9523aea9
+tauto_sha=73713a9682a7e1d64df37bb2c6a8a5e51883616bc0c029fad1f2ed82840adb9c
+guide_sha=2c925227d58f0161c92b372f25b9d55481d6bf02fbd0f98b11c89c611f34e0eb
+quick_sha=/SKELETON/REF/cnf+587/96ee/e42e/c36419e19dfb55e5780270ec50e8f996e7c0b558111ae8f9fd13f+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+737/13a9/682a/7e1d64df37bb2c6a8a5e51883616bc0c029fad1f2ed82840adb9c+oo/d082b0b76f/
+COL=
+[ -6=1 11=2 12=3 13=4 -7=5 -8=6 16=7 17=8 18=9 -20=10 -15=11 -10=12]
+
+
+
+		 Graph #15
+		 <div id='cnf_graph_15' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('15')">No labels</button><button onclick="update_png('15')">Update PNG</button><button onclick="switch_theme('15')">Switch theme</button>
+
+		 <div id='png_cnf_graph_15' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_15.js'></script>
+		 <script>show_cnf('cnf_graph_15', nmp_grph_15, 'preset', all_plays_15);
+		 </script>
+
+
+
+ck39.6.26.#f=7.4.found_nmp=ca{ {na_idx=12.tk=[rc:24 lv:5].cho=20}C.(0xf05dc0) cand_tk=[rc:24 lv:5] o_cho=L3C12/20\.t6 #sub=2 o_lv=3 cand=L3C12/20\.t6
+ all_sub=[{na_idx=12.tk=[rc:24 lv:5].cho=20} ->> {M.na_idx=13.tk=[rc:24 lv:6].cho=-15} ->> {na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+ #qu=12
+ nmp_quas=[o41/12\.t12 o42/13\.t12 o10/-7\.t11 o11/-8\.t11 o40/6\.t10 L5C14/-11\.t9 L4/-10\.t8.m.3 L4C13/-15\.t8.m.3 o33/-16\.t7 o36/-17\.t7 o38/-18\.t7 L3C12/20\.t6 ] 
+
+ nmp_neus_idxs=[41.42.10.11.40.33.36.38.14.21.24.20.23.13.18.16.28.26.34.31.30.44.]
+}
+ out_nmp=ca{ {M.na_idx=11.tk=[rc:23 lv:4].cho=-19}C.(0xf05848) cand_tk=[rc:23 lv:4] o_cho=L2C11/-19\.t5.m.1 #sub=3 o_lv=2 cand=L2C11/-19\.t5.m.1
+ all_sub=[{M.na_idx=11.tk=[rc:23 lv:4].cho=-19} ->> {na_idx=12.tk=[rc:24 lv:5].cho=20} ->> {M.na_idx=13.tk=[rc:24 lv:6].cho=-15} ->> {na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+ #qu=15
+ nmp_quas=[o41/12\.t12 o42/13\.t12 o10/-7\.t11 o11/-8\.t11 o40/6\.t10 L5C14/-11\.t9 L4/-10\.t8.m.3 L4C13/-15\.t8.m.3 o33/-16\.t7 o36/-17\.t7 o38/-18\.t7 L3C12/20\.t6 L2/-9\.t5.m.1 L2/-14\.t5.m.1 L2C11/-19\.t5.m.1 ] 
+
+ nmp_neus_idxs=[41.42.10.11.40.33.36.38.14.21.24.20.23.13.18.16.28.26.34.31.30.44.22.12.17.15.27.25.29.19.39.37.35.32.]
+}
+
+ck55.6.26.NOT_CAND_to_wrt qua=L1C10/4\.t3 not-has-learned_source.
+ck39.6.26.#f=7.5.out_nmp=ca{H. {na_idx=10.tk=[rc:23 lv:3].cho=4}C.(0xf052d0) cand_tk=[rc:23 lv:3] o_cho=L1C10/4\.t3 #sub=4 o_lv=1 cand=L1C10/4\.t3
+ all_sub=[{na_idx=10.tk=[rc:23 lv:3].cho=4} ->> {M.na_idx=11.tk=[rc:23 lv:4].cho=-19} ->> {na_idx=12.tk=[rc:24 lv:5].cho=20} ->> {M.na_idx=13.tk=[rc:24 lv:6].cho=-15} ->> {na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+ #qu=18
+ nmp_quas=[o41/12\.t12 o42/13\.t12 o10/-7\.t11 o11/-8\.t11 o40/6\.t10 L5C14/-11\.t9 L4/-10\.t8.m.3 L4C13/-15\.t8.m.3 o33/-16\.t7 o36/-17\.t7 o38/-18\.t7 L3C12/20\.t6 L2/-9\.t5.m.1 L2/-14\.t5.m.1 L2C11/-19\.t5.m.1 o5/-2\.t4 o7/-3\.t4 L1C10/4\.t3 ] 
+
+ nmp_neus_idxs=[41.42.10.11.40.33.36.38.5.7.14.21.24.20.23.13.18.16.28.26.34.31.30.44.22.12.17.15.27.25.29.19.39.37.35.32.4.43.]
+}
+ qua= L1C10/4\.t3 q_lv= 1 nxt_lv= 0
+ck39.6.26.quick_find failed nmp=0xf052d0
+ck47.6.26.map_oper skip (prepare == false) nmp={na_idx=10.tk=[rc:23 lv:3].cho=4}
+ck39.6.26.#f=7.CANNOT find na_idx=10
+ nxt_rsn=dt={ mots=[#L0\1/.t1 #+46\5/.t2 ]  qu:L1\-4/.t3 lv:0}
+ nxt_lv=0
+[] 
+ck70.6.26.#f=7.5.find_analysis
+		 <H1>BRN_recoil=26</H1>
+<H2>6.26.<H1>FindNOT</H1> {na_idx=10.tk=[rc:23 lv:3].cho=4} '[] '</H2>
+nmp=ca{H. {na_idx=10.tk=[rc:23 lv:3].cho=4}C.(0xf052d0) cand_tk=[rc:23 lv:3] o_cho=L1C10/4\.t3 #sub=4 o_lv=1 cand=L1C10/4\.t3
+ all_sub=[{na_idx=10.tk=[rc:23 lv:3].cho=4} ->> {M.na_idx=11.tk=[rc:23 lv:4].cho=-19} ->> {na_idx=12.tk=[rc:24 lv:5].cho=20} ->> {M.na_idx=13.tk=[rc:24 lv:6].cho=-15} ->> {na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+ #qu=18
+ nmp_quas=[o41/12\.t12 o42/13\.t12 o10/-7\.t11 o11/-8\.t11 o40/6\.t10 L5C14/-11\.t9 L4/-10\.t8.m.3 L4C13/-15\.t8.m.3 o33/-16\.t7 o36/-17\.t7 o38/-18\.t7 L3C12/20\.t6 L2/-9\.t5.m.1 L2/-14\.t5.m.1 L2C11/-19\.t5.m.1 o5/-2\.t4 o7/-3\.t4 L1C10/4\.t3 ] 
+
+ nmp_neus_idxs=[41.42.10.11.40.33.36.38.5.7.14.21.24.20.23.13.18.16.28.26.34.31.30.44.22.12.17.15.27.25.29.19.39.37.35.32.4.43.]
+}
+ is_MONO=0 #sub=4 has_sub=1
+all_sub=[{na_idx=10.tk=[rc:23 lv:3].cho=4} ->> {M.na_idx=11.tk=[rc:23 lv:4].cho=-19} ->> {na_idx=12.tk=[rc:24 lv:5].cho=20} ->> {M.na_idx=13.tk=[rc:24 lv:6].cho=-15} ->> {na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+
+ALL_MONOS=[ (19.1), (14.1), (9.1), (15.3), (10.3)]
+nmp_phi_id='[] '
+min_sha=invalid_minsha
+tauto_sha=invalid_sha
+guide_sha=invalid_sha
+quick_sha=invalid_sha
+TAUTO_path=
+invalid_path
+COL=
+[]
+
+
+
+		 Graph #16
+		 <div id='cnf_graph_16' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('16')">No labels</button><button onclick="update_png('16')">Update PNG</button><button onclick="switch_theme('16')">Switch theme</button>
+
+		 <div id='png_cnf_graph_16' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_16.js'></script>
+		 <script>show_cnf('cnf_graph_16', nmp_grph_16, 'preset', all_plays_16);
+		 </script>
+
+
+
+ck40.6.26.AFT_ana=
+TRAIL=[#L0UC0/-1\.t1 #C5+46/-5\.t2 L1C10/4\.t3 o7/-3\.t4 o5/-2\.t4 L2C11/-19\.t5.m.1 L2/-14\.t5.m.1 L2/-9\.t5.m.1 L3C12/20\.t6 o38/-18\.t7 o36/-17\.t7 o33/-16\.t7 L4C13/-15\.t8.m.3 L4/-10\.t8.m.3 L5C14/-11\.t9 o40/6\.t10 o11/-8\.t11 o10/-7\.t11 o42/13\.t12 o41/12\.t12 ]
+dt={ mots=[#L0\1/.t1 #+46\5/.t2 ]  qu:L1\-4/.t3 lv:0}
+
+ck40.7.31.bef_ana=
+TRAIL=[#L0UC0/-1\.t1 #C5+46/-5\.t2 #C10+45/-4\.t3 L1C15/3\.t4 o4/-2\.t5 L2C16/-18\.t6.m.1 L2/-13\.t6.m.1 L2/-8\.t6.m.1 L3C17/19\.t7 o39/-20\.t8 o35/-17\.t8 o32/-16\.t8 L4C18/-14\.t9.m.3 L4/-9\.t9.m.3 L5C19/-15\.t10 o44/10\.t11 o16/-7\.t12 o13/-6\.t12 o41/12\.t13 o40/11\.t13 ]
+ num_conf=1 br_lv=5 br_ti=13
+ck40.7.31.<H1>out_rsn=</H1>dt={ mots=[#L0\1/.t1 o4\2/.t5 o32\16/.t8 o35\17/.t8 ]  qu:o44\-10/.t11 lv:3}
+ck39.7.31.#f=8.1.out_nmp=ca{ {na_idx=19.tk=[rc:31 lv:8].cho=-15}T.C.(0xf08408) cand_tk=[rc:31 lv:8] o_cho=L5C19/-15\.t10 #sub=0 o_lv=5 cand=L5C19/-15\.t10
+ all_sub=[{na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+ #qu=6
+ nmp_quas=[o40/11\.t13 o41/12\.t13 o13/-6\.t12 o16/-7\.t12 o44/10\.t11 L5C19/-15\.t10 ] 
+
+ nmp_neus_idxs=[40.41.13.16.44.10.26.23.20.]
+}
+ qua= L5C19/-15\.t10 q_lv= 5 nxt_lv= 3
+ck39.7.31.#f=8.1 (q_lv > (nxt_lv + 1))
+ck39.7.31.#f=8.2.out_nmp=ca{ {M.na_idx=18.tk=[rc:29 lv:7].cho=-14}C.(0xf07e90) cand_tk=[rc:29 lv:7] o_cho=L4C18/-14\.t9.m.3 #sub=1 o_lv=4 cand=L4C18/-14\.t9.m.3
+ all_sub=[{M.na_idx=18.tk=[rc:29 lv:7].cho=-14} ->> {na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+ #qu=8
+ nmp_quas=[o40/11\.t13 o41/12\.t13 o13/-6\.t12 o16/-7\.t12 o44/10\.t11 L5C19/-15\.t10 L4/-9\.t9.m.3 L4C18/-14\.t9.m.3 ] 
+
+ nmp_neus_idxs=[40.41.13.16.44.10.26.23.20.29.19.15.12.25.22.]
+}
+ qua= L4C18/-14\.t9.m.3 q_lv= 4 nxt_lv= 3
+ck47.7.31.map_oper_go nmp={na_idx=19.tk=[rc:31 lv:8].cho=-15}
+ck70.7.31.		 <H1>BRN_recoil=31</H1>
+<H2>7.31.FindYES {na_idx=19.tk=[rc:31 lv:8].cho=-15} '[0 0 3 3 ] '</H2>
+nmp=ca{ {na_idx=19.tk=[rc:31 lv:8].cho=-15}T.C.(0xf08408) cand_tk=[rc:31 lv:8] o_cho=L5C19/-15\.t10 #sub=0 o_lv=5 cand=L5C19/-15\.t10
+ all_sub=[{na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+ #qu=6
+ nmp_quas=[o40/11\.t13 o41/12\.t13 o13/-6\.t12 o16/-7\.t12 o44/10\.t11 L5C19/-15\.t10 ] 
+
+ nmp_neus_idxs=[40.41.13.16.44.10.26.23.20.]
+}
+ is_MONO=0 #sub=0 has_sub=0
+all_sub=[{na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+
+ALL_MONOS=[ (18.1), (13.1), (8.1), (14.3), (9.3)]
+nmp_phi_id='[0 0 3 3 ] '
+min_sha=d1f7284949
+tauto_sha=260cd43295986b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c
+guide_sha=7fc4ae7bef22ef478db02579b447f3c798ea02866e16c002e0fc8c9086c9a489
+quick_sha=/SKELETON/REF/cnf+f94/dd90/e0a8/b05ea9e180ec5220315f65222457985d606eda4f3bc47fec26352+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+260/cd43/2959/86b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c+oo/ed4ca2b3e9/
+COL=
+[ -10=1 -6=2 -7=3 -15=4 -11=5 -12=6]
+
+
+
+		 Graph #17
+		 <div id='cnf_graph_17' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('17')">No labels</button><button onclick="update_png('17')">Update PNG</button><button onclick="switch_theme('17')">Switch theme</button>
+
+		 <div id='png_cnf_graph_17' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_17.js'></script>
+		 <script>show_cnf('cnf_graph_17', nmp_grph_17, 'preset', all_plays_17);
+		 </script>
+
+
+
+ck39.7.31.#f=8.2.found_nmp=ca{ {na_idx=19.tk=[rc:31 lv:8].cho=-15}T.C.(0xf08408) cand_tk=[rc:31 lv:8] o_cho=L5C19/-15\.t10 #sub=0 o_lv=5 cand=L5C19/-15\.t10
+ all_sub=[{na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+ #qu=6
+ nmp_quas=[o40/11\.t13 o41/12\.t13 o13/-6\.t12 o16/-7\.t12 o44/10\.t11 L5C19/-15\.t10 ] 
+
+ nmp_neus_idxs=[40.41.13.16.44.10.26.23.20.]
+}
+ out_nmp=ca{ {M.na_idx=18.tk=[rc:29 lv:7].cho=-14}C.(0xf07e90) cand_tk=[rc:29 lv:7] o_cho=L4C18/-14\.t9.m.3 #sub=1 o_lv=4 cand=L4C18/-14\.t9.m.3
+ all_sub=[{M.na_idx=18.tk=[rc:29 lv:7].cho=-14} ->> {na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+ #qu=8
+ nmp_quas=[o40/11\.t13 o41/12\.t13 o13/-6\.t12 o16/-7\.t12 o44/10\.t11 L5C19/-15\.t10 L4/-9\.t9.m.3 L4C18/-14\.t9.m.3 ] 
+
+ nmp_neus_idxs=[40.41.13.16.44.10.26.23.20.29.19.15.12.25.22.]
+}
+
+ck55.7.31.NOT_CAND_to_wrt qua=L3C17/19\.t7 not-has-learned_source.
+ck39.7.31.#f=8.3.out_nmp=ca{ {na_idx=17.tk=[rc:29 lv:6].cho=19}C.(0xf07918) cand_tk=[rc:29 lv:6] o_cho=L3C17/19\.t7 #sub=2 o_lv=3 cand=L3C17/19\.t7
+ all_sub=[{na_idx=17.tk=[rc:29 lv:6].cho=19} ->> {M.na_idx=18.tk=[rc:29 lv:7].cho=-14} ->> {na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+ #qu=12
+ nmp_quas=[o40/11\.t13 o41/12\.t13 o13/-6\.t12 o16/-7\.t12 o44/10\.t11 L5C19/-15\.t10 L4/-9\.t9.m.3 L4C18/-14\.t9.m.3 o32/-16\.t8 o35/-17\.t8 o39/-20\.t8 L3C17/19\.t7 ] 
+
+ nmp_neus_idxs=[40.41.13.16.44.32.35.39.10.26.23.20.29.19.15.12.25.22.36.33.30.43.]
+}
+ qua= L3C17/19\.t7 q_lv= 3 nxt_lv= 1
+ck39.7.31.#f=8.3 (q_lv > (nxt_lv + 1))
+ck39.7.31.#f=8.4.out_nmp=ca{ {M.na_idx=16.tk=[rc:28 lv:5].cho=-18}C.(0xf073a0) cand_tk=[rc:28 lv:5] o_cho=L2C16/-18\.t6.m.1 #sub=3 o_lv=2 cand=L2C16/-18\.t6.m.1
+ all_sub=[{M.na_idx=16.tk=[rc:28 lv:5].cho=-18} ->> {na_idx=17.tk=[rc:29 lv:6].cho=19} ->> {M.na_idx=18.tk=[rc:29 lv:7].cho=-14} ->> {na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+ #qu=15
+ nmp_quas=[o40/11\.t13 o41/12\.t13 o13/-6\.t12 o16/-7\.t12 o44/10\.t11 L5C19/-15\.t10 L4/-9\.t9.m.3 L4C18/-14\.t9.m.3 o32/-16\.t8 o35/-17\.t8 o39/-20\.t8 L3C17/19\.t7 L2/-8\.t6.m.1 L2/-13\.t6.m.1 L2C16/-18\.t6.m.1 ] 
+
+ nmp_neus_idxs=[40.41.13.16.44.32.35.39.10.26.23.20.29.19.15.12.25.22.36.33.30.43.28.18.14.11.24.21.27.17.37.38.34.31.]
+}
+ qua= L2C16/-18\.t6.m.1 q_lv= 2 nxt_lv= 1
+ck47.7.31.map_oper_go nmp={na_idx=17.tk=[rc:29 lv:6].cho=19}
+ck70.7.31.		 <H1>BRN_recoil=31</H1>
+<H2>7.31.FindYES {na_idx=17.tk=[rc:29 lv:6].cho=19} '[0 4 4 4 ] '</H2>
+nmp=ca{ {na_idx=17.tk=[rc:29 lv:6].cho=19}C.(0xf07918) cand_tk=[rc:29 lv:6] o_cho=L3C17/19\.t7 #sub=2 o_lv=3 cand=L3C17/19\.t7
+ all_sub=[{na_idx=17.tk=[rc:29 lv:6].cho=19} ->> {M.na_idx=18.tk=[rc:29 lv:7].cho=-14} ->> {na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+ #qu=12
+ nmp_quas=[o40/11\.t13 o41/12\.t13 o13/-6\.t12 o16/-7\.t12 o44/10\.t11 L5C19/-15\.t10 L4/-9\.t9.m.3 L4C18/-14\.t9.m.3 o32/-16\.t8 o35/-17\.t8 o39/-20\.t8 L3C17/19\.t7 ] 
+
+ nmp_neus_idxs=[40.41.13.16.44.32.35.39.10.26.23.20.29.19.15.12.25.22.36.33.30.43.]
+}
+ is_MONO=0 #sub=2 has_sub=1
+all_sub=[{na_idx=17.tk=[rc:29 lv:6].cho=19} ->> {M.na_idx=18.tk=[rc:29 lv:7].cho=-14} ->> {na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+
+ALL_MONOS=[ (18.1), (13.1), (8.1), (14.3), (9.3)]
+nmp_phi_id='[0 4 4 4 ] '
+min_sha=3a9523aea9
+tauto_sha=73713a9682a7e1d64df37bb2c6a8a5e51883616bc0c029fad1f2ed82840adb9c
+guide_sha=2c925227d58f0161c92b372f25b9d55481d6bf02fbd0f98b11c89c611f34e0eb
+quick_sha=/SKELETON/REF/cnf+587/96ee/e42e/c36419e19dfb55e5780270ec50e8f996e7c0b558111ae8f9fd13f+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+737/13a9/682a/7e1d64df37bb2c6a8a5e51883616bc0c029fad1f2ed82840adb9c+oo/d082b0b76f/
+COL=
+[ -10=1 15=2 11=3 12=4 -6=5 -7=6 20=7 16=8 17=9 -19=10 -14=11 -9=12]
+
+
+
+		 Graph #18
+		 <div id='cnf_graph_18' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('18')">No labels</button><button onclick="update_png('18')">Update PNG</button><button onclick="switch_theme('18')">Switch theme</button>
+
+		 <div id='png_cnf_graph_18' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_18.js'></script>
+		 <script>show_cnf('cnf_graph_18', nmp_grph_18, 'preset', all_plays_18);
+		 </script>
+
+
+
+ck39.7.31.#f=8.4.found_nmp=ca{ {na_idx=17.tk=[rc:29 lv:6].cho=19}C.(0xf07918) cand_tk=[rc:29 lv:6] o_cho=L3C17/19\.t7 #sub=2 o_lv=3 cand=L3C17/19\.t7
+ all_sub=[{na_idx=17.tk=[rc:29 lv:6].cho=19} ->> {M.na_idx=18.tk=[rc:29 lv:7].cho=-14} ->> {na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+ #qu=12
+ nmp_quas=[o40/11\.t13 o41/12\.t13 o13/-6\.t12 o16/-7\.t12 o44/10\.t11 L5C19/-15\.t10 L4/-9\.t9.m.3 L4C18/-14\.t9.m.3 o32/-16\.t8 o35/-17\.t8 o39/-20\.t8 L3C17/19\.t7 ] 
+
+ nmp_neus_idxs=[40.41.13.16.44.32.35.39.10.26.23.20.29.19.15.12.25.22.36.33.30.43.]
+}
+ out_nmp=ca{ {M.na_idx=16.tk=[rc:28 lv:5].cho=-18}C.(0xf073a0) cand_tk=[rc:28 lv:5] o_cho=L2C16/-18\.t6.m.1 #sub=3 o_lv=2 cand=L2C16/-18\.t6.m.1
+ all_sub=[{M.na_idx=16.tk=[rc:28 lv:5].cho=-18} ->> {na_idx=17.tk=[rc:29 lv:6].cho=19} ->> {M.na_idx=18.tk=[rc:29 lv:7].cho=-14} ->> {na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+ #qu=15
+ nmp_quas=[o40/11\.t13 o41/12\.t13 o13/-6\.t12 o16/-7\.t12 o44/10\.t11 L5C19/-15\.t10 L4/-9\.t9.m.3 L4C18/-14\.t9.m.3 o32/-16\.t8 o35/-17\.t8 o39/-20\.t8 L3C17/19\.t7 L2/-8\.t6.m.1 L2/-13\.t6.m.1 L2C16/-18\.t6.m.1 ] 
+
+ nmp_neus_idxs=[40.41.13.16.44.32.35.39.10.26.23.20.29.19.15.12.25.22.36.33.30.43.28.18.14.11.24.21.27.17.37.38.34.31.]
+}
+
+ck39.7.31.#f=8.5.out_nmp=ca{H. {na_idx=15.tk=[rc:28 lv:4].cho=3}C.(0xf06e28) cand_tk=[rc:28 lv:4] o_cho=L1C15/3\.t4 #sub=4 o_lv=1 cand=L1C15/3\.t4
+ all_sub=[{na_idx=15.tk=[rc:28 lv:4].cho=3} ->> {M.na_idx=16.tk=[rc:28 lv:5].cho=-18} ->> {na_idx=17.tk=[rc:29 lv:6].cho=19} ->> {M.na_idx=18.tk=[rc:29 lv:7].cho=-14} ->> {na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+ #qu=17
+ nmp_quas=[o40/11\.t13 o41/12\.t13 o13/-6\.t12 o16/-7\.t12 o44/10\.t11 L5C19/-15\.t10 L4/-9\.t9.m.3 L4C18/-14\.t9.m.3 o32/-16\.t8 o35/-17\.t8 o39/-20\.t8 L3C17/19\.t7 L2/-8\.t6.m.1 L2/-13\.t6.m.1 L2C16/-18\.t6.m.1 o4/-2\.t5 L1C15/3\.t4 ] 
+
+ nmp_neus_idxs=[40.41.13.16.44.32.35.39.4.10.26.23.20.29.19.15.12.25.22.36.33.30.43.28.18.14.11.24.21.27.17.37.38.34.31.42.]
+}
+ qua= L1C15/3\.t4 q_lv= 1 nxt_lv= 0
+ck39.7.31.quick_find failed nmp=0xf06e28
+ck47.7.31.map_oper skip (prepare == false) nmp={na_idx=15.tk=[rc:28 lv:4].cho=3}
+ck39.7.31.#f=8.CANNOT find na_idx=15
+ nxt_rsn=dt={ mots=[#L0\1/.t1 #+46\5/.t2 #+45\4/.t3 ]  qu:o4\2/.t5 lv:0}
+ nxt_lv=0
+[] 
+ck70.7.31.#f=8.5.find_analysis
+		 <H1>BRN_recoil=31</H1>
+<H2>7.31.<H1>FindNOT</H1> {na_idx=15.tk=[rc:28 lv:4].cho=3} '[] '</H2>
+nmp=ca{H. {na_idx=15.tk=[rc:28 lv:4].cho=3}C.(0xf06e28) cand_tk=[rc:28 lv:4] o_cho=L1C15/3\.t4 #sub=4 o_lv=1 cand=L1C15/3\.t4
+ all_sub=[{na_idx=15.tk=[rc:28 lv:4].cho=3} ->> {M.na_idx=16.tk=[rc:28 lv:5].cho=-18} ->> {na_idx=17.tk=[rc:29 lv:6].cho=19} ->> {M.na_idx=18.tk=[rc:29 lv:7].cho=-14} ->> {na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+ #qu=17
+ nmp_quas=[o40/11\.t13 o41/12\.t13 o13/-6\.t12 o16/-7\.t12 o44/10\.t11 L5C19/-15\.t10 L4/-9\.t9.m.3 L4C18/-14\.t9.m.3 o32/-16\.t8 o35/-17\.t8 o39/-20\.t8 L3C17/19\.t7 L2/-8\.t6.m.1 L2/-13\.t6.m.1 L2C16/-18\.t6.m.1 o4/-2\.t5 L1C15/3\.t4 ] 
+
+ nmp_neus_idxs=[40.41.13.16.44.32.35.39.4.10.26.23.20.29.19.15.12.25.22.36.33.30.43.28.18.14.11.24.21.27.17.37.38.34.31.42.]
+}
+ is_MONO=0 #sub=4 has_sub=1
+all_sub=[{na_idx=15.tk=[rc:28 lv:4].cho=3} ->> {M.na_idx=16.tk=[rc:28 lv:5].cho=-18} ->> {na_idx=17.tk=[rc:29 lv:6].cho=19} ->> {M.na_idx=18.tk=[rc:29 lv:7].cho=-14} ->> {na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+
+ALL_MONOS=[ (18.1), (13.1), (8.1), (14.3), (9.3)]
+nmp_phi_id='[] '
+min_sha=invalid_minsha
+tauto_sha=invalid_sha
+guide_sha=invalid_sha
+quick_sha=invalid_sha
+TAUTO_path=
+invalid_path
+COL=
+[]
+
+
+
+		 Graph #19
+		 <div id='cnf_graph_19' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('19')">No labels</button><button onclick="update_png('19')">Update PNG</button><button onclick="switch_theme('19')">Switch theme</button>
+
+		 <div id='png_cnf_graph_19' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_19.js'></script>
+		 <script>show_cnf('cnf_graph_19', nmp_grph_19, 'preset', all_plays_19);
+		 </script>
+
+
+
+ck40.7.31.AFT_ana=
+TRAIL=[#L0UC0/-1\.t1 #C5+46/-5\.t2 #C10+45/-4\.t3 L1C15/3\.t4 o4/-2\.t5 L2C16/-18\.t6.m.1 L2/-13\.t6.m.1 L2/-8\.t6.m.1 L3C17/19\.t7 o39/-20\.t8 o35/-17\.t8 o32/-16\.t8 L4C18/-14\.t9.m.3 L4/-9\.t9.m.3 L5C19/-15\.t10 o44/10\.t11 o16/-7\.t12 o13/-6\.t12 o41/12\.t13 o40/11\.t13 ]
+dt={ mots=[#L0\1/.t1 #+46\5/.t2 #+45\4/.t3 ]  qu:o4\2/.t5 lv:0}
+
+ck40.8.35.bef_ana=
+TRAIL=[#L0UC0/-1\.t1 #C5+46/-5\.t2 #C10+45/-4\.t3 #C15+48/2\.t4 #o4/-3\.t5 L1C20/-17\.t6.m.0 L1/-12\.t6.m.0 L1/-7\.t6.m.0 L2C21/18\.t7 o38/-20\.t8 o37/-19\.t8 o31/-16\.t8 L3C22/-13\.t9.m.2 L3/-8\.t9.m.2 L4C23/-14\.t10 o43/9\.t11 o19/-10\.t12 o12/-6\.t12 o44/15\.t13 o40/11\.t13 ]
+ num_conf=1 br_lv=4 br_ti=13
+ck40.8.35.<H1>out_rsn=</H1>dt={ mots=[#L0\1/.t1 #+46\5/.t2 o31\16/.t8 o38\20/.t8 ]  qu:o43\-9/.t11 lv:2}
+ck39.8.35.#f=9.1.out_nmp=ca{ {na_idx=23.tk=[rc:35 lv:8].cho=-14}T.C.(0xf099e8) cand_tk=[rc:35 lv:8] o_cho=L4C23/-14\.t10 #sub=0 o_lv=4 cand=L4C23/-14\.t10
+ all_sub=[{na_idx=23.tk=[rc:35 lv:8].cho=-14}]
+ #qu=6
+ nmp_quas=[o40/11\.t13 o44/15\.t13 o12/-6\.t12 o19/-10\.t12 o43/9\.t11 L4C23/-14\.t10 ] 
+
+ nmp_neus_idxs=[40.44.12.19.43.13.29.23.22.]
+}
+ qua= L4C23/-14\.t10 q_lv= 4 nxt_lv= 2
+ck39.8.35.#f=9.1 (q_lv > (nxt_lv + 1))
+ck39.8.35.#f=9.2.out_nmp=ca{ {M.na_idx=22.tk=[rc:33 lv:7].cho=-13}C.(0xf09470) cand_tk=[rc:33 lv:7] o_cho=L3C22/-13\.t9.m.2 #sub=1 o_lv=3 cand=L3C22/-13\.t9.m.2
+ all_sub=[{M.na_idx=22.tk=[rc:33 lv:7].cho=-13} ->> {na_idx=23.tk=[rc:35 lv:8].cho=-14}]
+ #qu=8
+ nmp_quas=[o40/11\.t13 o44/15\.t13 o12/-6\.t12 o19/-10\.t12 o43/9\.t11 L4C23/-14\.t10 L3/-8\.t9.m.2 L3C22/-13\.t9.m.2 ] 
+
+ nmp_neus_idxs=[40.44.12.19.43.13.29.23.22.27.17.18.11.28.21.]
+}
+ qua= L3C22/-13\.t9.m.2 q_lv= 3 nxt_lv= 2
+ck47.8.35.map_oper_go nmp={na_idx=23.tk=[rc:35 lv:8].cho=-14}
+ck70.8.35.		 <H1>BRN_recoil=35</H1>
+<H2>8.35.FindYES {na_idx=23.tk=[rc:35 lv:8].cho=-14} '[0 0 3 3 ] '</H2>
+nmp=ca{ {na_idx=23.tk=[rc:35 lv:8].cho=-14}T.C.(0xf099e8) cand_tk=[rc:35 lv:8] o_cho=L4C23/-14\.t10 #sub=0 o_lv=4 cand=L4C23/-14\.t10
+ all_sub=[{na_idx=23.tk=[rc:35 lv:8].cho=-14}]
+ #qu=6
+ nmp_quas=[o40/11\.t13 o44/15\.t13 o12/-6\.t12 o19/-10\.t12 o43/9\.t11 L4C23/-14\.t10 ] 
+
+ nmp_neus_idxs=[40.44.12.19.43.13.29.23.22.]
+}
+ is_MONO=0 #sub=0 has_sub=0
+all_sub=[{na_idx=23.tk=[rc:35 lv:8].cho=-14}]
+
+ALL_MONOS=[ (17.0), (12.0), (7.0), (13.2), (8.2)]
+nmp_phi_id='[0 0 3 3 ] '
+min_sha=d1f7284949
+tauto_sha=260cd43295986b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c
+guide_sha=7fc4ae7bef22ef478db02579b447f3c798ea02866e16c002e0fc8c9086c9a489
+quick_sha=/SKELETON/REF/cnf+f94/dd90/e0a8/b05ea9e180ec5220315f65222457985d606eda4f3bc47fec26352+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+260/cd43/2959/86b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c+oo/ed4ca2b3e9/
+COL=
+[ -9=1 -6=2 -10=3 -14=4 -11=5 -15=6]
+
+
+
+		 Graph #20
+		 <div id='cnf_graph_20' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('20')">No labels</button><button onclick="update_png('20')">Update PNG</button><button onclick="switch_theme('20')">Switch theme</button>
+
+		 <div id='png_cnf_graph_20' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_20.js'></script>
+		 <script>show_cnf('cnf_graph_20', nmp_grph_20, 'preset', all_plays_20);
+		 </script>
+
+
+
+ck39.8.35.#f=9.2.found_nmp=ca{ {na_idx=23.tk=[rc:35 lv:8].cho=-14}T.C.(0xf099e8) cand_tk=[rc:35 lv:8] o_cho=L4C23/-14\.t10 #sub=0 o_lv=4 cand=L4C23/-14\.t10
+ all_sub=[{na_idx=23.tk=[rc:35 lv:8].cho=-14}]
+ #qu=6
+ nmp_quas=[o40/11\.t13 o44/15\.t13 o12/-6\.t12 o19/-10\.t12 o43/9\.t11 L4C23/-14\.t10 ] 
+
+ nmp_neus_idxs=[40.44.12.19.43.13.29.23.22.]
+}
+ out_nmp=ca{ {M.na_idx=22.tk=[rc:33 lv:7].cho=-13}C.(0xf09470) cand_tk=[rc:33 lv:7] o_cho=L3C22/-13\.t9.m.2 #sub=1 o_lv=3 cand=L3C22/-13\.t9.m.2
+ all_sub=[{M.na_idx=22.tk=[rc:33 lv:7].cho=-13} ->> {na_idx=23.tk=[rc:35 lv:8].cho=-14}]
+ #qu=8
+ nmp_quas=[o40/11\.t13 o44/15\.t13 o12/-6\.t12 o19/-10\.t12 o43/9\.t11 L4C23/-14\.t10 L3/-8\.t9.m.2 L3C22/-13\.t9.m.2 ] 
+
+ nmp_neus_idxs=[40.44.12.19.43.13.29.23.22.27.17.18.11.28.21.]
+}
+
+ck55.8.35.NOT_CAND_to_wrt qua=L2C21/18\.t7 not-has-learned_source.
+ck39.8.35.#f=9.3.out_nmp=ca{ {na_idx=21.tk=[rc:33 lv:6].cho=18}C.(0xf08ef8) cand_tk=[rc:33 lv:6] o_cho=L2C21/18\.t7 #sub=2 o_lv=2 cand=L2C21/18\.t7
+ all_sub=[{na_idx=21.tk=[rc:33 lv:6].cho=18} ->> {M.na_idx=22.tk=[rc:33 lv:7].cho=-13} ->> {na_idx=23.tk=[rc:35 lv:8].cho=-14}]
+ #qu=12
+ nmp_quas=[o40/11\.t13 o44/15\.t13 o12/-6\.t12 o19/-10\.t12 o43/9\.t11 L4C23/-14\.t10 L3/-8\.t9.m.2 L3C22/-13\.t9.m.2 o31/-16\.t8 o37/-19\.t8 o38/-20\.t8 L2C21/18\.t7 ] 
+
+ nmp_neus_idxs=[40.44.12.19.43.31.37.38.13.29.23.22.27.17.18.11.28.21.39.33.32.42.]
+}
+ qua= L2C21/18\.t7 q_lv= 2 nxt_lv= 0
+ck39.8.35.#f=9.3 (q_lv > (nxt_lv + 1))
+ck39.8.35.#f=9.4.out_nmp=ca{H. {M.na_idx=20.tk=[rc:32 lv:5].cho=-17}C.(0xf08980) cand_tk=[rc:32 lv:5] o_cho=L1C20/-17\.t6.m.0 #sub=3 o_lv=1 cand=L1C20/-17\.t6.m.0
+ all_sub=[{M.na_idx=20.tk=[rc:32 lv:5].cho=-17} ->> {na_idx=21.tk=[rc:33 lv:6].cho=18} ->> {M.na_idx=22.tk=[rc:33 lv:7].cho=-13} ->> {na_idx=23.tk=[rc:35 lv:8].cho=-14}]
+ #qu=15
+ nmp_quas=[o40/11\.t13 o44/15\.t13 o12/-6\.t12 o19/-10\.t12 o43/9\.t11 L4C23/-14\.t10 L3/-8\.t9.m.2 L3C22/-13\.t9.m.2 o31/-16\.t8 o37/-19\.t8 o38/-20\.t8 L2C21/18\.t7 L1/-7\.t6.m.0 L1/-12\.t6.m.0 L1C20/-17\.t6.m.0 ] 
+
+ nmp_neus_idxs=[40.44.12.19.43.31.37.38.13.29.23.22.27.17.18.11.28.21.39.33.32.42.25.15.16.10.26.20.24.14.34.36.35.30.]
+}
+ qua= L1C20/-17\.t6.m.0 q_lv= 1 nxt_lv= 0
+ck47.8.35.map_oper_go nmp={na_idx=21.tk=[rc:33 lv:6].cho=18}
+ck70.8.35.		 <H1>BRN_recoil=35</H1>
+<H2>8.35.FindYES {na_idx=21.tk=[rc:33 lv:6].cho=18} '[0 4 4 4 ] '</H2>
+nmp=ca{ {na_idx=21.tk=[rc:33 lv:6].cho=18}C.(0xf08ef8) cand_tk=[rc:33 lv:6] o_cho=L2C21/18\.t7 #sub=2 o_lv=2 cand=L2C21/18\.t7
+ all_sub=[{na_idx=21.tk=[rc:33 lv:6].cho=18} ->> {M.na_idx=22.tk=[rc:33 lv:7].cho=-13} ->> {na_idx=23.tk=[rc:35 lv:8].cho=-14}]
+ #qu=12
+ nmp_quas=[o40/11\.t13 o44/15\.t13 o12/-6\.t12 o19/-10\.t12 o43/9\.t11 L4C23/-14\.t10 L3/-8\.t9.m.2 L3C22/-13\.t9.m.2 o31/-16\.t8 o37/-19\.t8 o38/-20\.t8 L2C21/18\.t7 ] 
+
+ nmp_neus_idxs=[40.44.12.19.43.31.37.38.13.29.23.22.27.17.18.11.28.21.39.33.32.42.]
+}
+ is_MONO=0 #sub=2 has_sub=1
+all_sub=[{na_idx=21.tk=[rc:33 lv:6].cho=18} ->> {M.na_idx=22.tk=[rc:33 lv:7].cho=-13} ->> {na_idx=23.tk=[rc:35 lv:8].cho=-14}]
+
+ALL_MONOS=[ (17.0), (12.0), (7.0), (13.2), (8.2)]
+nmp_phi_id='[0 4 4 4 ] '
+min_sha=3a9523aea9
+tauto_sha=73713a9682a7e1d64df37bb2c6a8a5e51883616bc0c029fad1f2ed82840adb9c
+guide_sha=2c925227d58f0161c92b372f25b9d55481d6bf02fbd0f98b11c89c611f34e0eb
+quick_sha=/SKELETON/REF/cnf+587/96ee/e42e/c36419e19dfb55e5780270ec50e8f996e7c0b558111ae8f9fd13f+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+737/13a9/682a/7e1d64df37bb2c6a8a5e51883616bc0c029fad1f2ed82840adb9c+oo/d082b0b76f/
+COL=
+[ -9=1 14=2 11=3 15=4 -6=5 -10=6 19=7 16=8 20=9 -18=10 -13=11 -8=12]
+
+
+
+		 Graph #21
+		 <div id='cnf_graph_21' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('21')">No labels</button><button onclick="update_png('21')">Update PNG</button><button onclick="switch_theme('21')">Switch theme</button>
+
+		 <div id='png_cnf_graph_21' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_21.js'></script>
+		 <script>show_cnf('cnf_graph_21', nmp_grph_21, 'preset', all_plays_21);
+		 </script>
+
+
+
+ck39.8.35.#f=9.4.found_nmp=ca{ {na_idx=21.tk=[rc:33 lv:6].cho=18}C.(0xf08ef8) cand_tk=[rc:33 lv:6] o_cho=L2C21/18\.t7 #sub=2 o_lv=2 cand=L2C21/18\.t7
+ all_sub=[{na_idx=21.tk=[rc:33 lv:6].cho=18} ->> {M.na_idx=22.tk=[rc:33 lv:7].cho=-13} ->> {na_idx=23.tk=[rc:35 lv:8].cho=-14}]
+ #qu=12
+ nmp_quas=[o40/11\.t13 o44/15\.t13 o12/-6\.t12 o19/-10\.t12 o43/9\.t11 L4C23/-14\.t10 L3/-8\.t9.m.2 L3C22/-13\.t9.m.2 o31/-16\.t8 o37/-19\.t8 o38/-20\.t8 L2C21/18\.t7 ] 
+
+ nmp_neus_idxs=[40.44.12.19.43.31.37.38.13.29.23.22.27.17.18.11.28.21.39.33.32.42.]
+}
+ out_nmp=ca{H. {M.na_idx=20.tk=[rc:32 lv:5].cho=-17}C.(0xf08980) cand_tk=[rc:32 lv:5] o_cho=L1C20/-17\.t6.m.0 #sub=3 o_lv=1 cand=L1C20/-17\.t6.m.0
+ all_sub=[{M.na_idx=20.tk=[rc:32 lv:5].cho=-17} ->> {na_idx=21.tk=[rc:33 lv:6].cho=18} ->> {M.na_idx=22.tk=[rc:33 lv:7].cho=-13} ->> {na_idx=23.tk=[rc:35 lv:8].cho=-14}]
+ #qu=15
+ nmp_quas=[o40/11\.t13 o44/15\.t13 o12/-6\.t12 o19/-10\.t12 o43/9\.t11 L4C23/-14\.t10 L3/-8\.t9.m.2 L3C22/-13\.t9.m.2 o31/-16\.t8 o37/-19\.t8 o38/-20\.t8 L2C21/18\.t7 L1/-7\.t6.m.0 L1/-12\.t6.m.0 L1C20/-17\.t6.m.0 ] 
+
+ nmp_neus_idxs=[40.44.12.19.43.31.37.38.13.29.23.22.27.17.18.11.28.21.39.33.32.42.25.15.16.10.26.20.24.14.34.36.35.30.]
+}
+
+ck47.8.35.map_oper_go nmp={na_idx=15.tk=[rc:28 lv:4].cho=3}
+ck70.8.35.---dbg_call_dbg_call_dbg_call---
+Call Stack from /home/jose/devel/ben-jose/src/library/brain/neuromap.cpp:920
+   bj-phi(_ZN8neuromap8map_operE8mem_op_t+0x168d) [0x4a5ebf]
+   bj-phi(_ZN8neuromap9map_writeEb+0x116) [0x4a0bc2]
+   bj-phi(_Z14write_all_nmpsR3rowIP8neuromapE+0xf6) [0x48f969]
+   bj-phi(_ZN5brain17analyse_conflictsER3rowI11prop_signalER9deduction+0x8a5) [0x490413]
+   bj-phi(_ZN5brain24deduce_and_reverse_trailEv+0x1cc) [0x4674b4]
+   bj-phi(_ZN5brain7pulsateEv+0x3fc) [0x464f82]
+   bj-phi(_ZN5brain5thinkEv+0x45c) [0x46137c]
+   bj-phi(_ZN5brain14solve_instanceEb+0x407) [0x466b11]
+   bj-phi(_Z8phi_mainlb+0x327) [0x442881]
+   bj-phi(main+0xeb) [0x442af0]
+   /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7f9bf6298830]
+   bj-phi(_start+0x29) [0x442419]
+(to see full call names link with -rdynamic option)
+
+---dbg_call_dbg_call_dbg_call---
+		 <H1>BRN_recoil=35</H1>
+<H2>8.35.WriteYES {na_idx=15.tk=[rc:28 lv:4].cho=3} '[2 5 5 5 ] '</H2>
+nmp=ca{H. {na_idx=15.tk=[rc:28 lv:4].cho=3}C.(0xf06e28) cand_tk=[rc:28 lv:4] o_cho=#o4\3/.t5 #sub=4 o_lv=1 cand=#C15+48/2\.t4
+ all_sub=[{na_idx=15.tk=[rc:28 lv:4].cho=3} ->> {M.na_idx=16.tk=[rc:28 lv:5].cho=-18} ->> {na_idx=17.tk=[rc:29 lv:6].cho=19} ->> {M.na_idx=18.tk=[rc:29 lv:7].cho=-14} ->> {na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+ #qu=17
+ nmp_quas=[o40/11\.t13 L1\12/.t6.M.0 o12/-6\.t12 L1/-7\.t6.m.0 o19\10/.t12 o44\-15/.t13 o43\-9/.t11 L4C23/-14\.t10 o31/-16\.t8 L1C20/-17\.t6.m.0 o38/-20\.t8 o37\19/.t8 L3/-8\.t9.m.2 L3C22/-13\.t9.m.2 L2\-18/.t7 #+48\-2/.t4 #o4\3/.t5 ] 
+
+ nmp_neus_idxs=[40.41.13.16.44.32.35.39.4.10.26.23.20.29.19.15.12.25.22.36.33.30.43.28.18.14.11.24.21.27.17.37.38.34.31.42.]
+}
+ is_MONO=0 #sub=4 has_sub=1
+all_sub=[{na_idx=15.tk=[rc:28 lv:4].cho=3} ->> {M.na_idx=16.tk=[rc:28 lv:5].cho=-18} ->> {na_idx=17.tk=[rc:29 lv:6].cho=19} ->> {M.na_idx=18.tk=[rc:29 lv:7].cho=-14} ->> {na_idx=19.tk=[rc:31 lv:8].cho=-15}]
+
+ALL_MONOS=[ (17.0), (12.0), (7.0), (13.2), (8.2)]
+nmp_phi_id='[2 5 5 5 ] '
+min_sha=97f571a5cd
+tauto_sha=9b6ba2822e912f87cce237e31d2bb370083df9947fc2f10eaab8847dc4b2a623
+guide_sha=46f48e41481c036265603873d9a0870bcebfc6970458264cb8b1dc1b058ba5bc
+quick_sha=/SKELETON/REF/cnf+644/0956/969a/b0fe21036b9c8ceaec4714c7cc469bdcc713671fa2d4d3cb5cfed+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+9b6/ba28/22e9/12f87cce237e31d2bb370083df9947fc2f10eaab8847dc4b2a623+oo/8503feb3c2/
+COL=
+[ -10=1 15=2 12=3 11=4 -7=5 -6=6 20=7 17=8 16=9 -19=10 2=11 -3=12 -14=13 -9=14 -13=15 -18=16 -8=17]
+
+
+
+		 Graph #22
+		 <div id='cnf_graph_22' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('22')">No labels</button><button onclick="update_png('22')">Update PNG</button><button onclick="switch_theme('22')">Switch theme</button>
+
+		 <div id='png_cnf_graph_22' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_22.js'></script>
+		 <script>show_cnf('cnf_graph_22', nmp_grph_22, 'preset', all_plays_22);
+		 </script>
+
+
+
+ck71.8.35.ADDED wrt_id=[2 5 5 5 ] 
+ wrt_phi_id_str='[2 5 5 5 ] '
+
+ck71.8.35.FIRST_WRITE_OK for wrt_id=[2 5 5 5 ] 
+ wrt_phi_id_str='[2 5 5 5 ] '
+ cur_sha=9b6ba2822e912f87cce237e31d2bb370083df9947fc2f10eaab8847dc4b2a623
+
+ck47.8.35.map_oper_go nmp={na_idx=10.tk=[rc:23 lv:3].cho=4}
+ck70.8.35.---dbg_call_dbg_call_dbg_call---
+Call Stack from /home/jose/devel/ben-jose/src/library/brain/neuromap.cpp:920
+   bj-phi(_ZN8neuromap8map_operE8mem_op_t+0x168d) [0x4a5ebf]
+   bj-phi(_ZN8neuromap9map_writeEb+0x116) [0x4a0bc2]
+   bj-phi(_Z14write_all_nmpsR3rowIP8neuromapE+0xf6) [0x48f969]
+   bj-phi(_ZN5brain17analyse_conflictsER3rowI11prop_signalER9deduction+0x8a5) [0x490413]
+   bj-phi(_ZN5brain24deduce_and_reverse_trailEv+0x1cc) [0x4674b4]
+   bj-phi(_ZN5brain7pulsateEv+0x3fc) [0x464f82]
+   bj-phi(_ZN5brain5thinkEv+0x45c) [0x46137c]
+   bj-phi(_ZN5brain14solve_instanceEb+0x407) [0x466b11]
+   bj-phi(_Z8phi_mainlb+0x327) [0x442881]
+   bj-phi(main+0xeb) [0x442af0]
+   /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7f9bf6298830]
+   bj-phi(_start+0x29) [0x442419]
+(to see full call names link with -rdynamic option)
+
+---dbg_call_dbg_call_dbg_call---
+		 <H1>BRN_recoil=35</H1>
+<H2>8.35.WriteYES {na_idx=10.tk=[rc:23 lv:3].cho=4} '[3 5 5 5 ] '</H2>
+nmp=ca{H. {na_idx=10.tk=[rc:23 lv:3].cho=4}C.(0xf052d0) cand_tk=[rc:23 lv:3] o_cho=#+45\4/.t3 #sub=4 o_lv=1 cand=#C10+45/-4\.t3
+ all_sub=[{na_idx=10.tk=[rc:23 lv:3].cho=4} ->> {M.na_idx=11.tk=[rc:23 lv:4].cho=-19} ->> {na_idx=12.tk=[rc:24 lv:5].cho=20} ->> {M.na_idx=13.tk=[rc:24 lv:6].cho=-15} ->> {na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+ #qu=18
+ nmp_quas=[L1\12/.t6.M.0 L3\13/.t9.M.2 L1/-7\.t6.m.0 L3/-8\.t9.m.2 o12\6/.t12 o40\-11/.t13 o19/-10\.t12 o44\-15/.t13 o31/-16\.t8 L1C20/-17\.t6.m.0 L2\-18/.t7 o38\20/.t8 o43\-9/.t11 L4C23/-14\.t10 o37/-19\.t8 #+48\-2/.t4 #o4/-3\.t5 #+45\4/.t3 ] 
+
+ nmp_neus_idxs=[41.42.10.11.40.33.36.38.5.7.14.21.24.20.23.13.18.16.28.26.34.31.30.44.22.12.17.15.27.25.29.19.39.37.35.32.4.43.]
+}
+ is_MONO=0 #sub=4 has_sub=1
+all_sub=[{na_idx=10.tk=[rc:23 lv:3].cho=4} ->> {M.na_idx=11.tk=[rc:23 lv:4].cho=-19} ->> {na_idx=12.tk=[rc:24 lv:5].cho=20} ->> {M.na_idx=13.tk=[rc:24 lv:6].cho=-15} ->> {na_idx=14.tk=[rc:26 lv:7].cho=-11}]
+
+ALL_MONOS=[ (17.0), (12.0), (7.0), (13.2), (8.2)]
+nmp_phi_id='[3 5 5 5 ] '
+min_sha=f9f06b091c
+tauto_sha=a193c043db39c3e7fd1311cb2f100600a9798d735f1896938036a051b73159d4
+guide_sha=f23b02a59e6913006db20770525f0483e65269fd4658ed9d8722d8dc3e7b7032
+quick_sha=/SKELETON/REF/cnf+5c8/9f03/3585/a437df63eaae2d3f158d3b158101976f54ab6088ffb511b1b7a05+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+a19/3c04/3db3/9c3e7fd1311cb2f100600a9798d735f1896938036a051b73159d4+oo/ee752a7ed6/
+COL=
+[ -6=1 11=2 12=3 13=4 -7=5 -8=6 16=7 17=8 18=9 -20=10 2=11 3=12 -4=13 -15=14 -10=15 -14=16 -19=17 -9=18]
+
+
+
+		 Graph #23
+		 <div id='cnf_graph_23' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('23')">No labels</button><button onclick="update_png('23')">Update PNG</button><button onclick="switch_theme('23')">Switch theme</button>
+
+		 <div id='png_cnf_graph_23' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_23.js'></script>
+		 <script>show_cnf('cnf_graph_23', nmp_grph_23, 'preset', all_plays_23);
+		 </script>
+
+
+
+ck71.8.35.ADDED wrt_id=[3 5 5 5 ] 
+ wrt_phi_id_str='[3 5 5 5 ] '
+
+ck71.8.35.FIRST_WRITE_OK for wrt_id=[3 5 5 5 ] 
+ wrt_phi_id_str='[3 5 5 5 ] '
+ cur_sha=a193c043db39c3e7fd1311cb2f100600a9798d735f1896938036a051b73159d4
+
+ck47.8.35.map_oper_go nmp={na_idx=5.tk=[rc:19 lv:2].cho=5}
+ck70.8.35.---dbg_call_dbg_call_dbg_call---
+Call Stack from /home/jose/devel/ben-jose/src/library/brain/neuromap.cpp:920
+   bj-phi(_ZN8neuromap8map_operE8mem_op_t+0x168d) [0x4a5ebf]
+   bj-phi(_ZN8neuromap9map_writeEb+0x116) [0x4a0bc2]
+   bj-phi(_Z14write_all_nmpsR3rowIP8neuromapE+0xf6) [0x48f969]
+   bj-phi(_ZN5brain17analyse_conflictsER3rowI11prop_signalER9deduction+0x8a5) [0x490413]
+   bj-phi(_ZN5brain24deduce_and_reverse_trailEv+0x1cc) [0x4674b4]
+   bj-phi(_ZN5brain7pulsateEv+0x3fc) [0x464f82]
+   bj-phi(_ZN5brain5thinkEv+0x45c) [0x46137c]
+   bj-phi(_ZN5brain14solve_instanceEb+0x407) [0x466b11]
+   bj-phi(_Z8phi_mainlb+0x327) [0x442881]
+   bj-phi(main+0xeb) [0x442af0]
+   /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7f9bf6298830]
+   bj-phi(_start+0x29) [0x442419]
+(to see full call names link with -rdynamic option)
+
+---dbg_call_dbg_call_dbg_call---
+		 <H1>BRN_recoil=35</H1>
+<H2>8.35.WriteYES {na_idx=5.tk=[rc:19 lv:2].cho=5} '[4 5 5 5 ] '</H2>
+nmp=ca{H. {na_idx=5.tk=[rc:19 lv:2].cho=5}C.(0xf03778) cand_tk=[rc:19 lv:2] o_cho=#+46\5/.t2 #sub=4 o_lv=1 cand=#C5+46/-5\.t2
+ all_sub=[{na_idx=5.tk=[rc:19 lv:2].cho=5} ->> {M.na_idx=6.tk=[rc:19 lv:3].cho=-20} ->> {na_idx=7.tk=[rc:20 lv:4].cho=16} ->> {M.na_idx=8.tk=[rc:20 lv:5].cho=-11} ->> {na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+ #qu=19
+ nmp_quas=[L3\8/.t9.M.2 o43/9\.t11 L3C22/-13\.t9.m.2 L4C23/-14\.t10 L1\12/.t6.M.0 L1/-7\.t6.m.0 o12/-6\.t12 o40\-11/.t13 L1C20/-17\.t6.m.0 L2\-18/.t7 o37/-19\.t8 o31\16/.t8 o19/-10\.t12 o44\-15/.t13 o38/-20\.t8 #+48\-2/.t4 #o4/-3\.t5 #C10+45/-4\.t3 #+46\5/.t2 ] 
+
+ nmp_neus_idxs=[42.43.24.25.41.30.31.32.6.8.9.27.15.17.14.10.20.22.21.12.11.37.35.34.40.16.26.29.28.19.18.23.13.33.39.38.36.7.5.4.44.]
+}
+ is_MONO=0 #sub=4 has_sub=1
+all_sub=[{na_idx=5.tk=[rc:19 lv:2].cho=5} ->> {M.na_idx=6.tk=[rc:19 lv:3].cho=-20} ->> {na_idx=7.tk=[rc:20 lv:4].cho=16} ->> {M.na_idx=8.tk=[rc:20 lv:5].cho=-11} ->> {na_idx=9.tk=[rc:21 lv:6].cho=-7}]
+
+ALL_MONOS=[ (17.0), (12.0), (7.0), (13.2), (8.2)]
+nmp_phi_id='[4 5 5 5 ] '
+min_sha=e92136d329
+tauto_sha=19025ace07a0f24962e9538260359e4899d73a0cb2260e9259aab3f041f849e8
+guide_sha=7b7df4ec068d550ed2c6cd071f4adccbc5a47bec517a0c2e251c8e47188eaa11
+quick_sha=/SKELETON/REF/cnf+7a6/71b4/899d/d65ccc453fc16371e6905b780c7a411517f544b34dae374eed502+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+190/25ac/e07a/0f24962e9538260359e4899d73a0cb2260e9259aab3f041f849e8+oo/e4631ad760/
+COL=
+[ -12=1 7=2 8=3 9=4 -13=5 -14=6 17=7 18=8 19=9 -16=10 2=11 3=12 4=13 -5=14 -6=15 -11=16 -10=17 -20=18 -15=19]
+
+
+
+		 Graph #24
+		 <div id='cnf_graph_24' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('24')">No labels</button><button onclick="update_png('24')">Update PNG</button><button onclick="switch_theme('24')">Switch theme</button>
+
+		 <div id='png_cnf_graph_24' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_24.js'></script>
+		 <script>show_cnf('cnf_graph_24', nmp_grph_24, 'preset', all_plays_24);
+		 </script>
+
+
+
+ck71.8.35.ADDED wrt_id=[4 5 5 5 ] 
+ wrt_phi_id_str='[4 5 5 5 ] '
+
+ck71.8.35.FIRST_WRITE_OK for wrt_id=[4 5 5 5 ] 
+ wrt_phi_id_str='[4 5 5 5 ] '
+ cur_sha=19025ace07a0f24962e9538260359e4899d73a0cb2260e9259aab3f041f849e8
+
+ck47.8.35.map_oper_go nmp={na_idx=0.tk=[rc:2 lv:1].cho=1}
+ck70.8.35.---dbg_call_dbg_call_dbg_call---
+Call Stack from /home/jose/devel/ben-jose/src/library/brain/neuromap.cpp:920
+   bj-phi(_ZN8neuromap8map_operE8mem_op_t+0x168d) [0x4a5ebf]
+   bj-phi(_ZN8neuromap9map_writeEb+0x116) [0x4a0bc2]
+   bj-phi(_Z14write_all_nmpsR3rowIP8neuromapE+0xf6) [0x48f969]
+   bj-phi(_ZN5brain17analyse_conflictsER3rowI11prop_signalER9deduction+0x8a5) [0x490413]
+   bj-phi(_ZN5brain24deduce_and_reverse_trailEv+0x1cc) [0x4674b4]
+   bj-phi(_ZN5brain7pulsateEv+0x3fc) [0x464f82]
+   bj-phi(_ZN5brain5thinkEv+0x45c) [0x46137c]
+   bj-phi(_ZN5brain14solve_instanceEb+0x407) [0x466b11]
+   bj-phi(_Z8phi_mainlb+0x327) [0x442881]
+   bj-phi(main+0xeb) [0x442af0]
+   /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7f9bf6298830]
+   bj-phi(_start+0x29) [0x442419]
+(to see full call names link with -rdynamic option)
+
+---dbg_call_dbg_call_dbg_call---
+		 <H1>BRN_recoil=35</H1>
+<H2>8.35.WriteYES {na_idx=0.tk=[rc:2 lv:1].cho=1} '[5 5 5 5 ] '</H2>
+nmp=ca{H. {na_idx=0.tk=[rc:2 lv:1].cho=1}C.(0xf01c20) cand_tk=[rc:2 lv:1] o_cho=#L0\1/.t1 #sub=4 o_lv=1 cand=#L0UC0/-1\.t1
+ all_sub=[{na_idx=0.tk=[rc:2 lv:1].cho=1} ->> {M.na_idx=1.tk=[rc:2 lv:2].cho=-16} ->> {na_idx=2.tk=[rc:3 lv:3].cho=7} ->> {M.na_idx=3.tk=[rc:3 lv:4].cho=-17} ->> {na_idx=4.tk=[rc:5 lv:5].cho=-13}]
+ #qu=20
+ nmp_quas=[L4\14/.t10 o44/15\.t13 o37/-19\.t8 o38/-20\.t8 L2C21/18\.t7 L3C22/-13\.t9.m.2 L1/-12\.t6.m.0 L1C20/-17\.t6.m.0 L3/-8\.t9.m.2 o43\-9/.t11 o19/-10\.t12 L1\7/.t6.M.0 o12/-6\.t12 o40\-11/.t13 o31/-16\.t8 #+48\-2/.t4 #o4/-3\.t5 #C10+45/-4\.t3 #C5+46/-5\.t2 #L0\1/.t1 ] 
+
+ nmp_neus_idxs=[43.44.37.38.42.14.15.16.0.1.2.3.39.28.29.27.24.34.36.35.26.25.19.18.17.41.21.31.33.32.23.22.30.20.10.13.12.11.9.8.7.6.5.4.40.]
+}
+ is_MONO=0 #sub=4 has_sub=1
+all_sub=[{na_idx=0.tk=[rc:2 lv:1].cho=1} ->> {M.na_idx=1.tk=[rc:2 lv:2].cho=-16} ->> {na_idx=2.tk=[rc:3 lv:3].cho=7} ->> {M.na_idx=3.tk=[rc:3 lv:4].cho=-17} ->> {na_idx=4.tk=[rc:5 lv:5].cho=-13}]
+
+ALL_MONOS=[ (17.0), (12.0), (7.0), (13.2), (8.2)]
+nmp_phi_id='[5 5 5 5 ] '
+min_sha=c150bb8dd9
+tauto_sha=fcd3559b67afbc858a659073d6490585e11064065b9757cafcaf126077da0220
+guide_sha=e8f881d76119756fbe7ae9db8600930a2bcd55e28b1b99634e55c4ca824a6979
+quick_sha=/SKELETON/REF/cnf+bed/9efb/3506/0df4a009f7906a0762b98a4e1e6475ffcb61371daae4a3f5f9bc0+oo/
+TAUTO_path=
+/SKELETON/CNF/cnf+fcd/3559/b67a/fbc858a659073d6490585e11064065b9757cafcaf126077da0220+oo/f7e1ca9d69/
+COL=
+[ -18=1 13=2 14=3 15=4 -19=5 -20=6 8=7 9=8 10=9 -7=10 3=11 4=12 5=13 -2=14 -1=15 -12=16 -17=17 -11=18 -6=19 -16=20]
+
+
+
+		 Graph #25
+		 <div id='cnf_graph_25' style='height:600px;width:800px;border:1px solid #777;'></div>
+		 <button onclick="no_labels('25')">No labels</button><button onclick="update_png('25')">Update PNG</button><button onclick="switch_theme('25')">Switch theme</button>
+
+		 <div id='png_cnf_graph_25' style='height:600px;width:800px;border:1px solid #777;display: none;'></div>
+		 <script src='phi_hole_4/phi_hole_4_nmp_25.js'></script>
+		 <script>show_cnf('cnf_graph_25', nmp_grph_25, 'preset', all_plays_25);
+		 </script>
+
+
+
+ck71.8.35.ADDED wrt_id=[5 5 5 5 ] 
+ wrt_phi_id_str='[5 5 5 5 ] '
+
+ck71.8.35.FIRST_WRITE_OK for wrt_id=[5 5 5 5 ] 
+ wrt_phi_id_str='[5 5 5 5 ] '
+ cur_sha=fcd3559b67afbc858a659073d6490585e11064065b9757cafcaf126077da0220
+
+ck40.8.35.AFT_ana=
+TRAIL=[#L0UC0/-1\.t1 #C5+46/-5\.t2 #C10+45/-4\.t3 #C15+48/2\.t4 #o4/-3\.t5 L1C20/-17\.t6.m.0 L1/-12\.t6.m.0 L1/-7\.t6.m.0 L2C21/18\.t7 o38/-20\.t8 o37/-19\.t8 o31/-16\.t8 L3C22/-13\.t9.m.2 L3/-8\.t9.m.2 L4C23/-14\.t10 o43/9\.t11 o19/-10\.t12 o12/-6\.t12 o44/15\.t13 o40/11\.t13 ]
+dt={ mots=[]  qu:#L0\1/.t1 lv:0}
+
+	</pre>
+	</body>
+</html>
