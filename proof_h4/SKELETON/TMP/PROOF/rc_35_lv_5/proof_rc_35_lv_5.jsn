@@ -1,0 +1,11 @@
+{
+"name": "rc_35_lv_5",
+"chain": [
+{"neu_lits": [],
+"neu_idx": "0","neu_type": "full", 
+"neu_full_jsn_pth": "/SKELETON/CNF/cnf+fcd/3559/b67a/fbc858a659073d6490585e11064065b9757cafcaf126077da0220+oo/f7e1ca9d69/proof",
+"neu_jsn_pth": "rc_35_lv_5_3/proof_rc_35_lv_5_3.jsn",
+"va_r": "0"
+}
+]
+}

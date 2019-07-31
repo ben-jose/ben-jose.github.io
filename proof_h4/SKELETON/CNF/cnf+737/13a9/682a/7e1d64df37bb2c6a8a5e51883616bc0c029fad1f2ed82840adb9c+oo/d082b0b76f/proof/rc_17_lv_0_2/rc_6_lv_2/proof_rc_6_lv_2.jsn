@@ -1,0 +1,26 @@
+{
+"name": "rc_6_lv_2",
+"chain": [
+{"neu_lits": [],
+"neu_idx": "0","neu_type": "full", 
+"neu_full_jsn_pth": "/SKELETON/CNF/cnf+260/cd43/2959/86b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c+oo/ed4ca2b3e9/proof",
+"neu_jsn_pth": "rc_6_lv_2_0/proof_rc_6_lv_2_0.jsn",
+"va_r": "0"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "-8", "-7"], 
+"neu_idx": "14",
+"va_r": "-8"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "-9", "-7"], 
+"neu_idx": "15",
+"va_r": "-9"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "-10", "-7"], 
+"neu_idx": "16",
+"va_r": "-10"
+}
+]
+}

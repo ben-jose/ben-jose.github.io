@@ -3,7 +3,13 @@
 <h1>Proofs</h1>
 
 <p>
-ben-jose can generate proofs for unsatisfiable formulas. 
+ben-jose can generate proofs for unsatisfiable formulas. To display them you will need a file system web browser like 
+webfs.
+
+<p> To install webfs in Linux Mint just type:
+<pre>
+	sudo apt-get install webfs
+</pre>
 
 <p>
 Assuming the program ''bj-batch-solver'' is in the path, and from the source tree directory:
@@ -12,8 +18,20 @@ Assuming the program ''bj-batch-solver'' is in the path, and from the source tre
 	cd ben-jose-master/src/programs/tests/solver
 	sh clean_sh
 	bj-solver-debug ./h4.cnf -proof -root .
-	firefox ./SKELETON/CNF/Show_Proof.htm &
+	webfsd -F -p 3000
 </pre>
+
+And from another terminal:
+
+<pre>
+	firefox http://localhost:3000/SKELETON/CNF/Show_Proof.htm &
+</pre>
+
+<p>
+This display system was designed as a debug tool so it will show some dialogs. Just click ok to all of them.
+
+<p>
+The expected output can be found in <a href="proof_h4/SKELETON/CNF/Show_Proof.htm">this link</a>.
 
 <p>
 the bj-batch-solver program will use the bjp_write_proofs library option to generate the proof of the unsatisfiable instance ''h4.cnf'' in JSON format. 

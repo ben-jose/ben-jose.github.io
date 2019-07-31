@@ -1,0 +1,34 @@
+<html> 
+	<head> 
+		<title>Show Ben Jose Proof Script</title> 
+		 <script src='show_proof_js_lib/show_proof.js'></script> 
+		 <link rel='stylesheet' type='text/css' 
+			 href='./show_proof_js_lib/sw_proof.css' media='screen' /> 
+	</head> 
+	<body> 
+		<h1>Show proof</h1> 
+		<textarea class='show_proof_path' id='main_jsn_file' rows='4' 
+		cols='70' style='font-size: 20px' 
+		>/SKELETON/CNF/cnf+fcd/3559/b67a/fbc858a659073d6490585e11064065b9757cafcaf126077da0220+oo/f7e1ca9d69/proof/cnf_proof.jsn
+		</textarea><br> 
+		(the path must start with '/SKELETON/CNF/' and end with 'cnf_proof.jsn').<br> 
+		<ul class='collapsibleList'> 
+			<li> 
+				<label for='pru_lb'><a id='main_cnf_title'></a></label> 
+				<input type='checkbox' id='pru_lb' /> 
+				<ul><li id='main_cnf_cont'></li></ul> 
+			</li> 
+		</ul> 
+		<ul class='collapsibleList'> 
+			<li> 
+				<label for='main_proof_lb' onclick="populate_main_ul_with_txt_area()"> 
+					<a id='proof_label'>LOAD FILE</a> 
+				</label> 
+				<input type='checkbox' id='main_proof_lb' /> 
+				<ul id='main_proof_ul'> 
+				</ul> 
+			</li> 
+		</ul> 
+	<script>populate_main_ul_with_param()</script> 
+	</body> 
+</html> 

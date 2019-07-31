@@ -1,0 +1,11 @@
+{
+"name": "/SKELETON/CNF/cnf+fcd/3559/b67a/fbc858a659073d6490585e11064065b9757cafcaf126077da0220+oo/f7e1ca9d69/proof/rc_35_lv_5_3",
+"chain": [
+{"neu_lits": [],
+"neu_idx": "0","neu_type": "full", 
+"neu_full_jsn_pth": "/SKELETON/CNF/cnf+190/25ac/e07a/0f24962e9538260359e4899d73a0cb2260e9259aab3f041f849e8+oo/e4631ad760/proof",
+"neu_jsn_pth": "rc_35_lv_5_2/proof_rc_35_lv_5_2.jsn",
+"va_r": "0"
+}
+]
+}

@@ -1,0 +1,31 @@
+{
+"name": "rc_17_lv_0",
+"chain": [
+{"neu_lits": [],
+"neu_idx": "0","neu_type": "full", 
+"neu_full_jsn_pth": "/SKELETON/CNF/cnf+737/13a9/682a/7e1d64df37bb2c6a8a5e51883616bc0c029fad1f2ed82840adb9c+oo/d082b0b76f/proof",
+"neu_jsn_pth": "rc_17_lv_0_2/proof_rc_17_lv_0_2.jsn",
+"va_r": "0"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "-2", "-1"], 
+"neu_idx": "0",
+"va_r": "-2"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "-3", "-1"], 
+"neu_idx": "1",
+"va_r": "-3"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "-4", "-1"], 
+"neu_idx": "2",
+"va_r": "-4"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "-5", "-1"], 
+"neu_idx": "3",
+"va_r": "-5"
+}
+]
+}

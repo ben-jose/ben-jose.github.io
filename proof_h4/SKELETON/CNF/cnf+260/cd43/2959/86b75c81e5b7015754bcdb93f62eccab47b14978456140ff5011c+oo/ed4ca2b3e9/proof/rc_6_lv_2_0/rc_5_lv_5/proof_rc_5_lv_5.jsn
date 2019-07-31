@@ -1,0 +1,30 @@
+{
+"name": "rc_5_lv_5",
+"chain": [
+{"neu_type": "norm", 
+"neu_lits": [ "-15", "-14"], 
+"neu_idx": "29",
+"va_r": "0"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "14", "19", "9", "4"], 
+"neu_idx": "43",
+"va_r": "14"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "15", "20", "10", "5"], 
+"neu_idx": "44",
+"va_r": "15"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "-19", "-18"], 
+"neu_idx": "37",
+"va_r": "-19"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "-20", "-18"], 
+"neu_idx": "38",
+"va_r": "-20"
+}
+]
+}

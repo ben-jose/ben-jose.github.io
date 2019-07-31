@@ -1,0 +1,8 @@
+c Yashua Melej Hamashiaj. 
+c ben-jose dimacs unsat cnf generated file.
+c Any modification will make it useless for ben-jose. 
+p cnf 6 4 
+2 3 0
+4 5 0
+4 6 0
+5 6 0

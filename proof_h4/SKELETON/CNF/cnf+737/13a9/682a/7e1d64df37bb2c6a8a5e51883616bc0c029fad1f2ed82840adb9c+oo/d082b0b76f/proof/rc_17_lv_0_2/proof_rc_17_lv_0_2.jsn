@@ -1,0 +1,17 @@
+{
+"name": "/SKELETON/CNF/cnf+737/13a9/682a/7e1d64df37bb2c6a8a5e51883616bc0c029fad1f2ed82840adb9c+oo/d082b0b76f/proof/rc_17_lv_0_2",
+"chain": [
+{"neu_lits": [],
+"neu_idx": "0","neu_type": "full", 
+"neu_full_jsn_pth": "/SKELETON/CNF/cnf+ad8/4491/5f88/31ff9de3e75355d27b88f7eb7816a17a67ec89cdf23ade8dfde85+oo/02e2bf692b/proof",
+"neu_jsn_pth": "rc_17_lv_0_1/proof_rc_17_lv_0_1.jsn",
+"va_r": "0"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "-7", "5", "3", "4"], 
+"neu_idx": "45",
+"neu_jsn_pth": "rc_6_lv_2/proof_rc_6_lv_2.jsn",
+"va_r": "-7"
+}
+]
+}

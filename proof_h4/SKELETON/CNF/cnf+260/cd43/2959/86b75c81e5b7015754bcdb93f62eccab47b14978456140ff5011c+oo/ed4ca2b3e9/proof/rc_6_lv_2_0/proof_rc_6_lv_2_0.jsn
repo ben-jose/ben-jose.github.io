@@ -1,0 +1,41 @@
+{
+"name": "/SKELETON/CNF/cnf+260/cd43/2959/86b75c81e5b7015754bcdb93f62eccab47b14978456140ff5011c+oo/ed4ca2b3e9/proof/rc_6_lv_2_0",
+"chain": [
+{"neu_type": "norm", 
+"neu_lits": [ "-20", "-19"], 
+"neu_idx": "39",
+"va_r": "0"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "19", "14", "9", "4"], 
+"neu_idx": "43",
+"va_r": "19"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "20", "15", "10", "5"], 
+"neu_idx": "44",
+"va_r": "20"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "-14", "-13"], 
+"neu_idx": "27",
+"va_r": "-14"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "-15", "-13"], 
+"neu_idx": "28",
+"va_r": "-15"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "13", "18", "8", "3"], 
+"neu_idx": "42",
+"va_r": "13"
+}
+,{"neu_type": "norm", 
+"neu_lits": [ "-18", "9", "10", "5", "4"], 
+"neu_idx": "45",
+"neu_jsn_pth": "rc_5_lv_5/proof_rc_5_lv_5.jsn",
+"va_r": "-18"
+}
+]
+}
