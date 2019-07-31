@@ -76,6 +76,10 @@
 ben-jose can generate proofs for unsatisfiable formulas. To display them you will need a file system web browser like 
 webfs.
 
+<p>
+This display system was designed as a debug tool so it needs some steps to be used.
+Also while running it will show some dialogs. Just click ok to all of them.
+
 <p> To install webfs in Linux Mint just type:
 <pre>
 	sudo apt-get install webfs
@@ -83,6 +87,11 @@ webfs.
 
 <p>
 Assuming the program ''bj-batch-solver'' is in the path, and from the source tree directory:
+
+<div class="alert alert-warning" role="alert">
+Due to a bug in the last solver version you must first edit the file 'dbg_ben_jose.conf' and uncomment (delete the leading '//')
+in the line that starts with '//115' so that you can see the paths that you will need later.
+</div>
 
 <pre>
 	cd ben-jose-master/src/programs/tests/solver
@@ -98,9 +107,6 @@ And from another terminal:
 </pre>
 
 <p>
-This display system was designed as a debug tool so it will show some dialogs. Just click ok to all of them.
-
-<p>
 The expected output can be found in <a href="proof_h4/SKELETON/CNF/Show_Proof.htm">this link</a>.
 
 <p>
@@ -111,7 +117,7 @@ Then:
 <ol>
 <li>
 <p>
-Copy the (very long) path printed in the standard output under "LAST_PROOF_PATH=" to the text area field in the Show_Proof.htm HTML page.
+Copy the (very long) path printed in the standard output under "FINAL_PROOF_JSN=" to the text area field in the Show_Proof.htm HTML page. (This will NOT be displayed in stdout if you did not uncomment the line starting with '//115' in the 'dbg_ben_jose.conf' file).
 
 <p>
 Paths must begin with ''/SKELETON'', so get rid of the prefix before it.
